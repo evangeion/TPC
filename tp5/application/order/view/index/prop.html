@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>腾讯游戏道聚城-集道具聚欢乐</title>
+</head>
+<body>
+	<div class="fr w950">
+		<!--我的关注-->
+		<div class="comm_bd mb10 clearfix center_box">
+			<div class="center_tt">我的功能性道具<span class="line"><s class="l_7"></s></span></div>
+			<div class="comm_bd clearfix mb20 choose_box">
+				<div id="choose_game" class="mr20 choose_game fl" data-onload="initProp">
+					<p class="fl">选择游戏：</p>
+					<div class="box fl" id="selectBorder">
+						<div class="tt"><s class="i_sp"></s><span id="curBizName" class="curBizName">选择游戏</span></a></div>
+						<div class="choose_sub" id="game_list">
+						</div>
+						<script id="prop_li" type="text/html">
+						<dl>
+						<dt>选择游戏：</dt>
+						<dd class="clearfix">
+						{var i=1}
+						
+						</dd>
+						</dl>
+						</script>
+					</div>
+					<div id="zone_content" class="fl mr10" style="display:none">
+						<select id="zone1" class="select_area" style="display:none">
+							<option value="">请选择大区</option>
+						</select>
+						<select id="zone2" class="select_area" style="display:none">
+							<option value="">请选择服务器</option>
+						</select>
+						<select id="sel_role" class="select_area" style="display:none">
+							<option value="">请选择角色</option>
+						</select>
+					</div>
+					<p class="txt fl"><a href="#" id="prop_search_btn" class="comm_btn">查询</a></p>
+				</div>
+			</div>
+			<div class="comm_bd">
+				<div class="clearfix center_tab" id="at_tab">
+					<a href="#" val="0" id="ok" class="current" title="未使用">未使用</a>
+					<a href="#" val="1" id="done" title="已使用">已使用</a>
+				</div>
+				<div class="center_tbl at_tbl" id="tbl_0">
+					<table width="100%">
+						<tr>
+							<th width="200">道具名</th>
+							<th width="120">数量</th>
+							<th width="300">说明</th>
+							<th>操作</th>
+						</tr>
+						<tbody id="table_list_0">
+							<tr>
+								<td colspan="4">请选择游戏，查询功能性道具</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="center_tbl at_tbl" id="tbl_1" style="display:none">
+					<table width="100%">
+						<tr>
+							<th width="200">道具名</th>
+							<th width="120">数量</th>
+							<th width="300">说明</th>
+							<th>使用时间</th>
+						</tr>
+						<tbody id="table_list_1">
+							<tr>
+								<td colspan="4">请选择游戏，查询功能性道具</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="page" id="page_wrapper"></div>
+			</div>
+		</div>
+		<!--猜你喜欢-->
+		<div class="comm_bd favorite" id="favorite" data-onload="initFavorite" data-title="猜你喜欢">
+			<div class="tt"><h6 class="fl">猜你喜欢</h6><a href="#" id="replaceFav" class="fr blue more">换一换&gt;&gt;</a></div>
+			<div class="comm_bg clearfix">
+				<div id="fav_wrapper" style="display:none;">
+					<div class="loading" style="height:216px;"><span class="loadmsg">loading...</span></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--使用道具-->
+<div class="comm_pop prop_pop" id="propdialog" style="display:none">
+	<div class="clearfix">
+		<h6>我的功能性道具</h6>
+		<a title="关闭" id="close_signin" class="i_sp close" href="javascript:;">关闭</a>
+	</div>
+	<div class="line"><s class="s_7"></s></div>
+	<div class="clearfix con" id="prop_cont">
+	</div>
+</div>
+<!--cf更名卡-->
+<script id="cf_prop" type="text/html">
+<div class="fl l_con">
+<img src="picture/3532384603064b2aaa58a06bcde79bae.gif" />
+<p>[${bizName}] ${sGoodsName}</p>
+</div>
+<div class="r_con" style="margin-bottom:15px;">
+<dl>
+<dd>大区：${zoneName}</dd>
+
+<dd>道具说明：${sDesc}</dd>
+</dl>
+<div class="btn"><a href="#" class="comm_btn commit_btn" title="确认">确认</a><a href="#" class="comm_btn gray_btn cancel_btn" title="取消">取消</a></div>
+</div>
+</script>
+<!--ava-->
+<script id="ava_prop" type="text/html">
+<div class="fl l_con">
+<img src="picture/3532384603064b2aaa58a06bcde79bae.gif" />
+<p>[${bizName}] ${sGoodsName}</p>
+</div>
+<div class="r_con" style="margin-bottom:15px;">
+<dl>
+<dd>大区：${zoneName}</dd>
+
+<dd>道具说明：${sDesc}</dd>
+</dl>
+<div class="btn"><a href="#" class="comm_btn commit_btn" title="确认">确认</a><a href="#" class="comm_btn gray_btn cancel_btn" title="取消">取消</a></div>
+</div>
+</script>
+<!--r2 -->
+<script id="r2_prop" type="text/html">
+<div class="fl l_con">
+<img src="picture/3532384603064b2aaa58a06bcde79bae.gif" />
+<p>[${bizName}] ${sGoodsName}</p>
+</div>
+<div class="r_con" style="margin-bottom:15px;">
+<dl>
+<dd>大区：${zoneName}</dd>
+<dd>道具说明：${sDesc}</dd>
+</dl>
+<div class="btn"><a href="#" class="comm_btn commit_btn" title="确认">确认</a><a href="#" class="comm_btn gray_btn cancel_btn" title="取消">取消</a></div>
+</div>
+</script>
+<script id="r2_prop_4" type="text/html">
+<div class="fl l_con">
+<img src="picture/3532384603064b2aaa58a06bcde79bae.gif" />
+<p>[${bizName}] ${sGoodsName}</p>
+</div>
+<div class="r_con" style="margin-bottom:15px;">
+<dl>
+<dd>大区：${zoneName}</dd>
+<dd><input type="radio" name="radiobutton" value="1" checked="checked">星星：<select id="level_star">
+<option value="">请选择</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+</select></dd>
+<dd><input type="radio" name="radiobutton" value="2">月亮：<select id="level_moon">
+<option value="">请选择</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+</select></dd>
+<dd>道具说明：${sDesc}</dd>
+</dl>
+<div class="btn"><a href="#" class="comm_btn commit_btn" title="确认">确认</a><a href="#" class="comm_btn gray_btn cancel_btn" title="取消">取消</a></div>
+</div>
+</script>
+<script id="r2_prop_1" type="text/html">
+<div class="fl l_con">
+<img src="picture/3532384603064b2aaa58a06bcde79bae.gif" />
+<p>[${bizName}] ${sGoodsName}</p>
+</div>
+<div class="r_con" style="margin-bottom:15px;">
+<dl>
+<dd>大区：${zoneName}</dd>
+<dd>昵称：<input type="text" id="nick_name" class="input" /></dd>
+<dd>道具说明：${sDesc}</dd>
+</dl>
+<div class="btn"><a href="#" class="comm_btn commit_btn" title="确认">确认</a><a href="#" class="comm_btn gray_btn cancel_btn" title="取消">取消</a></div>
+</div>
+</script>
+</body>
+</html>

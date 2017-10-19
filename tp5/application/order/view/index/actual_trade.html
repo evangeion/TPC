@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>腾讯游戏道聚城-集道具聚欢乐</title>
+</head>
+<body>
+	<div class="wrap clearfix">
+		<div class="fr w950">
+			<!--我的周边订单-->
+			<div class="comm_bd mb10 clearfix center_box">
+				<div class="center_tt reltab">
+					<span class="fl related current">我的周边订单</span>
+					<span class="fl comment">待评价</span>
+					<span class="fl comment">已评价</span>
+				</div>          
+				<!-- 我的周边订单和评价晒单内容 -->
+				<div class="tabcont">
+					<!-- 我的周边订单 -->
+					<div class="comm_bd">
+<!--
+<div id="tab_order" class="clearfix center_tab">
+<a class="current" href="javascript:;" id="tab_new_order">30天内订单</a>
+<a href="javascript:;" id="tab_old_order">历史订单</a>
+</div>
+-->
+<div class="comm_bd center_tbl fixed_tbl">
+	<table width="100%" id="order_list_con">
+		<tr>
+			<td colspan="10">
+				<div class="loading"><span class="loadmsg">loading...</span></div>
+			</td>
+		</tr>
+	</table>
+	<script type="text/html" id="order_list_tmpl">
+	<thead>
+	<tr>
+	<th width="440" class="tl">订单详情</th>
+	<th width="80">收货人</th>
+	<th width="100">实付款</th>
+	<th width="125">
+	<div class="box" id="selectStatus">
+	<div class="tt">
+	<s class="i_sp"></s>
+	<span id="js_order_con_status" class="curBizName">订单状态</span>
+	</div>  
+	<div class="choose_ul" id="select_order_con_status"> 
+	<ul>
+	<li status=""><a>全部订单状态</a></li>
+	<li status="1"><a>待付款</a></li>
+	<li status="2"><a>待发货</a></li>
+	<li status="101"><a>待收货</a></li>
+	<li status="102"><a>交易成功</a></li>
+	<li status="201"><a>退款中</a></li>
+	<li status="202"><a>退款完成</a></li>
+	<li status="103"><a>退货中</a></li>
+	<li status="113"><a>退货完成</a></li>
+	<li status="104"><a>换货中</a></li>
+	<li status="114"><a>换货完成</a></li>
+	<li status="-1"><a>已取消</a></li>
+	</ul>                
+	</div>
+	</div>
+	</th>
+	<th width="120">操作</th>
+	</tr>
+	</thead>
+	</script>
+	<script id="timeSec" type="text/html">
+	剩余${hour}时${minite}分${second}秒
+	</script>
+</table>
+</div>
+<div class="page" id="order_list_page"></div>
+<!--
+<p class="center_tip">
+<b class="red">温馨提示：</b>
+</p>
+-->
+</div>                
+</div>
+<!-- 待评价 -->
+<div class="tabcont" style="display:none;">
+	<!-- 等评价晒单 -->
+	<div class="comm_bd comment">
+		<div id="con_uncomment" class="comm_bd center_tbl fixed_tbl">
+			<table width="100%">
+				<tbody >
+					<tr>
+						<td colspan="2">
+							<div class="loading"><span class="loadmsg">loading...</span></div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="page pagesmar" id="page_uncomment"></div>
+	</div>
+</div>
+<!-- 待评价 -->
+<!-- 已评价 -->
+<div class="tabcont" style="display:none;">
+	<!-- 已评价晒单 -->
+	<div class="comm_bd comment">
+		<div id="con_commented" class="comm_bd center_tbl fixed_tbl">
+			<table width="100%">
+				<tbody>
+					<tr>
+						<td colspan="2">
+							<div class="loading"><span class="loadmsg">loading...</span></div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="page pagesmar" id="page_commented"></div>
+	</div>
+</div>
+<!-- 已评价 -->
+</div>
+</div>
+</div>
+<!--取消订单-->
+<div class="act_pop" id="popup_cancel" style="display:none;">
+	<a class="close" href="javascript:showDialog.hide();" title="关闭">关闭</a>
+	<h3>订单取消申请</h3>
+	<div class="pop_main">
+		<form id="form_cancel">
+			<input type="hidden" name="supplier_id" value="">
+			<input type="hidden" name="biz_code" value="">
+			<input type="hidden" name="serial_num" value="">
+			<p style="margin-bottom:20px;line-height:50px;">
+				<i class="fl relicon i-info"></i> <span>*</span>取消订单原因：
+				<select type="text" name="cancel_remark" style="width:200px;color:#3a3f4a;font-size:12px;">
+					<option value="现在不想购买">现在不想购买</option>
+					<option value="价格波动">价格波动</option>
+					<option value="重复下单">重复下单</option>
+					<option value="收货人信息有误">收货人信息有误</option>
+					<option value="送货时间过长">送货时间过长</option> 
+					<option value="其他原因">其他原因</option>
+					<option value="商品价格较贵">商品价格较贵</option>
+					<option value="商品缺货">商品缺货</option>
+					<option value="添加或删除商品">添加或删除商品</option>
+					<option value="发票信息有误、发票未开">发票信息有误、发票未开</option>
+					<option value="无法支付订单">无法支付订单</option>
+				</select>
+			</p>
+		</form>
+		<p class="tip_note red">温馨提醒：<br>订单成功取消后无法恢复<br>取消订单，使用的聚豆和优惠券不再返还</p>
+		<a href="javascript:void(0)" class="btn js_popup_cancel_submit" style="margin-left:50px;"><b>确定取消</b></a>
+		<a href="javascript:showDialog.hide();" class="btn btn-gray"><b>暂不取消</b></a>
+	</div>
+</div>
+</body>
+</html>

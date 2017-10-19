@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>腾讯游戏道聚城-集道具聚欢乐</title>
+</head>
+<body>
+	<div class="fr w950">
+		<!--我的关注-->
+		<div class="comm_bd mb10 clearfix center_box">
+			<div class="center_tt">领取魅力值<span class="line"><s class="l_5"></s></span></div>
+			<div class="comm_bd clearfix mb20 choose_box">
+				<div id="choose_game" class="mr20 choose_game fl" data-onload="initOrder">
+					<p class="fl">选择游戏：</p>
+					<div class="box fl" id="selectBorder">
+						<div class="tt"><s class="i_sp"></s><span id="curBizName" key="speed" value="QQ飞车" class="curBizName">QQ飞车</span></a></div>
+						<div class="choose_sub" id="game_list" key="speed" value="QQ飞车"></div>
+					</div>
+				</div>
+				<div class="fl clearfix choose_time mr10">
+					<p class="fl">查询时间：</p>
+					<div class="fl mr10"><input type="text" name="date1" class="date datepicker" id="start_date" value="" />至<input type="text" name="date1" class="date datepicker" id="end_date" value="" /></div>
+				</div>
+				<div class="fl"><a href="#" class="comm_btn btn" title="查询" id="btn_query" >查 询</a></div>
+			</div>
+			<div class="comm_bd coupon_tbl">
+				<table width="100%">
+					<thead>
+						<tr>
+							<th>游戏</th>
+							<th>购买时间</th>
+							<th>支付价格</th>
+							<th>操作</th>
+						</tr>
+					</thead>
+					<tbody id="table_list">
+						<tr>
+							<td colspan="4">
+								您可以在<a href="http://daoju.qq.com/speed" target="_blank" class="blue">《QQ飞车》道聚城</a>消费，获取魅力值。
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="page" id="page_wrapper"></div>
+			<p class="center_tip"><b class="red">温馨提示：</b>飞车魅力值需要在第二天凌晨更新，请耐心等待~</p>
+		</div>
+		<!--猜你喜欢-->
+		<div class="comm_bd favorite" id="favorite" data-onload="initFavorite" data-title="猜你喜欢">
+			<div class="tt"><h6 class="fl">猜你喜欢</h6><a href="#" id="replaceFav" class="fr blue more">换一换&gt;&gt;</a></div>
+			<div class="comm_bg clearfix">
+				<div id="fav_wrapper" style="display:none;">
+					<div class="loading" style="height:216px;"><span class="loadmsg">loading...</span></div>
+				</div>
+			</div>
+			<script type="text/html" id="fav_li">
+			<dl pos="${pos}">
+			<dt><a href="/${sPdName}/item/${iSeqId}.shtml?ADTAG=media.free.recommend.${sPdName.toUpperCase()}&algorithm=${algorithm}" target="_blank">
+			<img src="picture/3532384603064b2aaa58a06bcde79bae.gif"/></a></dt>
+			<dd>
+			<p><a href="/${sPdName}/item/${iSeqId}.shtml?ADTAG=media.free.recommend.${sPdName.toUpperCase()}&algorithm=${algorithm}" target="_blank"><b>[${bizName}]</b>${sGoodsName}</a></p>
+			<p class="red">商城价：<b>${iPrice} QB</b></p>
+			</dd>
+			</dl>
+			</script>
+		</div>
+	</div>
+</div>
+<div class="comm_pop prop_pop" id="getMlz" style="display:none">
+	<div class="clearfix">
+		<h6>领取魅力值</h6>
+		<a title="关闭" id="close_signin" class="i_sp close" href="javascript:;">关闭</a>
+	</div>
+	<div class="line"><s class="s_7"></s></div>
+	<div class="clearfix con">
+		<div class="fl l_con">
+			<img src="picture/dj_speed.png" />
+			<p>[QQ飞车] 飞车魅力值</p>
+		</div>
+		<div class="r_con">
+			<dl>
+				<dd>大区：
+					<select id="area1"><option value="">请选择大区</option></select>
+				</dd>
+				<dd>角色：
+					<select id="role"><option value="">请选择角色</option></select>
+				</dd>
+				<dd>道具说明：您可以在《QQ飞车》道聚城消费，获取魅力值。</dd>
+			</dl>
+			<div class="btn"><a href="#" class="comm_btn" id="getMlzBtn" title="确认">领取</a></div>
+		</div>
+	</div>
+</div>
+</body>
+</html><!--[if !IE]>|xGv00|f3a1829e031b0b97b1b4198bd2117d51<![endif]-->

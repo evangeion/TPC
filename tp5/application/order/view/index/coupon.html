@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>腾讯游戏道聚城-集道具聚欢乐</title>
+</head>
+<body>
+	<div class="fr w950">
+		<!--我的优惠券-->
+		<div class="comm_bd mb10 clearfix center_box">
+			<div class="center_tt">我的优惠券<span class="line"><s class="l_5"></s></span></div>
+			<div class="comm_bd">
+				<div id="tab_order" class="clearfix center_tab">
+					<a class="current" href="javascript:;">道具优惠券</a>
+					<a href="javascript:;">周边优惠券</a>
+				</div>
+			</div>
+			<div id="tab_con">
+				<div class="comm_bd coupon_tbl" style="border-top-style: none;">
+					<div class="comm_bd clearfix mb20 choose_box" style="border-bottom-style: none;padding:10px 20px 10px 10px;margin-bottom:0px;">
+						<div id="choose_game" class="mr20 choose_game fl" data-onload="initCoupon">
+							<p class="fl">选择游戏：</p>
+							<div class="box fl" id="selectBorder">
+								<div class="tt"><s class="i_sp"></s><span id="curBizName" class="curBizName">选择游戏</span></a></div>
+								<div class="choose_sub" id="game_list">
+								</div>
+							</div>
+						</div>
+						<div class="fl"><a href="#" class="comm_btn btn" title="查询" id="btn_query">查 询</a></div>
+					</div>
+					<table width="100%">
+						<thead>
+							<tr>
+								<th width="120">游戏</th>
+								<th width="120">优惠券名称</th>
+								<th width="120">优惠券面值</th>
+								<th width="120">使用条件</th>
+								<th width="120">使用状态</th>
+								<th>有效期</th>
+							</tr>
+						</thead>
+						<tbody id="table_list">
+							<tr>
+								<td colspan="6">请选择游戏，查询优惠券</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="page" id="page_wrapper"></div>
+				</div>
+				<div class="comm_bd coupon_tbl" style="display:none;border-top-style:none;">
+					<div class="comm_bd clearfix mb20 choose_box" style="border-bottom-style: none;padding:10px 20px 10px 10px;margin-bottom:0px;">
+						<div id="choose_actual_game" class="mr20 choose_game fl">
+							<p class="fl">选择游戏：</p>
+							<div id="selectActualBorder" class="box fl">
+								<div class="tt"><s class="i_sp"></s><span class="curBizName">选择游戏</span></a></div>
+								<div class="choose_sub">
+									<dl>
+										<dt>休闲游戏：</dt>
+										<dd id="game_actual_list" class="clearfix">
+											<a href="#" biz="lol">英雄联盟</a><i>|</i>
+											<a href="#" biz="bns">剑灵</a><i>|</i>
+											<a href="#" biz="dnf">地下城与勇士</a><i>|</i>
+											<a href="#" biz="x5">QQ炫舞</a><i>|</i>
+											<a href="#" biz="x52">炫舞时代</a><i>|</i>
+											<a href="#" biz="xx">寻仙</a><i>|</i>
+											<a href="#" biz="mxd2">冒险岛2</a><i>|</i>
+										</dd>
+									</dl>
+								</div>
+							</div>
+						</div>
+						<div class="fl"><a href="#" class="comm_btn btn" title="查询" id="btn_actual_query">查 询</a></div>
+					</div>
+					<table width="100%">
+						<thead>
+							<tr>
+								<th width="120">游戏</th>
+								<th width="120">优惠券名称</th>
+								<th width="120">优惠券面值</th>
+								<th width="120">使用条件</th>
+								<th width="120">使用状态</th>
+								<th>有效期</th>
+							</tr>
+						</thead>
+						<tbody id="table_actual_list">
+							<tr>
+								<td colspan="6">请选择游戏，查询优惠券</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="page" id="page_actual_wrapper"></div>
+				</div>
+			</div>
+			<p class="center_tip"><b class="red">优惠券说明：</b>对已过期的优惠券，我们将在每年1月份做一次清理。清理后您将无法再查询到已过期优惠券信息。 </p>
+		</div>
+		<!--猜你喜欢-->
+		<div class="comm_bd favorite" id="favorite" data-onload="initFavorite" data-title="猜你喜欢">
+			<div class="tt"><h6 class="fl">猜你喜欢</h6><a href="#" id="replaceFav" class="fr blue more">换一换&gt;&gt;</a></div>
+			<div class="comm_bg clearfix">
+				<div id="fav_wrapper" style="display:none;">
+					<div class="loading" style="height:216px;"><span class="loadmsg">loading...</span></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
