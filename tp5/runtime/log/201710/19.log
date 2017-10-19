@@ -1,0 +1,1789 @@
+---------------------------------------------------------------
+[ 2017-10-19T15:33:50+08:00 ] ::1 ::1 GET /moxie/fastadmin-2017-09-15/fastadmin/public/index.php/admin/index/login
+[ info ] localhost/moxie/fastadmin-2017-09-15/fastadmin/public/index.php/admin/index/login [运行时间：0.102006s][吞吐率：9.80req/s] [内存消耗：2,998.27kb] [文件加载：72]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.007001s ]
+[ info ] [ LANG ] C:\wamp\www\moxie\fastadmin-2017-09-15\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/moxie/fastadmin-2017-09-15/fastadmin/public/install.php',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.1026220506.1507771209; PHPSESSID=pvnrg6ok321r8jjv63078f79p6; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1508201892,1508238995,1508395232,1508398300; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1508398306',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\wamp\www\moxie\fastadmin-2017-09-15\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] C:\wamp\www\moxie\fastadmin-2017-09-15\fastadmin\public/../application/admin/lang/zh-cn/index.php
+[ info ] [ RUN ] app\admin\controller\Index->login[ C:\wamp\www\moxie\fastadmin-2017-09-15\fastadmin\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp\www\moxie\fastadmin-2017-09-15\fastadmin\public/../application/admin\view\index\login.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'background',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-19T15:33:51+08:00 ] ::1 ::1 GET /moxie/fastadmin-2017-09-15/fastadmin/public/index.php/admin/ajax/lang?callback=define&controllername=index&v=1508398430
+[ info ] localhost/moxie/fastadmin-2017-09-15/fastadmin/public/index.php/admin/ajax/lang?callback=define&controllername=index&v=1508398430 [运行时间：0.080005s][吞吐率：12.50req/s] [内存消耗：2,848.14kb] [文件加载：69]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006001s ]
+[ info ] [ LANG ] C:\wamp\www\moxie\fastadmin-2017-09-15\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/moxie/fastadmin-2017-09-15/fastadmin/public/index.php/admin/index/login',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.1026220506.1507771209; PHPSESSID=pvnrg6ok321r8jjv63078f79p6; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1508201892,1508238995,1508395232,1508398300; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1508398306',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'index',
+  'v' => '1508398430',
+)
+[ info ] [ LANG ] C:\wamp\www\moxie\fastadmin-2017-09-15\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ C:\wamp\www\moxie\fastadmin-2017-09-15\fastadmin\application\admin\controller\Ajax.php ]
+[ info ] [ LANG ] C:\wamp\www\moxie\fastadmin-2017-09-15\fastadmin\public/../application/admin/lang/zh-cn/index.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-19T15:33:55+08:00 ] ::1 ::1 POST /moxie/fastadmin-2017-09-15/fastadmin/public/index.php/admin/index/login
+[ info ] localhost/moxie/fastadmin-2017-09-15/fastadmin/public/index.php/admin/index/login [运行时间：0.279016s][吞吐率：3.58req/s] [内存消耗：3,635.18kb] [文件加载：79]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.007001s ]
+[ info ] [ LANG ] C:\wamp\www\moxie\fastadmin-2017-09-15\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '74',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/moxie/fastadmin-2017-09-15/fastadmin/public/index.php/admin/index/login',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.1026220506.1507771209; PHPSESSID=pvnrg6ok321r8jjv63078f79p6; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1508201892,1508238995,1508395232,1508398300; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1508398306',
+)
+[ info ] [ PARAM ] array (
+  '__token__' => '479330e876acffb9b437b69e2c31eef7',
+  'username' => 'admin',
+  'password' => '123456',
+)
+[ info ] [ LANG ] C:\wamp\www\moxie\fastadmin-2017-09-15\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] C:\wamp\www\moxie\fastadmin-2017-09-15\fastadmin\public/../application/admin/lang/zh-cn/index.php
+[ info ] [ RUN ] app\admin\controller\Index->login[ C:\wamp\www\moxie\fastadmin-2017-09-15\fastadmin\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.031001s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=tpc;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin` [ RunTime:0.054003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_admin` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] UPDATE `fa_admin`  SET `logintime`=1508398434,`token`='ef271f3d-595b-454d-adaf-f1e6b24940bf',`updatetime`=1508398434  WHERE  `id` = 1 [ RunTime:0.049003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('登录' , '{\"__token__\":\"479330e876acffb9b437b69e2c31eef7\",\"username\":\"admin\"}' , '/moxie/fastadmin-2017-09-15/fastadmin/public/index.php/admin/index/login' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36' , '0.0.0.0' , 1508398435) [ RunTime:0.021001s ]
+---------------------------------------------------------------
+[ 2017-10-19T15:33:55+08:00 ] ::1 ::1 GET /moxie/fastadmin-2017-09-15/fastadmin/public/index.php/admin/index/index
+[ info ] localhost/moxie/fastadmin-2017-09-15/fastadmin/public/index.php/admin/index/index [运行时间：0.272016s][吞吐率：3.68req/s] [内存消耗：4,129.63kb] [文件加载：91]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.007000s ]
+[ info ] [ LANG ] C:\wamp\www\moxie\fastadmin-2017-09-15\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/moxie/fastadmin-2017-09-15/fastadmin/public/index.php/admin/index/login',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.1026220506.1507771209; PHPSESSID=pvnrg6ok321r8jjv63078f79p6; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1508201892,1508238995,1508395232,1508398300; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1508398306',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\wamp\www\moxie\fastadmin-2017-09-15\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] C:\wamp\www\moxie\fastadmin-2017-09-15\fastadmin\public/../application/admin/lang/zh-cn/index.php
+[ info ] [ RUN ] app\admin\controller\Index->index[ C:\wamp\www\moxie\fastadmin-2017-09-15\fastadmin\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wamp\www\moxie\fastadmin-2017-09-15\fastadmin\public/../application/admin\view\index\index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'menulist',
+  6 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.001001s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=tpc;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.063004s ]
+[ sql ] [ SQL ] SELECT `AuthGroupAccess`.`uid`,`AuthGroupAccess`.`group_id`,`AuthGroup`.`id`,`AuthGroup`.`pid`,`AuthGroup`.`name`,`AuthGroup`.`rules` FROM `fa_auth_group_access` `AuthGroupAccess` LEFT JOIN `fa_auth_group` `AuthGroup` ON `AuthGroupAccess`.`group_id`=`AuthGroup`.`id` WHERE  (  AuthGroupAccess.uid='1' and AuthGroup.status='normal' ) [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `ismenu` = 1 ORDER BY `weigh`  desc [ RunTime:0.001001s ]
+---------------------------------------------------------------
+[ 2017-10-19T15:33:55+08:00 ] ::1 ::1 GET /moxie/fastadmin-2017-09-15/fastadmin/public/index.php/admin/ajax/lang?callback=define&controllername=index&v=1508398435
+[ info ] localhost/moxie/fastadmin-2017-09-15/fastadmin/public/index.php/admin/ajax/lang?callback=define&controllername=index&v=1508398435 [运行时间：0.084005s][吞吐率：11.90req/s] [内存消耗：2,864.78kb] [文件加载：70]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006000s ]
+[ info ] [ LANG ] C:\wamp\www\moxie\fastadmin-2017-09-15\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/moxie/fastadmin-2017-09-15/fastadmin/public/index.php/admin/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.1026220506.1507771209; PHPSESSID=pvnrg6ok321r8jjv63078f79p6; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1508201892,1508238995,1508395232,1508398300; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1508398306',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'index',
+  'v' => '1508398435',
+)
+[ info ] [ LANG ] C:\wamp\www\moxie\fastadmin-2017-09-15\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ C:\wamp\www\moxie\fastadmin-2017-09-15\fastadmin\application\admin\controller\Ajax.php ]
+[ info ] [ LANG ] C:\wamp\www\moxie\fastadmin-2017-09-15\fastadmin\public/../application/admin/lang/zh-cn/index.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-19T15:33:56+08:00 ] ::1 ::1 GET /moxie/fastadmin-2017-09-15/fastadmin/public/index.php/admin/dashboard?addtabs=1
+[ info ] localhost/moxie/fastadmin-2017-09-15/fastadmin/public/index.php/admin/dashboard?addtabs=1 [运行时间：0.207012s][吞吐率：4.83req/s] [内存消耗：3,989.13kb] [文件加载：80]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.007000s ]
+[ info ] [ LANG ] C:\wamp\www\moxie\fastadmin-2017-09-15\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'dashboard',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/moxie/fastadmin-2017-09-15/fastadmin/public/index.php/admin/dashboard?ref=addtabs',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.1026220506.1507771209; PHPSESSID=pvnrg6ok321r8jjv63078f79p6; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1508201892,1508238995,1508395232,1508398300; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1508398306',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+)
+[ info ] [ LANG ] C:\wamp\www\moxie\fastadmin-2017-09-15\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] C:\wamp\www\moxie\fastadmin-2017-09-15\fastadmin\public/../application/admin/lang/zh-cn/dashboard.php
+[ info ] [ RUN ] app\admin\controller\Dashboard->index[ C:\wamp\www\moxie\fastadmin-2017-09-15\fastadmin\application\admin\controller\Dashboard.php ]
+[ info ] [ VIEW ] C:\wamp\www\moxie\fastadmin-2017-09-15\fastadmin\public/../application/admin\view\dashboard\index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'totaluser',
+  6 => 'totalviews',
+  7 => 'totalorder',
+  8 => 'totalorderamount',
+  9 => 'todayuserlogin',
+  10 => 'todayusersignup',
+  11 => 'todayorder',
+  12 => 'unsettleorder',
+  13 => 'sevendnu',
+  14 => 'sevendau',
+  15 => 'paylist',
+  16 => 'createlist',
+  17 => 'uploadmode',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=tpc;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `AuthGroupAccess`.`uid`,`AuthGroupAccess`.`group_id`,`AuthGroup`.`id`,`AuthGroup`.`pid`,`AuthGroup`.`name`,`AuthGroup`.`rules` FROM `fa_auth_group_access` `AuthGroupAccess` LEFT JOIN `fa_auth_group` `AuthGroup` ON `AuthGroupAccess`.`group_id`=`AuthGroup`.`id` WHERE  (  AuthGroupAccess.uid='1' and AuthGroup.status='normal' ) [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'dashboard' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2017-10-19T15:33:56+08:00 ] ::1 ::1 GET /moxie/fastadmin-2017-09-15/fastadmin/public/index.php/admin/ajax/lang?callback=define&controllername=dashboard&v=1508398436
+[ info ] localhost/moxie/fastadmin-2017-09-15/fastadmin/public/index.php/admin/ajax/lang?callback=define&controllername=dashboard&v=1508398436 [运行时间：0.086005s][吞吐率：11.63req/s] [内存消耗：2,864.06kb] [文件加载：70]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006001s ]
+[ info ] [ LANG ] C:\wamp\www\moxie\fastadmin-2017-09-15\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/moxie/fastadmin-2017-09-15/fastadmin/public/index.php/admin/dashboard?addtabs=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.1026220506.1507771209; PHPSESSID=pvnrg6ok321r8jjv63078f79p6; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1508201892,1508238995,1508395232,1508398300; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1508398306',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'dashboard',
+  'v' => '1508398436',
+)
+[ info ] [ LANG ] C:\wamp\www\moxie\fastadmin-2017-09-15\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ C:\wamp\www\moxie\fastadmin-2017-09-15\fastadmin\application\admin\controller\Ajax.php ]
+[ info ] [ LANG ] C:\wamp\www\moxie\fastadmin-2017-09-15\fastadmin\public/../application/admin/lang/zh-cn/dashboard.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-19T15:33:58+08:00 ] ::1 ::1 GET /moxie/fastadmin-2017-09-15/fastadmin/public/index.php/admin/index/login
+[ info ] localhost/moxie/fastadmin-2017-09-15/fastadmin/public/index.php/admin/index/login [运行时间：0.112006s][吞吐率：8.93req/s] [内存消耗：2,982.69kb] [文件加载：73]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005000s ]
+[ info ] [ LANG ] C:\wamp\www\moxie\fastadmin-2017-09-15\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/moxie/fastadmin-2017-09-15/fastadmin/public/install.php',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.1026220506.1507771209; PHPSESSID=pvnrg6ok321r8jjv63078f79p6; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1508201892,1508238995,1508395232,1508398300; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1508398306',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\wamp\www\moxie\fastadmin-2017-09-15\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.009000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] C:\wamp\www\moxie\fastadmin-2017-09-15\fastadmin\public/../application/admin/lang/zh-cn/index.php
+[ info ] [ RUN ] app\admin\controller\Index->login[ C:\wamp\www\moxie\fastadmin-2017-09-15\fastadmin\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp\www\moxie\fastadmin-2017-09-15\fastadmin\public/../application/common\view\tpl\dispatch_jump.tpl [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'code',
+  6 => 'msg',
+  7 => 'data',
+  8 => 'url',
+  9 => 'wait',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.002000s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-19T15:43:05+08:00 ] ::1 ::1 GET /favicon.ico
+[ info ] www.tpc.com/favicon.ico [运行时间：0.153009s][吞吐率：6.54req/s] [内存消耗：1,841.75kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.007000s ]
+[ info ] [ LANG ] C:\wamp\www\TPC\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpc.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.tpc.com/install.php',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=4129596416; pgv_pvid=366352634; ts_uid=6096037612; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1508397345',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-19T15:43:12+08:00 ] ::1 ::1 GET /
+[ info ] www.tpc.com/ [运行时间：0.212013s][吞吐率：4.72req/s] [内存消耗：2,692.70kb] [文件加载：64]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005000s ]
+[ info ] [ LANG ] C:\wamp\www\TPC\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpc.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=4129596416; pgv_pvid=366352634; ts_uid=6096037612; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1508397345',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\wamp\www\TPC\tp5\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002000s ]
+[ info ] [ LANG ] C:\wamp\www\TPC\tp5\public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ C:\wamp\www\TPC\tp5\application\index\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp\www\TPC\tp5\public/../application/index\view\index\index.html [ array (
+  0 => 'site',
+  1 => 'config',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-19T15:43:22+08:00 ] ::1 ::1 GET /order
+[ info ] www.tpc.com/order [运行时间：0.077005s][吞吐率：12.99req/s] [内存消耗：2,379.54kb] [文件加载：60]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005000s ]
+[ info ] [ LANG ] C:\wamp\www\TPC\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'order',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpc.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=4129596416; pgv_pvid=366352634; ts_uid=6096037612; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1508397345,1508398993; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1508398993',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001000s ]
+[ info ] [ RUN ] app\order\controller\Index->index[ C:\wamp\www\TPC\tp5\application\order\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp\www\TPC\tp5\public/../application/order\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-19T15:43:22+08:00 ] ::1 ::1 GET /static/js/milo.js
+[ info ] www.tpc.com/static/js/milo.js [运行时间：0.057003s][吞吐率：17.54req/s] [内存消耗：1,841.02kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.013000s ]
+[ info ] [ LANG ] C:\wamp\www\TPC\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'milo.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpc.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.tpc.com/order',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=4129596416; pgv_pvid=366352634; ts_uid=6096037612; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1508397345,1508398993; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1508398993',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-19T15:43:22+08:00 ] ::1 ::1 GET /images/newtips.png
+[ info ] www.tpc.com/images/newtips.png [运行时间：0.064004s][吞吐率：15.62req/s] [内存消耗：1,841.54kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005000s ]
+[ info ] [ LANG ] C:\wamp\www\TPC\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'newtips.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpc.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.tpc.com/order',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=4129596416; pgv_pvid=366352634; ts_uid=6096037612; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1508397345,1508398993; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1508398993',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-19T15:43:23+08:00 ] ::1 ::1 GET /static/js/foot.js
+[ info ] www.tpc.com/static/js/foot.js [运行时间：0.137008s][吞吐率：7.30req/s] [内存消耗：1,841.02kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.015001s ]
+[ info ] [ LANG ] C:\wamp\www\TPC\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'foot.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpc.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.tpc.com/order',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=4129596416; pgv_pvid=366352634; ts_uid=6096037612; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1508397345,1508398993; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1508398993',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-19T15:43:23+08:00 ] ::1 ::1 GET /static/js/milo.js
+[ info ] www.tpc.com/static/js/milo.js [运行时间：0.058003s][吞吐率：17.24req/s] [内存消耗：1,841.02kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.007000s ]
+[ info ] [ LANG ] C:\wamp\www\TPC\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'milo.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpc.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.tpc.com/order',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=4129596416; pgv_pvid=366352634; ts_uid=6096037612; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1508397345,1508398993; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1508398993',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-19T15:43:24+08:00 ] ::1 ::1 GET /order
+[ info ] www.tpc.com/order [运行时间：0.061003s][吞吐率：16.39req/s] [内存消耗：2,141.47kb] [文件加载：58]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005000s ]
+[ info ] [ LANG ] C:\wamp\www\TPC\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'order',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpc.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.tpc.com/order',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=4129596416; pgv_pvid=366352634; ts_uid=6096037612; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1508397345,1508398993; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1508398993',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001000s ]
+[ info ] [ RUN ] app\order\controller\Index->index[ C:\wamp\www\TPC\tp5\application\order\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp\www\TPC\tp5\public/../application/order\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-19T15:43:24+08:00 ] ::1 ::1 GET /static/js/foot.js
+[ info ] www.tpc.com/static/js/foot.js [运行时间：0.055003s][吞吐率：18.18req/s] [内存消耗：1,841.02kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005000s ]
+[ info ] [ LANG ] C:\wamp\www\TPC\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'foot.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpc.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.tpc.com/order',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=4129596416; pgv_pvid=366352634; ts_uid=6096037612; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1508397345,1508398993; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1508398993',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-19T15:43:24+08:00 ] ::1 ::1 GET /static/js/milo.js
+[ info ] www.tpc.com/static/js/milo.js [运行时间：0.056003s][吞吐率：17.86req/s] [内存消耗：1,841.02kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006001s ]
+[ info ] [ LANG ] C:\wamp\www\TPC\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'milo.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpc.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.tpc.com/order',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=4129596416; pgv_pvid=366352634; ts_uid=6096037612; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1508397345,1508398993; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1508398993',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-19T15:43:24+08:00 ] ::1 ::1 GET /static/js/foot.js
+[ info ] www.tpc.com/static/js/foot.js [运行时间：0.053003s][吞吐率：18.87req/s] [内存消耗：1,841.02kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006000s ]
+[ info ] [ LANG ] C:\wamp\www\TPC\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'foot.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpc.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.tpc.com/order',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=4129596416; pgv_pvid=366352634; ts_uid=6096037612; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1508397345,1508398993; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1508398993',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-19T15:43:24+08:00 ] ::1 ::1 GET /images/newtips.png
+[ info ] www.tpc.com/images/newtips.png [运行时间：0.108007s][吞吐率：9.26req/s] [内存消耗：1,841.54kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.015001s ]
+[ info ] [ LANG ] C:\wamp\www\TPC\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'newtips.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpc.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.tpc.com/order',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=4129596416; pgv_pvid=366352634; ts_uid=6096037612; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1508397345,1508398993; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1508398993',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-19T15:43:24+08:00 ] ::1 ::1 GET /static/js/milo.js
+[ info ] www.tpc.com/static/js/milo.js [运行时间：0.100006s][吞吐率：10.00req/s] [内存消耗：1,841.02kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.015001s ]
+[ info ] [ LANG ] C:\wamp\www\TPC\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'milo.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpc.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.tpc.com/order',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=4129596416; pgv_pvid=366352634; ts_uid=6096037612; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1508397345,1508398993; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1508398993',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-19T15:43:25+08:00 ] ::1 ::1 GET /order/index/myprivilage
+[ info ] www.tpc.com/order/index/myprivilage [运行时间：0.081004s][吞吐率：12.35req/s] [内存消耗：2,366.07kb] [文件加载：60]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005001s ]
+[ info ] [ LANG ] C:\wamp\www\TPC\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'order',
+    1 => 'index',
+    2 => 'myprivilage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpc.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.tpc.com/order',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=4129596416; pgv_pvid=366352634; ts_uid=6096037612; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1508397345,1508398993; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1508398993',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001000s ]
+[ info ] [ RUN ] app\order\controller\Index->myprivilage[ C:\wamp\www\TPC\tp5\application\order\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp\www\TPC\tp5\public/../application/order\view\index\myprivilage.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-19T15:43:25+08:00 ] ::1 ::1 GET /static/js/milo.js
+[ info ] www.tpc.com/static/js/milo.js [运行时间：0.069004s][吞吐率：14.49req/s] [内存消耗：1,841.04kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.009000s ]
+[ info ] [ LANG ] C:\wamp\www\TPC\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'milo.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpc.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.tpc.com/order/index/myprivilage',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=4129596416; pgv_pvid=366352634; ts_uid=6096037612; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1508397345,1508398993; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1508398993',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-19T15:43:25+08:00 ] ::1 ::1 GET /order/index/images/newtips.png
+[ info ] www.tpc.com/order/index/images/newtips.png [运行时间：0.189010s][吞吐率：5.29req/s] [内存消耗：2,095.52kb] [文件加载：59]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006000s ]
+[ info ] [ LANG ] C:\wamp\www\TPC\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'order',
+    1 => 'index',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpc.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.tpc.com/order/index/myprivilage',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=4129596416; pgv_pvid=366352634; ts_uid=6096037612; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1508397345,1508398993; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1508398993',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-19T15:43:25+08:00 ] ::1 ::1 GET /static/js/foot.js
+[ info ] www.tpc.com/static/js/foot.js [运行时间：0.127007s][吞吐率：7.87req/s] [内存消耗：1,841.04kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005000s ]
+[ info ] [ LANG ] C:\wamp\www\TPC\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'foot.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpc.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.tpc.com/order/index/myprivilage',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=4129596416; pgv_pvid=366352634; ts_uid=6096037612; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1508397345,1508398993; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1508398993',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-19T15:43:25+08:00 ] ::1 ::1 GET /static/js/milo.js
+[ info ] www.tpc.com/static/js/milo.js [运行时间：0.053004s][吞吐率：18.87req/s] [内存消耗：1,841.04kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005000s ]
+[ info ] [ LANG ] C:\wamp\www\TPC\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'milo.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpc.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.tpc.com/order/index/myprivilage',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=4129596416; pgv_pvid=366352634; ts_uid=6096037612; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1508397345,1508398993; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1508398993',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-19T15:43:25+08:00 ] ::1 ::1 GET /order/index/task
+[ info ] www.tpc.com/order/index/task [运行时间：0.072004s][吞吐率：13.89req/s] [内存消耗：2,365.55kb] [文件加载：60]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005000s ]
+[ info ] [ LANG ] C:\wamp\www\TPC\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'order',
+    1 => 'index',
+    2 => 'task',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpc.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.tpc.com/order/index/myprivilage',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=4129596416; pgv_pvid=366352634; ts_uid=6096037612; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1508397345,1508398993; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1508398993',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001000s ]
+[ info ] [ RUN ] app\order\controller\Index->task[ C:\wamp\www\TPC\tp5\application\order\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp\www\TPC\tp5\public/../application/order\view\index\task.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-19T15:43:25+08:00 ] ::1 ::1 GET /static/js/foot.js
+[ info ] www.tpc.com/static/js/foot.js [运行时间：0.061003s][吞吐率：16.39req/s] [内存消耗：1,841.03kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005001s ]
+[ info ] [ LANG ] C:\wamp\www\TPC\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'foot.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpc.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.tpc.com/order/index/task',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=4129596416; pgv_pvid=366352634; ts_uid=6096037612; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1508397345,1508398993; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1508398993',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-19T15:43:26+08:00 ] ::1 ::1 GET /static/js/milo.js
+[ info ] www.tpc.com/static/js/milo.js [运行时间：0.079005s][吞吐率：12.66req/s] [内存消耗：1,841.03kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006001s ]
+[ info ] [ LANG ] C:\wamp\www\TPC\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'milo.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpc.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.tpc.com/order/index/task',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=4129596416; pgv_pvid=366352634; ts_uid=6096037612; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1508397345,1508398993; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1508398993',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-19T15:43:26+08:00 ] ::1 ::1 GET /order/index/images/newtips.png
+[ info ] www.tpc.com/order/index/images/newtips.png [运行时间：0.081004s][吞吐率：12.35req/s] [内存消耗：2,095.52kb] [文件加载：59]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005001s ]
+[ info ] [ LANG ] C:\wamp\www\TPC\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'order',
+    1 => 'index',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpc.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.tpc.com/order/index/task',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=4129596416; pgv_pvid=366352634; ts_uid=6096037612; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1508397345,1508398993; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1508398993',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-19T15:43:27+08:00 ] ::1 ::1 GET /order/index/trade
+[ info ] www.tpc.com/order/index/trade [运行时间：0.074005s][吞吐率：13.51req/s] [内存消耗：2,392.04kb] [文件加载：60]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005000s ]
+[ info ] [ LANG ] C:\wamp\www\TPC\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'order',
+    1 => 'index',
+    2 => 'trade',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpc.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.tpc.com/order/index/task',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=4129596416; pgv_pvid=366352634; ts_uid=6096037612; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1508397345,1508398993; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1508398993',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001000s ]
+[ info ] [ RUN ] app\order\controller\Index->trade[ C:\wamp\www\TPC\tp5\application\order\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp\www\TPC\tp5\public/../application/order\view\index\trade.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-19T15:43:27+08:00 ] ::1 ::1 GET /static/js/milo.js
+[ info ] www.tpc.com/static/js/milo.js [运行时间：0.066004s][吞吐率：15.15req/s] [内存消耗：1,841.03kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006000s ]
+[ info ] [ LANG ] C:\wamp\www\TPC\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'milo.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpc.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.tpc.com/order/index/trade',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=4129596416; pgv_pvid=366352634; ts_uid=6096037612; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1508397345,1508398993; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1508398993',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-19T15:43:27+08:00 ] ::1 ::1 GET /static/js/foot.js
+[ info ] www.tpc.com/static/js/foot.js [运行时间：0.129008s][吞吐率：7.75req/s] [内存消耗：1,841.03kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006000s ]
+[ info ] [ LANG ] C:\wamp\www\TPC\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'foot.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpc.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.tpc.com/order/index/trade',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=4129596416; pgv_pvid=366352634; ts_uid=6096037612; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1508397345,1508398993; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1508398993',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-19T15:43:27+08:00 ] ::1 ::1 GET /static/js/milo.js
+[ info ] www.tpc.com/static/js/milo.js [运行时间：0.054003s][吞吐率：18.52req/s] [内存消耗：1,841.03kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005000s ]
+[ info ] [ LANG ] C:\wamp\www\TPC\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'milo.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpc.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.tpc.com/order/index/trade',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=4129596416; pgv_pvid=366352634; ts_uid=6096037612; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1508397345,1508398993; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1508398993',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-19T15:43:27+08:00 ] ::1 ::1 GET /order/index/images/newtips.png
+[ info ] www.tpc.com/order/index/images/newtips.png [运行时间：0.098005s][吞吐率：10.20req/s] [内存消耗：2,095.52kb] [文件加载：59]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.008000s ]
+[ info ] [ LANG ] C:\wamp\www\TPC\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'order',
+    1 => 'index',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpc.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.tpc.com/order/index/trade',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=4129596416; pgv_pvid=366352634; ts_uid=6096037612; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1508397345,1508398993; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1508398993',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.007001s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-19T15:43:28+08:00 ] ::1 ::1 GET /order/index/myaddress
+[ info ] www.tpc.com/order/index/myaddress [运行时间：0.067004s][吞吐率：14.92req/s] [内存消耗：2,356.95kb] [文件加载：60]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006000s ]
+[ info ] [ LANG ] C:\wamp\www\TPC\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'order',
+    1 => 'index',
+    2 => 'myaddress',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpc.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.tpc.com/order/index/trade',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=4129596416; pgv_pvid=366352634; ts_uid=6096037612; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1508397345,1508398993; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1508398993',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001000s ]
+[ info ] [ RUN ] app\order\controller\Index->myaddress[ C:\wamp\www\TPC\tp5\application\order\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp\www\TPC\tp5\public/../application/order\view\index\myaddress.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-19T15:43:28+08:00 ] ::1 ::1 GET /static/js/milo.js
+[ info ] www.tpc.com/static/js/milo.js [运行时间：0.055003s][吞吐率：18.18req/s] [内存消耗：1,841.04kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005000s ]
+[ info ] [ LANG ] C:\wamp\www\TPC\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'milo.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpc.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.tpc.com/order/index/myaddress',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=4129596416; pgv_pvid=366352634; ts_uid=6096037612; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1508397345,1508398993; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1508398993',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-19T15:43:28+08:00 ] ::1 ::1 GET /static/js/foot.js
+[ info ] www.tpc.com/static/js/foot.js [运行时间：0.078004s][吞吐率：12.82req/s] [内存消耗：1,841.04kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006000s ]
+[ info ] [ LANG ] C:\wamp\www\TPC\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'foot.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpc.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.tpc.com/order/index/myaddress',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=4129596416; pgv_pvid=366352634; ts_uid=6096037612; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1508397345,1508398993; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1508398993',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-19T15:43:28+08:00 ] ::1 ::1 GET /static/js/milo.js
+[ info ] www.tpc.com/static/js/milo.js [运行时间：0.050003s][吞吐率：20.00req/s] [内存消耗：1,841.04kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.007000s ]
+[ info ] [ LANG ] C:\wamp\www\TPC\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'milo.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpc.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.tpc.com/order/index/myaddress',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=4129596416; pgv_pvid=366352634; ts_uid=6096037612; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1508397345,1508398993; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1508398993',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-19T15:43:28+08:00 ] ::1 ::1 GET /order/index/images/newtips.png
+[ info ] www.tpc.com/order/index/images/newtips.png [运行时间：0.112007s][吞吐率：8.93req/s] [内存消耗：2,095.52kb] [文件加载：59]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.008000s ]
+[ info ] [ LANG ] C:\wamp\www\TPC\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'order',
+    1 => 'index',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpc.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.tpc.com/order/index/myaddress',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=4129596416; pgv_pvid=366352634; ts_uid=6096037612; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1508397345,1508398993; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1508398993',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002000s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-19T15:43:29+08:00 ] ::1 ::1 GET /order/index/attention
+[ info ] www.tpc.com/order/index/attention [运行时间：0.073005s][吞吐率：13.70req/s] [内存消耗：2,094.63kb] [文件加载：59]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005001s ]
+[ info ] [ LANG ] C:\wamp\www\TPC\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'order',
+    1 => 'index',
+    2 => 'attention',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpc.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.tpc.com/order/index/myaddress',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=4129596416; pgv_pvid=366352634; ts_uid=6096037612; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1508397345,1508398993; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1508398993',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001000s ]
+[ info ] [ RUN ] app\order\controller\Index->attention[ C:\wamp\www\TPC\tp5\application\order\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]模板文件不存在:C:\wamp\www\TPC\tp5\public/../application/order\view\index\attention.html[C:\wamp\www\TPC\tp5\thinkphp\library\think\view\driver\Think.php:80]
+---------------------------------------------------------------
+[ 2017-10-19T15:43:32+08:00 ] ::1 ::1 GET /order/index/images/newtips.png
+[ info ] www.tpc.com/order/index/images/newtips.png [运行时间：0.092005s][吞吐率：10.87req/s] [内存消耗：2,095.52kb] [文件加载：59]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.008001s ]
+[ info ] [ LANG ] C:\wamp\www\TPC\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'order',
+    1 => 'index',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpc.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.tpc.com/order/index/myaddress',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=4129596416; pgv_pvid=366352634; ts_uid=6096037612; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1508397345,1508398993; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1508398993',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002000s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-19T15:43:33+08:00 ] ::1 ::1 GET /order/index/myticket
+[ info ] www.tpc.com/order/index/myticket [运行时间：0.072004s][吞吐率：13.89req/s] [内存消耗：2,367.07kb] [文件加载：60]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005000s ]
+[ info ] [ LANG ] C:\wamp\www\TPC\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'order',
+    1 => 'index',
+    2 => 'myticket',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpc.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.tpc.com/order/index/myaddress',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=4129596416; pgv_pvid=366352634; ts_uid=6096037612; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1508397345,1508398993; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1508398993',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001000s ]
+[ info ] [ RUN ] app\order\controller\Index->myticket[ C:\wamp\www\TPC\tp5\application\order\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp\www\TPC\tp5\public/../application/order\view\index\myticket.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-19T15:43:33+08:00 ] ::1 ::1 GET /static/js/foot.js
+[ info ] www.tpc.com/static/js/foot.js [运行时间：0.053003s][吞吐率：18.87req/s] [内存消耗：1,841.03kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005000s ]
+[ info ] [ LANG ] C:\wamp\www\TPC\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'foot.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpc.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.tpc.com/order/index/myticket',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=4129596416; pgv_pvid=366352634; ts_uid=6096037612; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1508397345,1508398993; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1508398993',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-19T15:43:33+08:00 ] ::1 ::1 GET /static/js/milo.js
+[ info ] www.tpc.com/static/js/milo.js [运行时间：0.112006s][吞吐率：8.93req/s] [内存消耗：1,841.03kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005000s ]
+[ info ] [ LANG ] C:\wamp\www\TPC\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'milo.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpc.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.tpc.com/order/index/myticket',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=4129596416; pgv_pvid=366352634; ts_uid=6096037612; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1508397345,1508398993; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1508398993',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-19T15:43:33+08:00 ] ::1 ::1 GET /order/index/images/newtips.png
+[ info ] www.tpc.com/order/index/images/newtips.png [运行时间：0.087005s][吞吐率：11.49req/s] [内存消耗：2,095.52kb] [文件加载：59]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005000s ]
+[ info ] [ LANG ] C:\wamp\www\TPC\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'order',
+    1 => 'index',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpc.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.tpc.com/order/index/myticket',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=4129596416; pgv_pvid=366352634; ts_uid=6096037612; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1508397345,1508398993; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1508398993',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002000s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-19T15:43:35+08:00 ] ::1 ::1 GET /order/index/charm
+[ info ] www.tpc.com/order/index/charm [运行时间：0.070004s][吞吐率：14.28req/s] [内存消耗：2,368.04kb] [文件加载：60]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005000s ]
+[ info ] [ LANG ] C:\wamp\www\TPC\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'order',
+    1 => 'index',
+    2 => 'charm',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpc.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.tpc.com/order/index/myticket',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=4129596416; pgv_pvid=366352634; ts_uid=6096037612; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1508397345,1508398993; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1508398993',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001000s ]
+[ info ] [ RUN ] app\order\controller\Index->charm[ C:\wamp\www\TPC\tp5\application\order\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp\www\TPC\tp5\public/../application/order\view\index\charm.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-19T15:43:35+08:00 ] ::1 ::1 GET /static/js/milo.js
+[ info ] www.tpc.com/static/js/milo.js [运行时间：0.153008s][吞吐率：6.54req/s] [内存消耗：1,841.03kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.025001s ]
+[ info ] [ LANG ] C:\wamp\www\TPC\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'milo.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpc.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.tpc.com/order/index/charm',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=4129596416; pgv_pvid=366352634; ts_uid=6096037612; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1508397345,1508398993; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1508398993',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-19T15:43:35+08:00 ] ::1 ::1 GET /order/index/images/newtips.png
+[ info ] www.tpc.com/order/index/images/newtips.png [运行时间：0.135008s][吞吐率：7.41req/s] [内存消耗：2,095.52kb] [文件加载：59]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.015001s ]
+[ info ] [ LANG ] C:\wamp\www\TPC\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'order',
+    1 => 'index',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpc.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.tpc.com/order/index/charm',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=4129596416; pgv_pvid=366352634; ts_uid=6096037612; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1508397345,1508398993; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1508398993',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.026002s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-19T15:43:35+08:00 ] ::1 ::1 GET /static/js/foot.js
+[ info ] www.tpc.com/static/js/foot.js [运行时间：0.194011s][吞吐率：5.15req/s] [内存消耗：1,841.03kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006000s ]
+[ info ] [ LANG ] C:\wamp\www\TPC\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'foot.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpc.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.tpc.com/order/index/charm',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=4129596416; pgv_pvid=366352634; ts_uid=6096037612; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1508397345,1508398993; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1508398993',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-19T15:43:35+08:00 ] ::1 ::1 GET /order/index/picture/dj_speed.png
+[ info ] www.tpc.com/order/index/picture/dj_speed.png [运行时间：0.262015s][吞吐率：3.82req/s] [内存消耗：2,095.52kb] [文件加载：59]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004000s ]
+[ info ] [ LANG ] C:\wamp\www\TPC\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'order',
+    1 => 'index',
+    2 => 'picture',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpc.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.tpc.com/order/index/charm',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=4129596416; pgv_pvid=366352634; ts_uid=6096037612; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1508397345,1508398993; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1508398993',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-19T15:43:35+08:00 ] ::1 ::1 GET /static/js/milo.js
+[ info ] www.tpc.com/static/js/milo.js [运行时间：0.075004s][吞吐率：13.33req/s] [内存消耗：1,841.03kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006001s ]
+[ info ] [ LANG ] C:\wamp\www\TPC\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'milo.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpc.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.tpc.com/order/index/charm',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=4129596416; pgv_pvid=366352634; ts_uid=6096037612; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1508397345,1508398993; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1508398993',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-19T15:44:32+08:00 ] ::1 ::1 GET /reslog
+[ info ] www.tpc.com/reslog [运行时间：0.112006s][吞吐率：8.93req/s] [内存消耗：2,206.51kb] [文件加载：58]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006001s ]
+[ info ] [ LANG ] C:\wamp\www\TPC\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'reslog',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpc.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=4129596416; pgv_pvid=366352634; ts_uid=6096037612; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1508397345,1508398993; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1508398993',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001000s ]
+[ info ] [ RUN ] app\reslog\controller\Index->index[ C:\wamp\www\TPC\tp5\application\reslog\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp\www\TPC\tp5\public/../application/reslog\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File

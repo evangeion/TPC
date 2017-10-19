@@ -6,7 +6,7 @@ use think\Controller;
 
 class Index extends Controller
 {
-	public function reslog()
+	public function index()
 	{
 		return $this->fetch();
 	}
