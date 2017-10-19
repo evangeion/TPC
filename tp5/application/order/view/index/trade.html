@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>腾讯游戏道聚城-集道具聚欢乐</title>
+
+<!-- <link href="css/datepicker.css" rel="stylesheet" type="text/css" /> -->
+</head>
+<body>
+
+	<div class="fr w950">
+	<!--我的订单-->
+		<div class="comm_bd mb10 clearfix center_box">
+			<div class="center_tt">我的订单<span class="line"><s class="l_4"></s></span></div>
+			
+			<div class="comm_bd clearfix mb20 choose_box">
+                <div id="choose_game" class="mr20 choose_game fl" data-onload="initOrder">
+                    <p class="fl">选择游戏：</p>
+                    <div class="box fl" id="selectBorder">
+                      <div class="tt"><s class="i_sp"></s><span id="curBizName" class="curBizName" biz="">全部</span></div>
+                      <div class="choose_sub" id="gameList">
+                        <div class="gametype">
+                            <ul>
+                                <li class="gcur brbt">
+                                    <i class="ordericon pc"></i>
+                                    <p class="gname">端<br>游</p>
+                                </li>
+                                <li>
+                                    <i class="ordericon mobile"></i>
+                                    <p class="gname">手<br>游</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="specificgame" style="display:;">
+                            <dl>
+                                <dt>角色扮演：</dt>
+                                <dd class="clearfix">
+                                	 <a biz="mho" href="#">怪物猎人OL</a><i>|</i>
+                                     <a biz="h2" href="#">QQ仙灵</a><i>|</i>
+                                     <a biz="wuxia" href="#">天涯明月刀</a><i>|</i>
+                                     <a biz="age" href="#">上古世纪</a><i>|</i>
+                                     <a biz="dzs" href="#">斗战神</a><i>|</i>
+                                     <a biz="xy" href="#">轩辕传奇</a><i>|</i>
+                                     <a biz="xx" href="#">寻仙</a><i>|</i>
+                                     <a biz="bns" href="#">剑灵</a><i>|</i>
+                                     <a biz="tiantang2" href="#">天堂2</a><i>|</i>
+                                     <a biz="tiantang" href="#">天堂</a><i>|</i>
+                                     <a biz="hxsj" href="#">幻想世界</a><i>|</i>
+                                     <a biz="xxz" href="#">QQ仙侠传</a><i>|</i>
+                                     <a biz="c9" href="#">第九大陆</a><i>|</i>
+                                     <a biz="dnf" href="#">地下城和勇士</a><i>|</i>
+                                     <a biz="sg" href="#">QQ三国</a><i>|</i>
+                                     <a biz="yl" href="#">御龙在天</a><i>|</i>
+                                     <a biz="yljd" href="#">御龙在天经典版</a><i>|</i>
+                                     <a biz="ffo" href="#">自由幻想</a><i>|</i>
+                                     <a biz="fo" href="#">QQ幻想</a><i>|</i>
+                                     <a biz="dj2" href="#">刀剑2</a><i>|</i>
+                                     <a biz="jf" href="#">疾风之刃</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>竞技游戏：</dt>
+                                <dd class="clearfix">
+                                	 <a biz="zzlt" href="#">战争雷霆</a><i>|</i>
+                                	 <a biz="smite" href="#">神之浩劫</a><i>|</i>
+                                     <a biz="codol" href="#">使命召唤codol</a><i>|</i>
+                                     <a biz="lol" href="#">英雄联盟</a><i>|</i>
+                                     <a biz="nz" href="#">逆战</a><i>|</i>
+                                     <a biz="cf" href="#">穿越火线</a><i>|</i>
+                                     <a biz="nba2k" href="#">NBA2KOL</a><i>|</i>
+                                     <a biz="ava" href="#">战地之王</a><i>|</i>
+                                     <a biz="tps" href="#">枪神纪</a><i>|</i>
+                                     <a biz="fifa" href="#">FIFA&nbsp;Online3</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>休闲游戏：</dt>
+                                <dd class="clearfix">
+                                    <a biz="nfsol" href="#">极品飞车OL</a><i>|</i>
+                                	<a biz="k" href="#">王牌对决</a><i>|</i>
+                                    <a biz="x5" href="#">QQ炫舞</a><i>|</i>
+                                    <a biz="x52" href="#">炫舞时代</a><i>|</i>
+                                    <a biz="speed" href="#">QQ飞车</a><i>|</i>
+                                    <a biz="r2" href="#">QQ音速</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>网页游戏：</dt>
+                                <dd class="clearfix">
+                                	<a biz="bydr" href="#">猎鱼达人3D</a><i>|</i>
+                                    <a biz="ye" href="#">夜店之王</a><i>|</i>
+                                    <a biz="bl" href="#">部落守卫战</a><i>|</i>
+                                    <a biz="fight" href="#">Q宠大乐斗</a><i>|</i>
+                                    <a biz="zg" href="#">烽火战国</a><i>|</i>
+                                    <a biz="7" href="#">7雄争霸</a><i>|</i>
+                                    <a biz="hyol" href="#">火影忍者OL</a><i>|</i>
+                                    <a biz="mgc" href="#">梦工厂</a><i>|</i>
+                                    <a biz="roco" href="#">洛克王国</a><i>|</i>
+                                    <a biz="cos" href="#">英魂之刃</a>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="specificgame" style="display:none;">
+                            <dl>
+                                <dt>角色扮演：</dt>
+                                <dd class="clearfix">
+                                     <a biz="as" href="#">傲世西游</a><i>|</i>
+                                     <a biz="9lz" href="#">九龙战</a><i>|</i>
+                                     <a biz="ml" href="#">魔龙与勇士</a><i>|</i>
+                                     <a biz="zxsj" href="#">全民斩仙</a><i>|</i>
+                                     <a biz="kof98ol" href="#">拳皇98 终极之战ol</a><i>|</i>
+                                     <a biz="mir" href="#">热血传奇</a><i>|</i>
+                                     <a biz="sgzr" href="#">三国之刃</a><i>|</i>
+                                     <a biz="ttxd" href="#">天天炫斗</a><i>|</i>
+                                     <a biz="ttlz" href="#">天天来战</a><i>|</i>
+                                     <a biz="ttcq" href="#">天天传奇</a><i>|</i>
+                                     <a biz="mt2" href="#">我叫MT2</a><i>|</i>
+                                     <a biz="xj" href="#">仙剑奇侠传</a><i>|</i>
+                                     <a biz="ylyx" href="#">游龙英雄</a><i>|</i>
+                                     <a biz="qmzg" href="#">全民主公</a><i>|</i>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>动作游戏：</dt>
+                                <dd class="clearfix">
+                                     <a biz="dlfx" href="#">独立防线</a><i>|</i>
+                                     <a biz="lt" href="#">雷霆战机</a><i>|</i>
+                                     <a biz="wefire" href="#">全民突击</a><i>|</i>
+                                     <a biz="feiji" href="#">全民飞机大战</a><i>|</i>
+                                     <a biz="ttfc" href="#">天天飞车</a><i>|</i>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>棋牌游戏：</dt>
+                                <dd class="clearfix">
+                                    <a biz="huanle" href="#">欢乐斗地主</a><i>|</i>
+                                    <a biz="ttfw" href="#">天天富翁</a><i>|</i>
+                                    <a biz="poker" href="#">天天德州</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>策略游戏：</dt>
+                                <dd class="clearfix">
+                                    <a biz="moba" href="#">全民超神</a><i>|</i>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>休闲游戏：</dt>
+                                <dd class="clearfix">
+                                    <a biz="pao" href="#">天天酷跑</a><i>|</i>
+                                    <a biz="wind" href="#">天天风之旅</a><i>|</i>
+                                    <a biz="peng" href="#">天天爱消除</a><i>|</i>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+
+                    </div>
+                </div>
+                <div id="choose_game" class="mr20 choose_game fl">
+                    <p class="fl">购买渠道：</p>
+                    <div class="box fl" id="selectChannel">
+                        <div class="tt">
+                            <s class="i_sp"></s>
+                            <span id="curChannel" class="curBizName">全部</span>
+                        </div>  
+                        <div class="choose_ul" id="channelList"> 
+                            <ul>
+                                <li appid="1000,1001,1002,1003" channel=""><a>全部</a></li>
+                                <li appid="1001" channel=""><a>道聚城APP</a></li>
+                                <li appid="1000" channel=""><a>手机QQ</a></li>
+                                <li appid="1002" channel="1002000000"><a>道聚城微信公众号</a></li>
+                                <li appid="1003" channel=""><a>道聚城官网</a></li>
+                            </ul>                
+                        </div>                                             
+                    </div>
+                </div>
+                <div class="fl"><a href="#" class="comm_btn btn" title="查询" id="btn_query">查 询</a></div>
+            </div>
+			
+			<div class="comm_bd">
+				<div id="tab_order" class="clearfix center_tab">
+					<a class="current" href="javascript:;" id="tab_new_order">30天内订单</a>
+					<a href="javascript:;" id="tab_old_order">历史订单</a>
+				</div>
+				<div id="con_order" class="comm_bd center_tbl fixed_tbl">
+					<table width="100%">
+						<thead>
+							<tr>
+                                <th width="150">游戏</th>
+                                <th width="260">订单物品</th>
+                                <th width="100">数量</th>
+                                <th width="160">实付款</th>
+                                <th width="150">
+                                    <div class="box" id="selectStatus">
+                                        <div class="tt">
+                                            <s class="i_sp"></s>
+                                            <span id="curStatus" class="curBizName">全部订单状态</span>
+                                        </div>  
+                                        <div class="choose_ul" id="statusList"> 
+                                            <ul>
+                                                <li status=''><a>全部订单状态</a></li>
+                                                <li status='1'><a>等待买家付款</a></li>
+                                                <li status='2'><a>买家已付款</a></li>
+                                                <li status='3'><a>交易成功</a></li>
+                                                <li status='-100'><a>交易已撤销</a></li>
+                                            </ul>                
+                                        </div>                                             
+                                    </div>
+                                </th>
+                                <th width="120">操作</th>
+                            </tr>
+						</thead>
+						<tbody id="new_order_list">
+							<tr>
+								<td colspan="10">
+									请选择业务，查询订单信息
+								</td>
+							</tr>
+						</tbody>
+						<tbody id="old_order_list" style="display:none;">
+							<tr>
+								<td colspan="10">
+									请选择业务，查询订单信息
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div id="bottom_order">
+					<div class="page" id="new_page_wrapper"></div>
+					<div class="page" id="old_page_wrapper" style="display:none;"></div>
+				</div>
+				<p class="center_tip"><b class="red">温馨提示：</b><br/>1、购买成功后系统会自动发货，如发货失败24小时内会自动补发！<br/>2、如果网银重复付款或付款后订单取消，道具未到账，网银退款将在15个工作日内到账。</p>
+			</div>
+		</div>
+		<!--猜你喜欢-->
+		<div class="comm_bd favorite" id="favorite" data-onload="initFavorite" data-title="猜你喜欢">
+			<div class="tt"><h6 class="fl">猜你喜欢</h6><a href="#" id="replaceFav" class="fr blue more">换一换&gt;&gt;</a></div>
+			<div class="comm_bg clearfix">
+				<div id="fav_wrapper" style="display:none;">
+					<div class="loading" style="height:216px;"><span class="loadmsg">loading...</span></div>
+				</div>
+			</div>
+			<script type="text/html" id="fav_li">
+				<dl pos="${pos}">
+					<dt><a href="/${sPdName}/item/${iSeqId}.shtml?ADTAG=media.free.recommend.${sPdName.toUpperCase()}&algorithm=${algorithm}" target="_blank">
+						<img src="picture/c5317d4d4b8c4e4ca24b8c656028db59.gif"/></a></dt>
+					<dd>
+						<p><a href="/${sPdName}/item/${iSeqId}.shtml?ADTAG=media.free.recommend.${sPdName.toUpperCase()}&algorithm=${algorithm}" target="_blank"><b>[${bizName}]</b>${sGoodsName}</a></p>
+						<p class="red">商城价：<b>${iPrice} QB</b></p>
+					</dd>
+				</dl>
+			</script>
+		</div>
+	</div>
+
+</body>
+</html>

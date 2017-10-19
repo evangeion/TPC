@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>腾讯游戏道聚城-集道具聚欢乐</title>
+
+</head>
+<body>
+	<div class="fl w950" data-onload="initCenter">
+		<div id="userInfoCon" class="clearfix comm_bd mb10 center_info">
+			<div class="loading" style="margin-bottom:10px;"><span class="loadmsg">loading...</span></div>
+		</div>
+
+		<!-- 我的任务 -->
+		<div class="usertask">
+			<div class="mb10 clearfix center_box">
+				<div class="center_tt">我的任务<span class="line"><s class="l_5"></s></span></div>
+				<div class="comm_bd tab_task">
+					<a id="btn_task_uncomplete" href="javascript:;" class="p_task_spr p_task_not_over">未完成任务</a>
+					<div id="blk_task_tab" class="clearfix center_tab"></div>
+					<script type="text/html" id="tmpl_task_tab">
+					{var i=0}
+					</script>
+					<div class="tab_task_cont dis" id="blk_task_list">
+						<div class="loading" style="margin-bottom:10px;"><span class="loadmsg">loading...</span></div>
+					</div>
+					<script type="text/html" id="tmpl_task_list">
+
+					</script>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="myTask_mask" id="mask_popup" style="width: 100%;height: 100%;z-index: 999;position: fixed; top: 0; left: 0;background: #000;opacity: .6;filter: alpha(opacity=60);display: none;"></div>
+	<div id="blk_popup" style="display: none; visibility: visible; position: fixed; z-index: 1000; left: 50%; top: 35%; margin-top: -165px; margin-left: -255px;" role="dialog" tabindex="-1"></div>
+
+</body>
+</html>

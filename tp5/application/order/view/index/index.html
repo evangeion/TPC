@@ -1,0 +1,189 @@
+<html>
+<head>
+    <title>腾讯游戏道聚城-集道具聚欢乐</title>
+</head>
+<body>
+
+<div class="fl w950" data-onready="initCenter">
+        <!--个人信息-->
+        <div id="userInfoCon" class="clearfix comm_bd mb10 center_info">
+            <div class="loading" style="margin-bottom:10px;"><span class="loadmsg">loading...</span></div>      
+        </div>
+        <div class="game_consume">
+            <!-- 最近登录的游戏 -->
+            <div class="login_game" id="enjoyedGameCon"></div>
+
+            <!-- 本月累计消费 -->
+            <div class="" id="consumeCon">
+                <div class="consume">
+                    <div class="loading"><span class="loadmsg">loading...</span></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 节省 -->
+        <div class="dj_save">
+            <div class="save_num">
+                本月道聚城为您省了：<span id="iSaveTotal"></span>
+            </div>      
+        </div>
+
+        <!--我的特权--start-->
+        <div class="userprivilege">
+            <div class="mb10 clearfix center_box">
+                <div class="center_tt">
+                    我的特权
+                    <i class="dot-tip"></i>
+                    <span class="line"><s class="l_5"></s></span><!--<i class="fr pro_help"></i>-->
+                    <a href="http://xinyue.qq.com/act/pc/a20160530xydjc/index.html?ADTAG=xinyue.daoju.personal" target="_blank" class="link-xinyue">心悦游戏家</a>
+                </div>
+                <div class="comm_bg userbox clearfix">
+                    <div>
+                        <dl>      
+                            <dt>
+                                <a href="myprivilage.shtml" target="_blank" class="task-link">       
+                                    <i class="tqico coupons"></i>
+                                </a>
+                            </dt>      
+                            <dd>       
+                                <p>专享优惠券</p>      
+                            </dd>     
+                        </dl>
+                        <dl>      
+                            <dt>
+                                <a href="myprivilage.shtml" target="_blank" class="task-link">       
+                                    <i class="tqico gift"></i>
+                                </a>
+                            </dt>      
+                            <dd>       
+                                <p>首次消费礼</p>      
+                            </dd>     
+                        </dl> 
+                        <dl>      
+                            <dt>
+                                <a href="myprivilage.shtml" target="_blank" class="task-link">       
+                                    <i class="tqico djgift"></i>
+                                </a>
+                            </dt>      
+                            <dd>       
+                                <p>道具逢十礼</p>      
+                            </dd>     
+                        </dl> 
+                        <dl class="borderrt">      
+                            <dt>
+                                <a href="myprivilage.shtml" target="_blank" class="task-link">       
+                                    <i class="tqico consume"></i>
+                                </a>
+                            </dt>      
+                            <dd>       
+                                <p>消费成长礼</p>      
+                            </dd>     
+                        </dl>                                                                        
+                    </div>
+                </div>
+            </div>                        
+        </div>
+        <!--我的特权--end-->
+
+        <!--我的任务--start-->
+        <div class="usertask">
+            <div class="mb10 clearfix center_box">
+                <div class="center_tt">我的任务<i class="dot-tip"></i><span class="line"><s class="l_5"></s></span><!--<i class="fr pro_help"></i>--></div>
+<!--<div class="taskinfor">
+<span>可领取奖励：<strong>2</strong></span>  <span>可接受任务：<strong>10</strong></span>  <span>已完成任务：<strong>2</strong></span>
+</div>
+-->
+<div class="comm_bg userbox clearfix">
+    <div>
+        <dl>      
+            <dt>
+                <a href="/mall/task.shtml" target="_blank" class="task-link">       
+                    <i class="taskico signin"></i>
+                </a>
+            </dt>      
+            <dd>       
+                <p>每日签到</p>      
+            </dd>     
+        </dl>
+        <dl>      
+            <dt>
+                <a href="/mall/task.shtml" target="_blank" class="task-link">       
+                    <i class="taskico info"></i>
+                </a>
+            </dt>      
+            <dd>       
+                <p>完善资料</p>      
+            </dd>     
+        </dl> 
+        <dl>      
+            <dt>
+                <a href="/mall/task.shtml" target="_blank" class="task-link">       
+                    <i class="taskico down"></i>
+                </a>
+            </dt>      
+            <dd>       
+                <p>下载APP</p>      
+            </dd>     
+        </dl> 
+        <dl class="borderrt">      
+            <dt>
+                <a href="/mall/task.shtml" target="_blank" class="task-link">       
+                    <i class="taskico login"></i>
+                </a>
+            </dt>      
+            <dd>       
+                <p>每日登录APP</p>      
+            </dd>     
+        </dl>  
+        <dl class="borderrt">      
+            <dt>
+                <a href="/mall/task.shtml" target="_blank" class="task-link">       
+                    <i class="taskico appconsume"></i>
+                </a>
+            </dt>      
+            <dd>       
+                <p>APP首笔消费</p>      
+            </dd>     
+        </dl>                                                                                               
+    </div>
+</div>
+</div>            
+</div>
+
+<!--我的任务--end-->
+<div id="orderInfoCon">
+    <div class="loading" style="height:234px;margin-bottom:10px;"><span class="loadmsg">loading...</span></div>
+</div>
+<!--近期未完成订单（待付款）-->
+<!--猜你喜欢-->
+<div class="comm_bd favorite" id="favorite" data-onload="initFavorite" data-title="猜你喜欢">
+    <div class="tt"><h6 class="fl">猜你喜欢</h6><a href="#" id="replaceFav" class="fr blue more">换一换&gt;&gt;</a></div>
+    <div class="comm_bg clearfix">
+        <div id="fav_wrapper"></div>
+    </div>
+</div>
+
+<!-- 功勋值提示浮层 -->
+<div class="gxfc" id="gxzfc">
+    <div class="fctips">
+        <div class="gxfxvalue" style="padding:10px;">功勋值<strong></strong></div>
+        <div class="fcbtnbox">
+            <a href="http://daoju.qq.com/mall/help/help_exploit.shtml" target="_blank" class="ckdetail">[查看功勋详情]</a>
+            <a href="javascript:;" class="comm_btn mid_btn gxknow">我知道啦</a>            
+        </div>
+    </div>
+</div>
+
+<!-- 完善资料提示浮层 -->
+<div class="introfc" id="introfc">
+    <div class="introtips">
+        <div class="introbtnbox">
+            <a href="http://daoju.qq.com/mall/myinfo.shtml" target="_blank"  class="ckdetail">[完善个人资料]</a>
+            <a href="javascript:;" class="comm_btn mid_btn gxknow">我知道啦</a>
+        </div>
+    </div>
+</div>
+</div>
+
+</body>
+</html>
