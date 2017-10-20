@@ -1,0 +1,307 @@
+---------------------------------------------------------------
+[ 2017-10-20T09:26:22+08:00 ] ::1 ::1 GET /admin/ajax/wipecache?_=1508459267562
+[ info ] www.tpc.com/admin/ajax/wipecache?_=1508459267562 [运行时间：0.138008s][吞吐率：7.25req/s] [内存消耗：2,854.83kb] [文件加载：70]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006000s ]
+[ info ] [ LANG ] C:\wamp\www\TPC\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'wipecache',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpc.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'referer' => 'http://www.tpc.com/admin/dashboard?ref=addtabs',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=4129596416; pgv_pvid=366352634; ts_uid=6096037612; PHPSESSID=8m4l7vte0egogack4dnm0keeh4; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1508459265,1508459714,1508460484,1508461160; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1508461160',
+)
+[ info ] [ PARAM ] array (
+  '_' => '1508459267562',
+)
+[ info ] [ LANG ] C:\wamp\www\TPC\tp5\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Ajax->wipecache[ C:\wamp\www\TPC\tp5\application\admin\controller\Ajax.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.004001s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-20T09:26:23+08:00 ] ::1 ::1 GET /admin/dashboard?ref=addtabs
+[ info ] www.tpc.com/admin/dashboard?ref=addtabs [运行时间：0.167010s][吞吐率：5.99req/s] [内存消耗：3,626.24kb] [文件加载：75]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.017001s ]
+[ info ] [ LANG ] C:\wamp\www\TPC\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'dashboard',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpc.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.tpc.com/admin/general/attachment?ref=addtabs',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=4129596416; pgv_pvid=366352634; ts_uid=6096037612; PHPSESSID=8m4l7vte0egogack4dnm0keeh4; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1508459265,1508459714,1508460484,1508461160; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1508461160',
+)
+[ info ] [ PARAM ] array (
+  'ref' => 'addtabs',
+)
+[ info ] [ LANG ] C:\wamp\www\TPC\tp5\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:dbname=tpc;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpc_auth_group_access` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `AuthGroupAccess`.`uid`,`AuthGroupAccess`.`group_id`,`AuthGroup`.`id`,`AuthGroup`.`pid`,`AuthGroup`.`name`,`AuthGroup`.`rules` FROM `tpc_auth_group_access` `AuthGroupAccess` LEFT JOIN `tpc_auth_group` `AuthGroup` ON `AuthGroupAccess`.`group_id`=`AuthGroup`.`id` WHERE  (  AuthGroupAccess.uid='1' and AuthGroup.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpc_auth_rule` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `tpc_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-10-20T09:26:24+08:00 ] ::1 ::1 GET /admin/index/index
+[ info ] www.tpc.com/admin/index/index [运行时间：0.385022s][吞吐率：2.60req/s] [内存消耗：4,120.83kb] [文件加载：91]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004001s ]
+[ info ] [ LANG ] C:\wamp\www\TPC\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpc.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.tpc.com/admin/general/attachment?ref=addtabs',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=4129596416; pgv_pvid=366352634; ts_uid=6096037612; PHPSESSID=8m4l7vte0egogack4dnm0keeh4; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1508459265,1508459714,1508460484,1508461160; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1508461160',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\wamp\www\TPC\tp5\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] C:\wamp\www\TPC\tp5\public/../application/admin/lang/zh-cn/index.php
+[ info ] [ RUN ] app\admin\controller\Index->index[ C:\wamp\www\TPC\tp5\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wamp\www\TPC\tp5\public/../application/admin\view\index\index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'menulist',
+  6 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:dbname=tpc;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpc_auth_group_access` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `AuthGroupAccess`.`uid`,`AuthGroupAccess`.`group_id`,`AuthGroup`.`id`,`AuthGroup`.`pid`,`AuthGroup`.`name`,`AuthGroup`.`rules` FROM `tpc_auth_group_access` `AuthGroupAccess` LEFT JOIN `tpc_auth_group` `AuthGroup` ON `AuthGroupAccess`.`group_id`=`AuthGroup`.`id` WHERE  (  AuthGroupAccess.uid='1' and AuthGroup.status='normal' ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpc_auth_rule` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `tpc_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tpc_auth_rule` WHERE  `ismenu` = 1 ORDER BY `weigh`  desc [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2017-10-20T09:26:24+08:00 ] ::1 ::1 GET /admin/ajax/lang?callback=define&controllername=index&v=1508462783
+[ info ] www.tpc.com/admin/ajax/lang?callback=define&controllername=index&v=1508462783 [运行时间：0.075004s][吞吐率：13.33req/s] [内存消耗：2,857.51kb] [文件加载：70]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005000s ]
+[ info ] [ LANG ] C:\wamp\www\TPC\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpc.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.tpc.com/admin/index/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=4129596416; pgv_pvid=366352634; ts_uid=6096037612; PHPSESSID=8m4l7vte0egogack4dnm0keeh4; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1508459265,1508459714,1508460484,1508461160; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1508461160',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'index',
+  'v' => '1508462783',
+)
+[ info ] [ LANG ] C:\wamp\www\TPC\tp5\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002001s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ C:\wamp\www\TPC\tp5\application\admin\controller\Ajax.php ]
+[ info ] [ LANG ] C:\wamp\www\TPC\tp5\public/../application/admin/lang/zh-cn/index.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-20T09:26:24+08:00 ] ::1 ::1 GET /admin/dashboard?addtabs=1
+[ info ] www.tpc.com/admin/dashboard?addtabs=1 [运行时间：0.148009s][吞吐率：6.76req/s] [内存消耗：3,971.95kb] [文件加载：80]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005000s ]
+[ info ] [ LANG ] C:\wamp\www\TPC\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'dashboard',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpc.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.tpc.com/admin/dashboard?ref=addtabs',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=4129596416; pgv_pvid=366352634; ts_uid=6096037612; PHPSESSID=8m4l7vte0egogack4dnm0keeh4; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1508459265,1508459714,1508460484,1508461160; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1508461160',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+)
+[ info ] [ LANG ] C:\wamp\www\TPC\tp5\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] C:\wamp\www\TPC\tp5\public/../application/admin/lang/zh-cn/dashboard.php
+[ info ] [ RUN ] app\admin\controller\Dashboard->index[ C:\wamp\www\TPC\tp5\application\admin\controller\Dashboard.php ]
+[ info ] [ VIEW ] C:\wamp\www\TPC\tp5\public/../application/admin\view\dashboard\index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'totaluser',
+  6 => 'totalviews',
+  7 => 'totalorder',
+  8 => 'totalorderamount',
+  9 => 'todayuserlogin',
+  10 => 'todayusersignup',
+  11 => 'todayorder',
+  12 => 'unsettleorder',
+  13 => 'sevendnu',
+  14 => 'sevendau',
+  15 => 'paylist',
+  16 => 'createlist',
+  17 => 'uploadmode',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=tpc;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpc_auth_group_access` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `AuthGroupAccess`.`uid`,`AuthGroupAccess`.`group_id`,`AuthGroup`.`id`,`AuthGroup`.`pid`,`AuthGroup`.`name`,`AuthGroup`.`rules` FROM `tpc_auth_group_access` `AuthGroupAccess` LEFT JOIN `tpc_auth_group` `AuthGroup` ON `AuthGroupAccess`.`group_id`=`AuthGroup`.`id` WHERE  (  AuthGroupAccess.uid='1' and AuthGroup.status='normal' ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpc_auth_rule` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `tpc_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `tpc_auth_rule` WHERE  `name` = 'dashboard' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-10-20T09:26:25+08:00 ] ::1 ::1 GET /admin/ajax/lang?callback=define&controllername=dashboard&v=1508462784
+[ info ] www.tpc.com/admin/ajax/lang?callback=define&controllername=dashboard&v=1508462784 [运行时间：0.074004s][吞吐率：13.51req/s] [内存消耗：2,856.81kb] [文件加载：70]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004000s ]
+[ info ] [ LANG ] C:\wamp\www\TPC\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpc.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.tpc.com/admin/dashboard?addtabs=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=4129596416; pgv_pvid=366352634; ts_uid=6096037612; PHPSESSID=8m4l7vte0egogack4dnm0keeh4; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1508459265,1508459714,1508460484,1508461160; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1508461160',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'dashboard',
+  'v' => '1508462784',
+)
+[ info ] [ LANG ] C:\wamp\www\TPC\tp5\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ C:\wamp\www\TPC\tp5\application\admin\controller\Ajax.php ]
+[ info ] [ LANG ] C:\wamp\www\TPC\tp5\public/../application/admin/lang/zh-cn/dashboard.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File
