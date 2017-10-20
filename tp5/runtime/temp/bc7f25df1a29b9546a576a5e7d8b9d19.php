@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:102:"C:\wamp\www\moxie\fastadmin-2017-09-15\fastadmin\public/../application/admin\view\dashboard\index.html";i:1505521690;s:101:"C:\wamp\www\moxie\fastadmin-2017-09-15\fastadmin\public/../application/admin\view\layout\default.html";i:1505521690;s:98:"C:\wamp\www\moxie\fastadmin-2017-09-15\fastadmin\public/../application/admin\view\common\meta.html";i:1505521690;s:100:"C:\wamp\www\moxie\fastadmin-2017-09-15\fastadmin\public/../application/admin\view\common\script.html";i:1505521690;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:73:"C:\wamp\www\TPC\tp5\public/../application/admin\view\dashboard\index.html";i:1505521690;s:72:"C:\wamp\www\TPC\tp5\public/../application/admin\view\layout\default.html";i:1505521690;s:69:"C:\wamp\www\TPC\tp5\public/../application/admin\view\common\meta.html";i:1505521690;s:71:"C:\wamp\www\TPC\tp5\public/../application/admin\view\common\script.html";i:1505521690;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
