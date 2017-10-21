@@ -3,7 +3,7 @@
 namespace app\admin\controller;
 
 use app\common\controller\Backend;
-use app\common\model\Category as CategoryModel;
+// use app\common\model\User as UserModel;
 use fast\Tree;
 
 /**
@@ -12,35 +12,38 @@ use fast\Tree;
  * @icon fa fa-list
  * @remark 用于统一管理网站的所有分类,分类可进行无限级分类
  */
-class Category extends Backend
+class User extends Backend
 {
 
     protected $model = null;
-    protected $categorylist = [];
+    protected $userlist = [];
     protected $noNeedRight = ['selectpage'];
 
     public function _initialize()
     {
         parent::_initialize();
         $this->request->filter(['strip_tags']);
-        $this->model = model('Category');
+        $this->model = model('User');
 
         $tree = Tree::instance();
-        $tree->init($this->model->order('weigh desc,id desc')->select(), 'pid');
-        $this->categorylist = $tree->getTreeList($tree->getTreeArray(0), 'name');
-        // dump($this->categorylist);
+        $tree->init($this->model->order('updatetime desc')->select(), 'deletetime');
+        $this->userlist = $tree->getTreeList($tree->getTreeArray(null), 'name');
+        // dump($this->userlist);
         // dump($tree->getTreeArray(0));
         // dump($tree);
-        $categorydata = [0 => ['type' => 'all', 'name' => __('None')]];
-        foreach ($this->categorylist as $k => $v)
+        // $userdata = [0 => ['type' => 'all', 'name' => __('None')]];
+        foreach ($this->userlist as $k => $v)
         {
-            $categorydata[$v['id']] = $v;
+            $userdata[$v['id']] = $v;
             // dump($v);
         } 
-        // dump($categorydata);
-        $this->view->assign("flagList", $this->model->getFlagList());
-        $this->view->assign("typeList", CategoryModel::getTypeList());
-        $this->view->assign("parentList", $categorydata);
+        // dump($userdata);
+        // $this->view->assign("flagList", $this->model->getFlagList());
+        // dump($this->model->getFlagList());
+        // $this->view->assign("typeList", UserModel::getTypeList());
+        $this->view->assign("parentList", $userdata);
+        // echo json($userdata);
+        json_encode($userdata);
     }
 
     /**
@@ -55,9 +58,9 @@ class Category extends Backend
             $list = [];
             if ($search)
             {
-                foreach ($this->categorylist as $k => $v)
+                foreach ($this->userlist as $k => $v)
                 {
-                    if (stripos($v['name'], $search) !== false || stripos($v['nickname'], $search) !== false)
+                    if (stripos($v['id'], $search) !== false || stripos($v['name'], $search) !== false)
                     {
                         $list[] = $v;
                     }
@@ -65,11 +68,11 @@ class Category extends Backend
             }
             else
             {
-                $list = $this->categorylist;
+                $list = $this->userlist;
             }
             $total = count($list);
             $result = array("total" => $total, "rows" => $list);
-            // dump($list);
+
             return json($result);
         }
         return $this->view->fetch();

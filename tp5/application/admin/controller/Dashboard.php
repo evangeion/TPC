@@ -30,7 +30,7 @@ class Dashboard extends Backend
         $uploadmode = isset($hooks['upload_config_init']) && $hooks['upload_config_init'] ? implode(',', $hooks['upload_config_init']) : 'local';
         $this->view->assign([
             'totaluser'        => 35200,
-            'totalviews'       => 219390,
+            'totalviews'       => 2190,
             'totalorder'       => 32143,
             'totalorderamount' => 174800,
             'todayuserlogin'   => 321,
