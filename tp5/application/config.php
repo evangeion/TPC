@@ -234,9 +234,9 @@ return [
         // 验证码图片高度
         'imageH'   => 30,
         // 验证码图片宽度
-        'imageW'   => 100,
+        'imageW'   => 90,
         // 验证码位数
-        'length'   => 4,
+        'length'   => 3,
         // 验证成功后是否重置
         'reset'    => true
     ],

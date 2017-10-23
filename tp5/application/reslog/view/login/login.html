@@ -21,7 +21,7 @@
 			<div id="large-header" class="large-header">
 				<canvas id="demo-canvas"></canvas>
 				<div class="logo_box">
-					<h3>欢迎你</h3>
+					<h3>欢迎你</h3><div>&emsp;仍未注册<a href="/reslog/register/register">立即注册</a></div>
 					<form action="/reslog/login/login" name="f">
 						<div class="input_outer">
 							<span class="u_user"></span>
@@ -72,8 +72,9 @@ $("#sub").click(function(){
 $.post("{:url('/reslog/login/login')}", {name:name,password:password}, function(data){
 	var code = jQuery.parseJSON(data)['code'];
 	if(code){
+		document.getElementById('password').value=''; 
 		alert("登录成功");
-		location.href ="/index/index/index";
+		location.href =document.referrer;
 	}
 	else
 	{

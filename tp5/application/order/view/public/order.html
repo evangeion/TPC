@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
 	<title>{block name="title"}标题{/block}</title> 
 	<link href="__CSS__/comm.css" rel="stylesheet" type="text/css" />
 	<link href="__CSS__/center.css" rel="stylesheet" type="text/css" />
@@ -12,10 +13,10 @@
 	<div class="mainnav">
 		<div class="wrap">
 			<div id="t_scroll" class="fl l_side t_scroll">
-				<a href="http://daoju.qq.com/act/djc/a20160317appxz/index.html" target="_blank" title="手机版"><s class="i_sp i_mobile"></s>手机版</a><i>|</i>
-				<a href="http://www.kuyoo.com/" target="_blank" title="游戏币交易">游戏币交易</a><i>|</i>
-				<a href="http://pay.qq.com/" target="_blank" title="Q币充值">Q币充值</a><i>|</i>
-				<a href="http://xinyue.qq.com/act/pc/a20160530xydjc/index.html?ADTAG=xinyue.daojutoubu" target="_blank" title="心悦游戏家">心悦游戏家</a>
+				<!-- <a href="http://daoju.qq.com/act/djc/a20160317appxz/index.html" target="_blank" title="手机版"><s class="i_sp i_mobile"></s>手机版</a><i>|</i> -->
+				<a href="http://www.kuyoo.com/" target="_blank" title="购物点充值">购物点充值</a><i>|</i>
+				<!-- <a href="http://pay.qq.com/" target="_blank" title="Q币充值">Q币充值</a><i>|</i> -->
+				<a href="http://xinyue.qq.com/act/pc/a20160530xydjc/index.html?ADTAG=xinyue.daojutoubu" target="_blank" title="特权玩家">特权玩家</a>
 			</div>
 			<div class="fr r_side">
 				<div class="game game_hide" onmouseover="this.className='game game_show'" onmouseout="this.className='game game_hide'">
@@ -23,27 +24,43 @@
 					<iframe scrolling="no" frameborder="0" id="game_area_list" src="http://daoju.qq.com/time/big_mall/tpl/game_area.htm?v=20131108" allowtransparency="true" class="game_pop"></iframe>
 				</div><i>|</i>
 				<a href="/mall/help/help_daoju.shtml?ADTAG=cop.innercop.DJ.BIG.TOP.DBDH.help" target="_blank" title="帮助中心">帮助中心</a><i>|</i>
-				<div id="a_connect" class="fr a_center">
+				<!-- <div id="a_connect" class="fr a_center">
 					<a href="http://daoju.gamebbs.qq.com/forum.php?ADTAG=cop.innercop.DJ.BIG.TOP.YMDH.LT" target="_blank" title="官方论坛" class="a_link">官方论坛<s class="i_sp i_centerdown"></s></a>
 					<div class="center_list">
 						<a class="active" href="http://daoju.gamebbs.qq.com/forum.php?ADTAG=cop.innercop.DJ.BIG.TOP.YMDH.LT" target="_blank" title="官方论坛">官方论坛<s class="i_sp i_centerup"></s></a>
 						<a href="http://t.qq.com/daojucheng?ADTAG=cop.innercop.DJ.BIG.TOP.DBDH.WB" target="_blank" title="官方微博">官方微博</a>
 					</div>
-				</div><i>|</i>
+				</div><i>|</i> -->
 				<div id="a_center" class="fr" style="position:relative;width: 48px;">
 					<a href="/mall/center.shtml?ADTAG=cop.innercop.DJ.BIG.TOP.DBDH.GRZX" target="_blank" title="个人中心" class="a_link">个人中心</a>
 					<div id="sp_news_num" style="display:none;background-color:red; position: absolute;left:48px;top:4px;height:5px;width:5px;-moz-border-radius:50px;border-radius:50%;-webkit-border-radius:50px;overflow:hidden;">0</div>
 				</div><i>|</i>
 				<a href="/mall/trade2.shtml" target="_blank" title="我的订单">我的订单</a><i>|</i>
 				<div class="login fr">
+					{if condition="($logined == 0)"} 
 					<div id="unlogin">
-						您还未登录，请<a title="登录" href="javascript:LoginManager.login();">登录</a>
+						您还未登录，请<a title="登录" href="/reslog/login/login">登录</a>
 					</div>
-					<div id="logined" style="display:none">
+					{else /}
+					<div id="unlogin" style="display:none">
+						您还未登录，请<a title="登录" href="/reslog/login/login">登录</a>
+					</div>
+					<div id="logined">
 						<p>
-							欢迎你，<a title="个人中心" class="newpercenter" href="/mall/center.shtml"><span id="login_nickname_span"></span></a>&nbsp;&nbsp;&nbsp;<a title="退出" href="javascript:LoginManager.logout();">退出</a>
+							欢迎你<a title="个人中心" class="newpercenter" href="/mall/center.shtml"><span id="login_nickname_span">&nbsp;{$name}</span></a>&nbsp;&nbsp;&nbsp;<a title="退出" href id="out">退出</a>
 						</p>
-
+						<script type="text/javascript">
+						$('#out').click(function(){
+							// alert(1);
+							$.ajax({
+								url:"/order/index/out",
+								success:function(){
+									$('#unlogin').show();
+									$('#logined').hide();
+								}
+							})
+						})
+						</script>
 						<div class="loginhover" style="display:none">
 							<p id="header_uin" class="qqnum"></p>
 							<div class="persbox">
@@ -53,7 +70,7 @@
 								<div class="fl pinfor">
 									<p>
 										<b id="header_nick"></b>
-										<span class="bean-num" title="聚豆"><i class="bean new-acticon"></i><span id="header_judou"></span></span>
+										<span class="bean-num" title="购物点"><i class="bean new-acticon"></i><span id="header_judou"></span></span>
 									</p>
 									<p class="gthbox">
 										<a href="javascript:;">
@@ -70,6 +87,7 @@
 							</div>
 						</div>
 					</div>
+					{/if}
 				</div>
 			</div>
 		</div>
@@ -81,13 +99,13 @@
 			<div class="s_bar fl">
 				<div class="s_text fl">
 					<div id="s_menu" class="s_menu fl">
-						<a class="all noline" href="#"><s class="i_sp"></s><span id="cur_game">选择游戏</span></a>
+						<a class="all noline" href="#"><s class="i_sp"></s><span id="cur_game">英雄联盟专区</span></a>
 						<div class="choose_sub" id="js_wrapper">
 						</div>
 
 					</div>
-					<input type="text" value="请选择游戏搜索道具" onfocus="this.value=='请选择游戏搜索道具' && (this.value='')"
-					onblur="this.value=='' && (this.value='请选择游戏搜索道具')" id="search_txt"/>
+					<input type="text" value="请搜索道具" onfocus="this.value=='请搜索道具' && (this.value='')"
+					onblur="this.value=='' && (this.value='请搜索道具')" id="search_txt"/>
 				</div>
 				<button class="b_sp btn" id="search_btn">搜索</button>
 				<div class="words"><p id="word_wrapper">
@@ -117,9 +135,9 @@
 <div class="nav">
 	<div class="wrap clearfix">
 		<div id="all_game" class="all_game fl">
-			<a class="show_game" href="javascript:;" title="所有游戏分类"><s class="i_sp i_game_down"></s><p>所有游戏分类</p></a>
-			<div class="box">
-				<dl class="top"><dt><s class="i_sp i_game"></s>所有游戏分类</dt></dl>
+			<a class="show_game" href="javascript:;" title="英雄联盟"><s class="i_sp i_game_down"></s><p>英雄联盟</p></a>
+			<!-- <div class="box">
+				<dl class="top"><dt><s class="i_sp i_game"></s>英雄联盟</dt></dl>
 				<dl class="bot">
 					<dt><s class="i_sp i_mobilegame"></s>热门游戏<i class="i_sp"></i></dt>
 					<dd class="col_2">
@@ -229,29 +247,30 @@
 						</div>
 					</dd>
 				</dl>
-			</div>
+			</div> -->
 		</div>
 		<ul class="fl clearfix" id="navBtns">
+			<li>&nbsp;</li>
 			<li><a href="/mall/index.shtml?ADTAG=cop.innercop.DJ.BIG.TOP.YMDH.SY" title="首页">首页</a></li>
 			<li>
 				<a href="/mall/actcenter.shtml?ADTAG=cop.innercop.DJ.BIG.TOP.YMDH.HDZX" title="活动中心">活动中心</a>
 				<div class="nav-popup-box">
-					<a href="http://daoju.qq.com/mall/shangou.shtml?ADTAG=cop.innercop.DJ.BIG.TOP.YMDH.DJMS" title="闪购专区">闪购专区</a>
-					<a href="http://daoju.qq.com/mall/tao.shtml?ADTAG=cop.innercop.DJ.BIG.TOP.YMDH.TBB" title="淘宝贝">淘宝贝</a>
+					<a href="http://daoju.qq.com/mall/shangou.shtml?ADTAG=cop.innercop.DJ.BIG.TOP.YMDH.DJMS" title="今日特价">今日特价</a>
+					<a href="http://daoju.qq.com/mall/tao.shtml?ADTAG=cop.innercop.DJ.BIG.TOP.YMDH.TBB" title="云购">云购</a>
 				</div>
 			</li>
-			<li>
+			<!-- <li>
 				<a href="http://mall.qq.com/index.shtml?ADTAG=jcp.pc.djcgw.naventr" title="聚诚品" target="_blank">聚诚品</a>
 				<div id="sp_news_num" style="position:absolute;left:99px;top:21px; height:9px; width:20px;overflow:hidden;background:url(images/newtips.png) no-repeat;text-indent:-9999em;">new</div>
-			</li>
-			<li>
+			</li> -->
+<!-- 			<li>
 				<a href="http://daoju.qq.com/mall/mgc/index.shtml?ADTAG=cop.innercop.DJ.BIG.TOP.YMDH.SYZX" title="手游中心">手游中心</a>
-			</li>
+			</li> -->
 			<li id="navJuDou">
-				<a href="http://daoju.qq.com/mall/judou.shtml" title="聚豆商城">聚豆商城</a>
-				<div class="nav-popup-box" style="display:none;z-index:100;">
-					<a href="http://daoju.qq.com/mall/judou.shtml" title="聚豆抽奖">聚豆抽奖</a>
-					<a href="http://daoju.qq.com/mall/judou.shtml" title="聚豆兑换">聚豆兑换</a>
+				<a href="http://daoju.qq.com/mall/judou.shtml" title="购物点商城">购物点商城</a>
+				<div class="nav-popup-box" style="z-index:100;">
+					<a href="http://daoju.qq.com/mall/judou.shtml" title="购物点抽奖">购物点抽奖</a>
+					<a href="http://daoju.qq.com/mall/judou.shtml" title="购物点充值">购物点充值</a>
 				</div>
 			</li>
 			<li><a href="/mall/center.shtml?ADTAG=cop.innercop.DJ.BIG.TOP.YMDH.GRZX" title="个人中心">个人中心</a></li>
@@ -291,7 +310,7 @@
 				<dd><a href="/order/index/myaddress" title="我的收货地址"><s class="i_sp i_address"></s>我的收货地址</a></dd>
 				<dd><a href="/order/index/ticket" title="我的购物点"><s class="i_sp i_ticket"></s>我的购物点</a></dd>
 				<dd><a href="/order/index/coupon" title="我的优惠券"><s class="i_sp i_coupon"></s>我的优惠券</a></dd>
-				<dd><a href="/order/index/coin" title="我的聚豆"><s class="i_sp i_coin"></s>我的聚豆</a></dd>
+				<dd><a href="/order/index/coin" title="我的购物点"><s class="i_sp i_coin"></s>我的购物点</a></dd>
 				<dd><a href="/order/index/message" title="我的消息"><s class="i_sp i_message"></s>我的消息</a></dd>
 				<dd><a href="/order/index/attention" title="我的关注"><s class="i_sp i_attention"></s>我的关注</a></dd>
 				<dd><a href="/order/index/prop" title="我的功能性道具"><s class="i_sp i_prop"></s>我的功能性道具</a></dd>
@@ -315,8 +334,8 @@
 			<ul class="bx_qa_ul c">
 				<li><a title="什么是道聚城" target="_blank" class="btn_c" href="/mall/help/help_daoju.shtml">什么是道聚城</a></li>
 				<li><a title="如何购买道具" target="_blank" class="btn_c" href="/mall/help/help_buy.shtml">如何购买</a></li>
-				<li><a title="如何赠送道具" target="_blank" class="btn_c" href="/mall/help/help_send.shtml">如何赠送</a></li>
-				<li><a title="如何获取聚豆" target="_blank" class="btn_c" href="/mall/help/help_judou.shtml">如何获取聚豆</a></li>
+				<!-- <li><a title="如何赠送道具" target="_blank" class="btn_c" href="/mall/help/help_send.shtml">如何赠送</a></li> -->
+				<li><a title="如何获取购物点" target="_blank" class="btn_c" href="/mall/help/help_judou.shtml">如何获取购物点</a></li>
 			</ul>
 		</div>
 		<div class="bx_qa_t1">
@@ -325,7 +344,7 @@
 				<li><a title="道具发货时间" target="_blank" class="btn_c" href="/mall/help/help_provide.shtml">发货时间</a></li>
 				<li><a title="道具如何领取" target="_blank" class="btn_c" href="/mall/help/help_receive.shtml">如何领取</a></li>
 				<li><a title="道具补发规则" target="_blank" class="btn_c" href="/mall/help/help_reissue.shtml">补发规则</a></li>
-				<li><a title="Vip价定义" target="_blank" class="btn_c" href="/mall/help/help_vip.shtml">Vip价定义</a></li>
+				<li><a title="特权定义" target="_blank" class="btn_c" href="/mall/help/help_vip.shtml">特权定义</a></li>
 				<li><a title="道具状态定义" target="_blank" class="btn_c" href="/mall/help/help_status.shtml">道具状态定义</a></li>
 			</ul>
 		</div>
@@ -338,8 +357,11 @@
 			</ul>
 		</div>
 		<div class="bx_qa_t1 bx_qa_last">
-			<h4 class="bx_qa_title"><s class="i_sp i_kf"></s>腾讯在线客服</h4>
-			<div class="kf_box"><a class="b_sp" target="_blank" title="腾讯在线客服" href="http://crm2.qq.com/page/portalpage/wpa.php?uin=40012345&amp;f=1&amp;ty=1&amp;ap="></a></div>
+			<h4 class="bx_qa_title"><s class="i_sp i_kf"></s>意见反馈</h4>
+			<ul class="bx_qa_ul c">
+				<li><a title="意见反馈" target="_blank" class="btn_c" href="/mall/help/help_payment.shtml">意见反馈</a></li>
+			</ul>
+			<!-- <div class="kf_box"><a class="b_sp" target="_blank" title="意见反馈" href="http://crm2.qq.com/page/portalpage/wpa.php?uin=40012345&amp;f=1&amp;ty=1&amp;ap="></a></div> -->
 		</div>
 	</div>
 	<div class="wrap">

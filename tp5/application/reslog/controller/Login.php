@@ -20,6 +20,7 @@ class Login extends Controller
 		$result = $this->user->get(['name'=>$name, 'password'=>md5($password)]);
 		if($result) {
 			session('name',$name);
+			session('result',json_encode($result));
 			return json_encode(['code'=>1, 'info'=>'用户存在']);
 		}
 		elseif($name) {

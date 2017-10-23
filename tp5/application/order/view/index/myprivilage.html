@@ -6,34 +6,111 @@
 <body>
     <div class="fl w950" data-onload="initCenter">
         <!--个人信息-->
-        <div id="userInfoCon" class="clearfix comm_bd mb10 center_info">
+       <!--  <div id="userInfoCon" class="clearfix comm_bd mb10 center_info">
             <div class="loading" style="margin-bottom:10px;"><span class="loadmsg">loading...</span></div>
-        </div>
+        </div> -->
         <!--我的特权--start-->
         <div class="usertask" data-onload="initPrivilage">
             <div class="mb10 clearfix center_box">
                 <div class="center_tt">
                     我的特权
                     <span class="line"><s class="l_5"></s></span><!--<i class="fr pro_help"></i>-->
-                    <a href="http://xinyue.qq.com/act/pc/a20160530xydjc/index.html?ADTAG=xinyue.daoju.personal" target="_blank" class="link-xinyue">心悦游戏家</a>
+                    <a href="http://xinyue.qq.com/act/pc/a20160530xydjc/index.html?ADTAG=xinyue.daoju.personal" target="_blank" class="link-xinyue">特权玩家</a>
+                    {if condition="($logined == 0)"} 
+                    <div class="default_con clearfix">
+                        <div class="pic"></div>
+                        <div class="txt">
+                           <p class="tt" style="padding-top:35px;">抱歉，获取信息失败，请先<a href="/reslog/login/login">登录</a>！</p>
+                       </div>
+                   </div>
+                   {/if}
+               </div>
+               <!-- 消费特权 -->
+               <div class="comm_bd">                    
+                <div class="clearfix center_tab" id="at_tab">
+                    <a href="javascript:;" class="current" title="消费特权">消费特权</a>
                 </div>
-                <!-- 消费特权 -->
-                <div class="comm_bd">                    
-                    <div class="clearfix center_tab" id="at_tab">
-                        <a href="javascript:;" class="current" title="消费特权">消费特权</a>
-                    </div>
-                    <div id="costCon" class="specialbox"></div>
-                </div>
-                <!-- 成长特礼 -->
-                <div class="comm_bd mart20">                    
-                    <div class="clearfix center_tab" id="at_tab">
-                        <a href="javascript:;" class="current" title="成长特礼">成长特权</a>
-                    </div>
-                    <div id="growthCon" class="specialbox"></div>
-                </div>
-            </div>
-        </div>
-        <!--我的特权--end-->
+                <div id="costCon" class="specialbox">
+                      {if condition="($logined == 1)"} 
+                 <dl>
+                    <dt>
+                        <i class="tqico coupons"></i>
+                    </dt>
+                    <dd>       
+                        <p class="imgtip">专享优惠券</p>      
+                    </dd>  
+                    <dd>       
+                        <p id="couponBar" class="imginfo"><!--<strong>0元</strong>优惠券--></p>
+                    </dd>  
+                    <dd>
+                        <p class="receive">
+                            <strong></strong>
+                            {if condition="($privilege == 1)" }已拥有{else /}您不是特权玩家
+                            {/if}
+                        </p>      
+                    </dd>
+                    <dd>
+                        <p>
+                            <a href="http://daoju.qq.com/mall/coupon.shtml" style="float:left;margin-left:10px;line-height:28px;color:#1994eb;" target="_blank">查看我的优惠券</a>
+                        </p>
+                    </dd> 
+                </dl>
+                <dl>   
+                    <i class="tqico weekly"></i>   
+                    <dt>
+                        <i class="tqico gift"></i>
+                    </dt>      
+                    <dd>       
+                        <p class="imgtip">永久购物点</p>      
+                    </dd>  
+                    <dd>       
+                        <p class="imginfo"><strong></strong>成长值加成<strong></strong></p>
+                    </dd>  
+                    <dd>       
+                        <p class="receive">
+                            <strong></strong>
+                            {if condition="($privilege == 1)" }已拥有{else /}您不是特权玩家
+                            <a href="javascript:;" class="comm_btn btn getBtn" ticket_type="weekfirst">立即参与</a>
+                            {/if}
+                        </p>      
+                    </dd>                                                           
+                </dl>                 
+            </p>      
+        </dd>     
+    </dl>                         
+    <dl class="marr0"> 
+        <i class="tqico sixthg"></i>      
+        <dt>
+            <i class="tqico djgift" title="您的成长值击败了全球79%的用户"></i>
+        </dt>      
+        <dd>       
+            <p class="imgtip">玩家大比拼</p>      
+        </dd>  
+        <dd>       
+            <p class="imginfo"><strong></strong>成长值加成<strong></strong></p>      
+        </dd>  
+        <dd>       
+            <p class="receive">
+                <strong></strong>
+                {if condition="($privilege == 0)" }您不是特权玩家
+                <a href="javascript:;" class="comm_btn btn getBtn" ticket_type="weekfirst">立即参与</a>
+                {/if}
+            </p>      
+        </dd>                                                               
+    </dl>
+    {/if}
+</div>
+</div>
+<!-- 成长特礼 -->
+<!-- <div class="comm_bd mart20">                    
+    <div class="clearfix center_tab" id="at_tab">
+        <a href="javascript:;" class="current" title="成长特礼">成长特权</a>
     </div>
+    <div id="growthCon" class="specialbox"></div>
+</div> -->
+</div>
+</div>
+<!--我的特权--end-->
+</div>
 </body>
 </html>
