@@ -17,7 +17,7 @@ class Login extends Controller
 	{
 		$name = $this->request->param('name');
 		$password = $this->request->param('password');
-		$result = $this->user->get(['name'=>$name, 'password'=>$password]);
+		$result = $this->user->get(['name'=>$name, 'password'=>md5($password)]);
 		if($result) {
 			session('name',$name);
 			return json_encode(['code'=>1, 'info'=>'用户存在']);
