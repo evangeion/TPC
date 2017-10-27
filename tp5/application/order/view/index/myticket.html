@@ -8,25 +8,26 @@
 		<!--我的订单-->
 		<div class="comm_bd mb10 clearfix center_box">
 			<div class="center_tt">我的票务<span class="line"><s class="l_4"></s></span></div>
+			 {if condition="($logined == 0)"} 
+            <div class="default_con clearfix">
+                <div class="pic"></div>
+                <div class="txt">
+                   <p class="tt" style="padding-top:35px;">抱歉，获取信息失败，请先<a href="/reslog/login/login">登录</a>！</p>
+               </div>
+           </div>
+           {else /}
 			<div class="comm_bd clearfix mb20 choose_box">
 				<div id="choose_game" class="mr20 choose_game fl" data-onload="initOrder">
-					<p class="fl">选择游戏：</p>
+					<p class="fl">指向游戏：</p>
 					<div class="box fl" id="selectBorder">
-						<div class="tt"><s class="i_sp"></s><span id="curBizName" class="curBizName" key="" value="">请选择</span></div>
-						<div class="choose_sub" id="game_list" key="" value="">
-							<dl>
-								<dd style="margin-left:10px;width:130px;" class="clearfix">
-									<a href="#" biz="mgc">梦工厂</a><i>|</i><a biz="roco" href="#">洛克王国</a>
-								</dd>
-							</dl>
-						</div>
+						<div class="tt"><s class="i_sp"></s><span id="curBizName" class="curBizName" key="" value="">英雄联盟</span></div>
 					</div>
 				</div>
 				<div class="fl"><a href="#" class="comm_btn btn" title="查询" id="btn_query">查 询</a></div>
 			</div>
 			<div class="comm_bd">
 				<div id="tab_order" class="clearfix center_tab">
-					<a class="current" href="javascript:;" id="new_tab_order">1个月内订单</a>
+					<!-- <a class="current" href="javascript:;" id="new_tab_order">1个月内订单</a> -->
 					<a href="javascript:;" id="old_tab_order">历史订单</a>
 				</div>
 				<div id="con_order" class="comm_bd center_tbl fixed_tbl">
@@ -64,6 +65,7 @@
 				</div>
 				<p class="center_tip"><b class="red">温馨提示：</b><br/>1、购买成功后系统会自动发货，如发货失败24小时内会自动补发！<br/>2、如果网银重复付款或付款后订单取消，道具未到账，网银退款将在15个工作日内到账。</p>
 			</div>
+			{/if}
 		</div>
 	</div>
 </div>

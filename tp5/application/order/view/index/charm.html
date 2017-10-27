@@ -8,19 +8,22 @@
 		<!--我的关注-->
 		<div class="comm_bd mb10 clearfix center_box">
 			<div class="center_tt">领取魅力值<span class="line"><s class="l_5"></s></span></div>
+			{if condition="($logined == 0)"} 
+			<div class="default_con clearfix">
+				<div class="pic"></div>
+				<div class="txt">
+					<p class="tt" style="padding-top:35px;">抱歉，获取信息失败，请先<a href="/reslog/login/login">登录</a>！</p>
+				</div>
+			</div>
+			{else /}
 			<div class="comm_bd clearfix mb20 choose_box">
 				<div id="choose_game" class="mr20 choose_game fl" data-onload="initOrder">
-					<p class="fl">选择游戏：</p>
+					<p class="fl">指向游戏：</p>
 					<div class="box fl" id="selectBorder">
-						<div class="tt"><s class="i_sp"></s><span id="curBizName" key="speed" value="QQ飞车" class="curBizName">QQ飞车</span></a></div>
-						<div class="choose_sub" id="game_list" key="speed" value="QQ飞车"></div>
+						<div class="tt"><s class="i_sp"></s><span id="curBizName" key="speed" value="英雄联盟" class="curBizName">英雄联盟</span></a></div>
+						<div class="choose_sub" id="game_list" key="speed" value="英雄联盟"></div>
 					</div>
 				</div>
-				<div class="fl clearfix choose_time mr10">
-					<p class="fl">查询时间：</p>
-					<div class="fl mr10"><input type="text" name="date1" class="date datepicker" id="start_date" value="" />至<input type="text" name="date1" class="date datepicker" id="end_date" value="" /></div>
-				</div>
-				<div class="fl"><a href="#" class="comm_btn btn" title="查询" id="btn_query" >查 询</a></div>
 			</div>
 			<div class="comm_bd coupon_tbl">
 				<table width="100%">
@@ -42,7 +45,8 @@
 				</table>
 			</div>
 			<div class="page" id="page_wrapper"></div>
-			<p class="center_tip"><b class="red">温馨提示：</b>飞车魅力值需要在第二天凌晨更新，请耐心等待~</p>
+			{/if}
+			<p class="center_tip"><b class="red">温馨提示：</b>不等同于QQ飞车的魅力值功能~</p>
 		</div>
 		<!--猜你喜欢-->
 		<div class="comm_bd favorite" id="favorite" data-onload="initFavorite" data-title="猜你喜欢">

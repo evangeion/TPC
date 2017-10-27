@@ -20,6 +20,10 @@ class User extends Model
 	{
 		return $this->hasMany('userAppend', 'user_id');
 	}
+	public function ticket()
+	{
+		return $this->hasMany('ticket', 'user_id');
+	}
 	// //多对多
 	// public function role()
 	// {

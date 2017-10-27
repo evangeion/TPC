@@ -5,19 +5,31 @@
 </head>
 <body>
 	<div class="fl w950" data-onload="initCenter">
-		<div id="userInfoCon" class="clearfix comm_bd mb10 center_info">
-			<div class="loading" style="margin-bottom:10px;"><span class="loadmsg">loading...</span></div>
-		</div>
 		<!-- 我的任务 -->
 		<div class="usertask">
 			<div class="mb10 clearfix center_box">
 				<div class="center_tt">我的任务<span class="line"><s class="l_5"></s></span></div>
 				<div class="comm_bd tab_task">
 					<a id="btn_task_uncomplete" href="javascript:;" class="p_task_spr p_task_not_over">未完成任务</a>
-					<div id="blk_task_tab" class="clearfix center_tab"></div>
-					<div class="tab_task_cont dis" id="blk_task_list">
-						<div class="loading" style="margin-bottom:10px;"><span class="loadmsg">loading...</span></div>
+					<div id="blk_task_tab" class="clearfix center_tab">
 					</div>
+					{if condition="($logined == 0)"} 
+					<div class="default_con clearfix">
+						<div class="pic"></div>
+						<div class="txt">
+							<p class="tt" style="padding-top:35px;">抱歉，获取信息失败，请先<a href="/reslog/login/login">登录</a>！</p>
+						</div>
+					</div>
+					{else /}
+					<div class="default_con clearfix" style="width:300px;">
+						<div class="pic"></div>
+						<div class="txt" style="margin-left:0px;padding-top:10px;">
+							<p class="tt">抱歉，暂无任何任务信息！</p>
+							<p>您可以：</p>
+							<p>进入道聚城首页更多折扣道具等着你，<a href="http://daoju.qq.com/mall" target="_blank" class="blue">立即前往&gt;</a></p>
+						</div>
+					</div>
+					{/if}
 				</div>
 			</div>
 		</div>

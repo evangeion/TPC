@@ -8,59 +8,61 @@
 		<!--我的聚豆-->
 		<!--个人信息-->
 		<div class="comm_bd mb10 clearfix center_box">
+			 {if condition="($logined == 0)"} 
+            <div class="default_con clearfix">
+                <div class="pic"></div>
+                <div class="txt">
+                   <p class="tt" style="padding-top:35px;">抱歉，获取信息失败，请先<a href="/reslog/login/login">登录</a>！</p>
+               </div>
+           </div>
+           {else /}
 			<div class="clearfix">
 				<dl class="fl center_info coin_info">
 					<dt><img id="face_img" alt="" src="picture/blank.png" /></dt>
 					<dd>
-						<p><strong id="login_qq_span_index"></strong>，欢迎你</p>
-						<p><span class="fl">我的聚豆：<strong class="red" id="my_coin"></strong></span><i class="fl i_sp i_mycoin"></i></p>
+						<p><strong id="login_qq_span_index">{$name}</strong>，欢迎你</p>
+						<p><span class="fl">我的<strong class="red" id="my_coin">积分：</strong></span><i class="fl i_sp i_mycoin">{$score}</i></p>
 					</dd>
 				</dl>
 			</div>
 			<div class="comm_bd" id="blk_coin" data-onload="initCoin">
 				<div class="clearfix center_tab" id="tab_coin">
-					<a href="javascript:;" class="current" title="所有记录">所有记录</a>
-					<a href="javascript:;" title="兑换记录">兑换记录</a>
-					<!-- 
+					<a href="javascript:;" class="current" title="消费记录">消费记录</a>
+					<!-- <a href="javascript:;" title="兑换记录">兑换记录</a>
 					<a href="javascript:;" title="获取记录">获取记录</a>
 					<a href="javascript:;" title="使用记录">使用记录</a>
-					<a href="javascript:;" title="过期记录">过期记录</a>
-				-->
-			</div>
-			<div class="center_tbl">
-				<div class="loading tbl_con"><span class="loadmsg">loading...</span></div> 
-				<div class="page" id="page_wrapper" style="display:none"></div>
-			</div>
-			<div class="center_tbl" style="display:none;">
-					<!-- <div class="loading"><span class="loadmsg">loading...</span></div>
-					<div class="page" style="display:none"></div> -->
-					<ul class="vat-hd c">
-						<li class="od1">礼品</li>
-						<li class="od2">礼品类型</li>
-						<li class="od3">消耗聚豆</li>
-						<li class="od4">日期</li>
-						<li class="od5">状态</li>
-					</ul>
-					<ul class="vat-bd query_infomation" id="tmp_judou_record_list" id="judouPanel" data-onload="initJudouRecordList" data-title="聚豆商城">
-					</ul>
-					<div class="loading"><span class="loadmsg">loading...</span></div>
-					<div class="page" id="page_wrapper" style="display:none"></div>
-				</div>			
-				<!-- 
-				<div class="center_tbl" style="display:none;">
-					<div class="loading"><span class="loadmsg">loading...</span></div>
-					<div class="page" style="display:none"></div>
+					<a href="javascript:;" title="过期记录">过期记录</a> -->
+					
 				</div>
-				<div class="center_tbl" style="display:none;">
-					<div class="loading"><span class="loadmsg">loading...</span></div>
-					<div class="page" style="display:none"></div>
-				</div>
-				<div class="center_tbl" style="display:none;">
-					<div class="loading"><span class="loadmsg">loading...</span></div>
-					<div class="page" style="display:none"></div>
-				</div>
-			-->
+				<div class="comm_bd coupon_tbl">
+				<table width="100%">
+					<thead>
+						<tr>
+							<th width="180">日期</th>
+							<th width="150">积分金额</th>
+							<th width="150">商品名称</th>
+						</tr>
+					</thead>
+					<tbody id="table_list" >	
+					</tbody>
+				</table>
+				<script type="text/javascript">
+				function demo(){
+
+				$.post("{:url('/order/index/coin1')}",{},function(data){
+					var data = jQuery.parseJSON(data);
+					$("#table_list").html('');
+					for(i in data){
+						// alert(data[i]['name']);
+						$("#table_list").append("<tr><td width='180'>"+data[i]['createtime']+"</td><td width='150'>"+data[i]['real_price']+"</td><td width='150'>"+data[i]['name']+"</td></tr>");
+					}  
+				},'json');
+			}
+				demo();
+				</script>
+			</div>		
 		</div>
+		{/if}
 	</div>
 	<!--猜你喜欢-->
 	<div class="comm_bd favorite" id="favorite" data-onload="initFavorite" data-title="猜你喜欢">

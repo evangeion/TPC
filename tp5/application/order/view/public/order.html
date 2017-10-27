@@ -3,7 +3,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
-	<title>{block name="title"}标题{/block}</title> 
+	<title>{block name="title"}wordpress有人做过弹幕插件，你找找看{/block}</title> 
 	<link href="__CSS__/comm.css" rel="stylesheet" type="text/css" />
 	<link href="__CSS__/center.css" rel="stylesheet" type="text/css" />
 	<link href="__CSS__/datepicker.css" rel="stylesheet" type="text/css" />
@@ -267,10 +267,10 @@
 				<a href="http://daoju.qq.com/mall/mgc/index.shtml?ADTAG=cop.innercop.DJ.BIG.TOP.YMDH.SYZX" title="手游中心">手游中心</a>
 			</li> -->
 			<li id="navJuDou">
-				<a href="http://daoju.qq.com/mall/judou.shtml" title="购物点商城">购物点商城</a>
+				<a href="http://daoju.qq.com/mall/judou.shtml" title="积分商城">积分商城</a>
 				<div class="nav-popup-box" style="z-index:100;">
-					<a href="http://daoju.qq.com/mall/judou.shtml" title="购物点抽奖">购物点抽奖</a>
-					<a href="http://daoju.qq.com/mall/judou.shtml" title="购物点充值">购物点充值</a>
+					<a href="http://daoju.qq.com/mall/judou.shtml" title="积分抽奖">积分抽奖</a>
+					<a href="http://daoju.qq.com/mall/judou.shtml" title="积分充值">积分充值</a>
 				</div>
 			</li>
 			<li><a href="/mall/center.shtml?ADTAG=cop.innercop.DJ.BIG.TOP.YMDH.GRZX" title="个人中心">个人中心</a></li>
@@ -294,7 +294,7 @@
 		</div>
 	</div>
 </div>
-<div class="bread wrap"><a href="/mall" title="道聚城">道聚城</a>&gt;<b>个人中心</b></div>
+<div class="bread wrap"><a href="/mall" title="道聚城">道聚城</a>&gt;<b id="fubiaoti">{$fu}</b></div>
 {/block}
 <div class="wrap clearfix">
 	{block name="left"}
@@ -310,7 +310,7 @@
 				<dd><a href="/order/index/myaddress" title="我的收货地址"><s class="i_sp i_address"></s>我的收货地址</a></dd>
 				<dd><a href="/order/index/ticket" title="我的购物点"><s class="i_sp i_ticket"></s>我的购物点</a></dd>
 				<dd><a href="/order/index/coupon" title="我的优惠券"><s class="i_sp i_coupon"></s>我的优惠券</a></dd>
-				<dd><a href="/order/index/coin" title="我的购物点"><s class="i_sp i_coin"></s>我的购物点</a></dd>
+				<dd><a href="/order/index/coin" title="我的积分"><s class="i_sp i_coin"></s>我的积分</a></dd>
 				<dd><a href="/order/index/message" title="我的消息"><s class="i_sp i_message"></s>我的消息</a></dd>
 				<dd><a href="/order/index/attention" title="我的关注"><s class="i_sp i_attention"></s>我的关注</a></dd>
 				<dd><a href="/order/index/prop" title="我的功能性道具"><s class="i_sp i_prop"></s>我的功能性道具</a></dd>
@@ -320,6 +320,11 @@
 			</dl>
 		</div>
 	</div>
+	<script type="text/javascript">
+	$('dd').click(function(){
+		$('#fubiaoti').text($(this).text());
+	})
+	</script>
 	{/block}
 	{block name="main"}
 	{__CONTENT__}

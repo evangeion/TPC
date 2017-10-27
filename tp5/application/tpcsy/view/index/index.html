@@ -2,189 +2,171 @@
 <html>
 <head>
     <meta charset="utf-8" />
-<meta name="robots" content="all" />
-<meta http-equiv="x-ua-compatible" content="IE=edge">
-<meta name="Copyright" content="TENCNET" />
-<meta name="author" content="Tencent-TGideas" />
-<link href="__CSS__/comm (2).css" rel="stylesheet" />
-<link href="__CSS__/boxy.css" rel="stylesheet" />
-<script>var d0 = new Date();var timePoints=new Array(16);document.domain="qq.com";</script>
-
+    <link href="__CSS__/comm (2).css" rel="stylesheet" />
+    <link href="__CSS__/boxy.css" rel="stylesheet" />
     <title>英雄联盟道聚城-集道具聚欢乐</title>
-    <meta name="Description" content="道具商城，游戏商城，英雄联盟道聚城，提供英雄联盟游戏道具购买，支持Q币Q点、财付通、网银各种支付方式，提供安全交易保障，让你全面安心享受游戏购物的乐趣！"/>
-    <meta name="Keywords" content="道具商城，游戏商城，英雄联盟，lol，道聚城，游戏商城，道具购买，网络购物，周末折扣，半价，幸运星，幸运召唤师，阿卡丽，神秘商店，冰雪节，魔法少女，生日营销，优惠，团购"/>
     <link href="__CSS__/index.css" rel="stylesheet"/>
+
+<link rel="stylesheet" href="assets/DanmuPlayer/css/danmuplayer.css">
+    <script src="assets/js/jquery-1.11.1.min.js"></script>
+<script src="assets/DanmuPlayer/js/danmuplayer.js"></script>
+
+
+
 </head>
 <body>
-<div class="pagewrap">
-    <!--[if lt IE 8]>
-    <p class="chromeframe">您使用的IE浏览器版本过低，本站不再支持，<a href="http://windows.microsoft.com/">升级您的IE浏览器</a>，或使用<a
-            href="http://www.google.cn/chrome/">Google Chrome</a>、<a
-            href="http://www.firefox.com.cn/download/">Firefox</a>等高级浏览器，将会得到更好的体验！</p>
-    <![endif]-->
-    <div class="layout contwrap">
-        <!-- 顶部登录栏 -->
-<div class="mainnav">
-    <div class="wrap">
-        <div id="t_scroll" class="fl l_side t_scroll">
-            <a href="http://daoju.qq.com/act/djc/a20160317appxz/index.html" target="_blank" title="手机版"><s class="i_sp i_mobile"></s>手机版</a><i>|</i>
-            <a href="http://www.kuyoo.com/" target="_blank" title="游戏币交易">游戏币交易</a><i>|</i>
-            <a href="http://pay.qq.com/" target="_blank" title="Q币充值">Q币充值</a><i>|</i>
-            <a href="http://xinyue.qq.com/act/pc/a20160530xydjc/index.html?ADTAG=xinyue.daojutoubu" target="_blank" title="心悦游戏家">心悦游戏家</a>
-        </div>
-        <div class="fr r_side">
-            <div class="game game_hide" onmouseover="this.className='game game_show'" onmouseout="this.className='game game_hide'">
-                <a class="i_sp game_menu" href="javascript:;" id="game_menu" title="游戏导航">游戏导航</a>
-                <iframe scrolling="no" frameborder="0" id="game_area_list" src="http://daoju.qq.com/time/big_mall/tpl/game_area.htm?v=20131108" allowtransparency="true" class="game_pop"></iframe>
-            </div><i>|</i>
-            <a href="/mall/help/help_daoju.shtml?ADTAG=cop.innercop.DJ.BIG.TOP.DBDH.help" target="_blank" title="帮助中心">帮助中心</a><i>|</i>
-            <div id="a_connect" class="fr a_center">
-                <a href="http://daoju.gamebbs.qq.com/forum.php?ADTAG=cop.innercop.DJ.BIG.TOP.YMDH.LT" target="_blank" title="官方论坛" class="a_link">官方论坛<s class="i_sp i_centerdown"></s></a>
-                <div class="center_list">
-                    <a class="active" href="http://daoju.gamebbs.qq.com/forum.php?ADTAG=cop.innercop.DJ.BIG.TOP.YMDH.LT" target="_blank" title="官方论坛">官方论坛<s class="i_sp i_centerup"></s></a>
-                    <a href="http://t.qq.com/daojucheng?ADTAG=cop.innercop.DJ.BIG.TOP.DBDH.WB" target="_blank" title="官方微博">官方微博</a>
-                </div>
-            </div><i>|</i>
-            <div id="a_center" class="fr" style="position:relative;width: 48px;">
-                <a href="/mall/center.shtml?ADTAG=cop.innercop.DJ.BIG.TOP.DBDH.GRZX" target="_blank" title="个人中心" class="a_link">个人中心</a>
-                <div id="sp_news_num" style="display:none;background-color:red; position: absolute;left:48px;top:4px;height:5px;width:5px;-moz-border-radius:50px;border-radius:50%;-webkit-border-radius:50px;overflow:hidden;">0</div>
-            </div><i>|</i>
-            <a href="/mall/trade2.shtml" target="_blank" title="我的订单">我的订单</a><i>|</i>
-            <div class="login fr">
-                <div id="unlogin">
-                    您还未登录，请<a id="btn_topbar_unlogin_login" title="登录" href="javascript:;">登录</a>
-                </div>
-                <div id="logined" style="display:none">
-                    <p>
-                         欢迎你，<a title="个人中心" class="newpercenter" href="/mall/center.shtml"><span id="txt_topbar_logined_uin"></span><span id="login_qq_span" style="display: none;"></span></a>&nbsp;&nbsp;&nbsp;<a id="btn_topbar_logined_logout" title="退出" href="javascript:;">退出</a>
-                    </p>
-                
-                    <div class="loginhover" style="display:none">
-                        <p id="header_uin" class="qqnum"></p>
-                        <div class="persbox">
-                            <div class="fl usrimg">
-                                <img id="header_face_img" src="" width="62" height="62" alt="头像">
+
+
+
+
+
+
+    <div class="pagewrap">
+        <div class="layout contwrap">
+            <!-- 顶部登录栏 -->
+            <div class="mainnav">
+                <div class="wrap">
+                    <div id="t_scroll" class="fl l_side t_scroll">
+
+                    </div>
+                    <div class="fr r_side">
+                        <div class="game game_hide" onmouseover="this.className='game game_show'" onmouseout="this.className='game game_hide'">
+                            <a class="i_sp game_menu" href="javascript:;" id="game_menu" title="游戏导航">游戏导航</a>
+                            <iframe scrolling="no" frameborder="0" id="game_area_list" src="http://daoju.qq.com/time/big_mall/tpl/game_area.htm?v=20131108" allowtransparency="true" class="game_pop"></iframe>
+                        </div><i>|</i>
+
+                        <div id="a_connect" class="fr a_center">
+
+                            <div class="center_list">
+
                             </div>
-                            <div class="fl pinfor">
+                        </div><i></i>
+                        <div id="a_center" class="fr" style="position:relative;width: 48px;">
+
+                            <div id="sp_news_num" style="display:none;background-color:red; position: absolute;left:48px;top:4px;height:5px;width:5px;-moz-border-radius:50px;border-radius:50%;-webkit-border-radius:50px;overflow:hidden;">0</div>
+                        </div><i></i>
+
+                        <div class="login fr">
+                            <div id="unlogin">
+                                您还未登录，请<a id="btn_topbar_unlogin_login" title="登录" href="javascript:;">登录</a>
+                            </div>
+                            <div id="logined" style="display:none">
                                 <p>
-                                    <b id="header_nick"></b>
-                                    <span class="bean-num" title="聚豆"><i class="bean new-acticon"></i><span id="header_judou"></span></span>
+                                    欢迎你，<a title="个人中心" class="newpercenter" href="/mall/center.shtml"><span id="txt_topbar_logined_uin"></span><span id="login_qq_span" style="display: none;"></span></a>&nbsp;&nbsp;&nbsp;<a id="btn_topbar_logined_logout" title="退出" href="javascript:;">退出</a>
                                 </p>
-                                <p class="gthbox">
-                                    <a href="javascript:;">
-                                        <span class="xinyuelevel" id="header_growth_level"></span>
-                                        <span id="header_growth_level_text"></span>
-                                    </a>
-                                    <a class="barbox">
-                                        <span id="header_valuebar" class="svaluebar"></span>
-                                        <span id="header_svover" class="svover" style=""></span>
-                                        <span id="header_gthbar" class="gthbar-num"></span>                                    
-                                    </a>                        
-                                </p>                                                          
+
+                                <div class="loginhover" style="display:none">
+                                    <p id="header_uin" class="qqnum"></p>
+                                    <div class="persbox">
+                                        <div class="fl usrimg">
+                                            <img id="header_face_img" src="" width="62" height="62" alt="头像">
+                                        </div>
+                                        <div class="fl pinfor">
+                                            <p>
+                                                <b id="header_nick"></b>
+                                                <span class="bean-num" title="聚豆"><i class="bean new-acticon"></i><span id="header_judou"></span></span>
+                                            </p>
+                                            <p class="gthbox">
+                                                <a href="javascript:;">
+                                                    <span class="xinyuelevel" id="header_growth_level"></span>
+                                                    <span id="header_growth_level_text"></span>
+                                                </a>
+                                                <a class="barbox">
+                                                    <span id="header_valuebar" class="svaluebar"></span>
+                                                    <span id="header_svover" class="svover" style=""></span>
+                                                    <span id="header_gthbar" class="gthbar-num"></span>                                    
+                                                </a>                        
+                                            </p>                                                          
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+
+            <!-- 通用主题栏 -->
+            <div class="menu">
+                <!-- 搜索栏 -->
+                <div id="blk_nav_search" class="search">
+                    <div class="searchbox clearfix">
+                        <div class="logobox fl">
+                            <a class="navico logo-djc" href="/mall" target="_blank" title="道聚城">道聚城</a>
+                        </div>
+                        <div class="sbar fl">
+                            <div class="navico stext">
+                                <a class="navico sbtn" id="btn_nav_search_submit">搜索</a>
+                                <input type="text" value="输入道具进行搜索" attr_default="输入道具进行搜索" id="inpt_nav_search_name" class="js_btn_click_report" report_tag="mall.lol.index.categories_new">
+<!--
+<div class="search-hot-words">
+<a href="" data-stat-id="cc0cd185d46f80a3" onclick="">散弹枪</a>
+<a href="" data-stat-id="23a3aa91fdd4a133" onclick="">狙击枪</a>
 </div>
+-->
+<div id="blk_nav_search_keywordlist" class="keyword-list hide"></div>
+<!--  -->
+<script id="tmpl_nav_search_keywordlist" type="tmpl/text">
 
-        <!-- 通用主题栏 -->
-<div class="menu">
-    <!-- 搜索栏 -->
-    <div id="blk_nav_search" class="search">
-        <div class="searchbox clearfix">
-            <div class="logobox fl">
-                <a class="navico logo-djc" href="/mall" target="_blank" title="道聚城">道聚城</a>
-            </div>
-            <div class="sbar fl">
-                <div class="navico stext">
-                    <a class="navico sbtn" id="btn_nav_search_submit">搜索</a>
-                    <input type="text" value="输入道具进行搜索" attr_default="输入道具进行搜索" id="inpt_nav_search_name" class="js_btn_click_report" report_tag="mall.lol.index.categories_new">
-                    <!--
-                    <div class="search-hot-words">
-                        <a href="" data-stat-id="cc0cd185d46f80a3" onclick="">散弹枪</a>
-                        <a href="" data-stat-id="23a3aa91fdd4a133" onclick="">狙击枪</a>
-                    </div>
-                    -->
-                    <div id="blk_nav_search_keywordlist" class="keyword-list hide"></div>
-                    <!--  -->
-                    <script id="tmpl_nav_search_keywordlist" type="tmpl/text">
-                 
-                    	<p class="keyword-listbg"></p>
-                        <ul class="result-list">
-                        
-                            <li iseqid="${item.propId}">
-                               
-                            </li>
-                        
-                        </ul>
-                  
-                    </script>
-                    <!--  -->
-                </div>
-            </div>
-            <div class="logogame fl">
-                <a class="navico logo-lol" href="http://lol.qq.com/" target="_blank" title="英雄联盟">英雄联盟</a>
-            </div>
+<p class="keyword-listbg"></p>
+<ul class="result-list">
+
+<li iseqid="${item.propId}">
+
+</li>
+
+</ul>
+
+</script>
+<!--  -->
+</div>
+</div>
+<div class="logogame fl">
+    <a class="navico logo-lol" href="http://lol.qq.com/" target="_blank" title="英雄联盟">英雄联盟</a>
+</div>
+</div>
+</div>
+<!-- 主导航栏 -->
+<div class="nav" id="blk_nav_menu">
+    <div class="navico navwrap clearfix">           
+        <ul class="fl clearfix" style="overflow:hidden;">
+            <li class="navico">
+                <a href="{:url('tpcsy/index/index')}" class="js_btn_click_report">首页</a>
+            </li>
+            <li class="navico">
+                <a href="{:url('tpcsy/skin/skin')}" class="js_btn_click_report">商品列表</a>
+            </li>
+
+
+
+            <li class="navico">
+                <a href="{:url('tpcsy/entity/entity')}" class="js_btn_click_report">周边商城</a>
+            </li>
+
+            <li class="navico" style="display:none;"><!--current-->
+                <a href="/lol/index.shtml?ADTAG=innercop.lol.SY.sy">首页</a>
+            </li>
+            <li class="navico" style="display:none;"><!--current-->
+                <a href="/lol/list/shoppinglist.shtml?ADTAG=innercop.lol.SY.shoppinglist">商品列表</a>
+            </li>
+
+            <li class="navico" style="display:none;"><!--current-->
+                <a href="http://mall.qq.com/lol/?e_code=305545">周边商城</a>
+            </li>
+
+        </ul>
+        <div class="fr nav-cart">
+            <a href="/lol/cart.shtml?ADTAG=innercop.lol.SY.paylist_new" class="btn-cart" title="购物车">
+                <i id="cartNum">（0）</i>
+                <s class="navico i-cart"></s>购物车
+            </a>                
         </div>
-    </div>
-
-    <!-- 主导航栏 -->
-    <div class="nav" id="blk_nav_menu">
-        <div class="navico navwrap clearfix">           
-            <ul class="fl clearfix" style="overflow:hidden;">
-            	<li class="navico">
-                    <a href="/lol/index.shtml?ADTAG=innercop.lol.SY.sy_new" class="js_btn_click_report">首页</a>
-                </li>
-                <li class="navico">
-                    <a href="/lol/list/shoppinglist.shtml?ADTAG=innercop.lol.SY.shoppinglist_new" class="js_btn_click_report">商品列表</a>
-                </li>
-                <li class="navico">
-                    <a target="_blank" href="/mall/actcenter.shtml?flag=lol&ADTAG=innercop.lol.SY.actlist_new" target="_blank" class="js_btn_click_report">活动专区</a>
-                </li>
-                <li class="navico">
-                    <a target="_blank" href="http://daoju.qq.com/mall/tao.shtml?flag=lol&ADTAG=innercop.lol.SY.tao_new" target="_blank" class="js_btn_click_report">限时折扣</a>
-                </li>
-                <li class="navico">
-                    <a target="_blank" href="/mall/judou.shtml?sBizCode=lol" target="_blank" class="js_btn_click_report">聚豆乐园</a>
-                </li>
-                <li class="navico">
-                    <a target="_blank" href="http://mall.qq.com/lol/?e_code=305545&ADTAG=innercop.lol.SY.zhoubian" target="_blank" class="js_btn_click_report">周边商城</a>
-                </li>
-                <li class="navico">
-                    <a target="_blank" href="/mall/center.shtml?flag=lol&ADTAG=innercop.lol.SY.center_new" target="_blank"  class="js_btn_click_report">个人中心</a>
-                </li>
-            	                <li class="navico" style="display:none;"><!--current-->
-                    <a href="/lol/index.shtml?ADTAG=innercop.lol.SY.sy">首页</a>
-                </li>
-                                <li class="navico" style="display:none;"><!--current-->
-                    <a href="/lol/list/shoppinglist.shtml?ADTAG=innercop.lol.SY.shoppinglist">商品列表</a>
-                </li>
-                                <li class="navico" style="display:none;"><!--current-->
-                    <a href="/mall/actlist.shtml?flag=lol&ADTAG=innercop.lol.SY.actlist">活动专区</a>
-                </li>
-                                <li class="navico" style="display:none;"><!--current-->
-                    <a href="http://mall.qq.com/lol/?e_code=305545">周边商城</a>
-                </li>
-                                <li class="navico" style="display:none;"><!--current-->
-                    <a href="/mall/center.shtml?flag=lol&ADTAG=innercop.lol.SY.center">个人中心</a>
-                </li>
-                            </ul>
-            <div class="fr nav-cart">
-                <a href="/lol/cart.shtml?ADTAG=innercop.lol.SY.paylist_new" class="btn-cart" title="购物车">
-                    <i id="cartNum">（0）</i>
-                    <s class="navico i-cart"></s>购物车
-                </a>                
-            </div>
-        </div>       
-    </div> 
-     <!--  -->
-    <script type="text/javascript">
-    if(/\/$/.test(window.location.pathname) || /index\.shtml$/.test(window.location.pathname)){
-    	document.getElementById('blk_nav_menu').className = 'nav navico';
-    }
+    </div>       
+</div> 
+<!--  -->
+<script type="text/javascript">
+if(/\/$/.test(window.location.pathname) || /index\.shtml$/.test(window.location.pathname)){
+    document.getElementById('blk_nav_menu').className = 'nav navico';}
     </script>
     <!--  -->
     <!-- 子导航栏 -->   
@@ -195,22 +177,22 @@
                     <li id="cate_nav_0" class="all-class">
                         <a href="/lol/list/shoppinglist.shtml?ADTAG=innercop.lol.SY.shoppinglist_new" class="dj-link" title="全部分类">全部分类</a>
                     </li>
-                                    	                    <li id="cate_nav_16">
+                    <li id="cate_nav_16">
                         <a href="/lol/list/16-0-0-0-0-0-0-0-0-0-0-00-0-0-1-1.shtml?ADTAG=innercop.lol.SY.shoppinglist_new_16" class="dj-link">英雄</a>
                     </li> 
-                                                        	                    <li id="cate_nav_17">
+                    <li id="cate_nav_17">
                         <a href="/lol/list/17-0-0-0-0-0-0-0-0-0-0-00-0-0-1-1.shtml?ADTAG=innercop.lol.SY.shoppinglist_new_17" class="dj-link">皮肤</a>
                     </li> 
-                                                        	                    <li id="cate_nav_18">
+                    <li id="cate_nav_18">
                         <a href="/lol/list/18-0-0-0-0-0-0-0-0-0-0-00-0-0-1-1.shtml?ADTAG=innercop.lol.SY.shoppinglist_new_18" class="dj-link">道具</a>
                     </li> 
-                                                        	                    <li id="cate_nav_19">
+                    <li id="cate_nav_19">
                         <a href="/lol/list/19-0-0-0-0-0-0-0-0-0-0-00-0-0-1-1.shtml?ADTAG=innercop.lol.SY.shoppinglist_new_19" class="dj-link">守卫眼皮肤</a>
                     </li> 
-                                                        	                    <li id="cate_nav_136">
+                    <li id="cate_nav_136">
                         <a href="/lol/list/136-0-0-0-0-0-0-0-0-0-0-00-0-0-1-1.shtml?ADTAG=innercop.lol.SY.shoppinglist_new_136" class="dj-link">道具包</a>
                     </li> 
-                                                        </ul>
+                </ul>
             </div>
         </div>        
     </div>
@@ -220,842 +202,216 @@
 </div>
 
 
-        <!-- 登录栏和广告区 -->
-        <div class="mainer clearfix">
-            <div class="clearfix">
-                <!-- 左侧登录栏 -->
-                <div class="fl wth222 ">
-                    <div class="loginbox">
-                        <div id="person" data-onload="initPerson" data-title="个人信息">
-                            <div id="blk_index_main_unlogin">
-                                <div class="login_box bot_line">
-                                    <div class="fl usr_img"><img
-                                            src="picture/default.gif">
-                                    </div>
-                                    <p class="gray">您还未登录哦，<a id="btn_index_main_unlogin_login" href="javascript:;"
-                                                              class="blue">立即登录</a><br>购买超值商品！</p>
-                                </div>
+<!-- 登录栏和广告区 -->
+<div class="mainer clearfix">
+    <div class="clearfix">
+        <!-- 左侧登录栏 -->
+        <div class="fl wth222 ">
+            <div class="loginbox">
+                <div id="person" data-onload="initPerson" data-title="个人信息">
+                    <div id="blk_index_main_unlogin">
+                        <div class="login_box bot_line">
+                            <div class="fl usr_img"><img
+                                src="../../static/images/default.gif">
                             </div>
-                            <div id="blk_index_main_logined" style="display:none;">
-                                <div class="login_box bot_line">
-                                    <div class="fl usr_img">
-                                        <a href="http://daoju.qq.com/mall/center.shtml" target="_blank">
-                                            <img id="con_face_img"
-                                                 src="picture/blank.png">
-                                        </a>
-                                    </div>
-                                    <p class="qqintro">
-                                        <b id="con_nick" class="mr10 qq-index"></b>
-                                        <s class=""></s>
-                                        <span class="bean-num" title="聚豆"><i class="bean new-acticon"></i><span
-                                                id="con_judou"></span></span>
-                                    </p>
-                                    <p class="gthbox">
-                                        <a href="http://daoju.qq.com/mall/center.shtml" class="ico"
-                                           id="con_growth_level"></a>
-                                        <a class="barbox">
-                                            <span id="con_svaluebar" class="svaluebar"></span>
-                                            <span id="con_svover" class="svover" style=""></span>
-                                            <span id="con_gthbar" class="gthbar-num"></span>
-                                        </a>
-                                    </p>
-                                </div>
+                            <p class="gray">您还未登录哦，<a id="btn_index_main_unlogin_login" href="javascript:;"
+                              class="blue">立即登录</a><br>购买超值商品！</p>
+                          </div>
+                      </div>
+                      <div id="blk_index_main_logined" style="display:none;">
+                        <div class="login_box bot_line">
+                            <div class="fl usr_img">
+                                <a href="http://daoju.qq.com/mall/center.shtml" target="_blank">
+                                    <img id="con_face_img"
+                                    src="../../static/images/blank.png">
+                                </a>
+                            </div>
+                            <p class="qqintro">
+                                <b id="con_nick" class="mr10 qq-index"></b>
+                                <s class=""></s>
+                                <span class="bean-num" title="聚豆"><i class="bean new-acticon"></i><span
+                                    id="con_judou"></span></span>
+                                </p>
+                                <p class="gthbox">
+                                    <a href="http://daoju.qq.com/mall/center.shtml" class="ico"
+                                    id="con_growth_level"></a>
+                                    <a class="barbox">
+                                        <span id="con_svaluebar" class="svaluebar"></span>
+                                        <span id="con_svover" class="svover" style=""></span>
+                                        <span id="con_gthbar" class="gthbar-num"></span>
+                                    </a>
+                                </p>
                             </div>
                         </div>
-                        <div id="role—binded" class="collegebox" style="display: none;">
-                            <div class="clearfix">
-                                <p id="role-binded-server" class="fl coll-tag"></p>
-                                <p id="role-binded-area" class="fl coll-tag"></p>
-                            </div>
-                            <p id="role-binded-rolename" class="coll-name"></p>
-                            <a id="role-binded-change" data-action="bind-role" href="javascript:;" class="btn-change"
-                               title="切换">切换></a>
+                    </div>
+                    <div id="role—binded" class="collegebox" style="display: none;">
+                        <div class="clearfix">
+                            <p id="role-binded-server" class="fl coll-tag"></p>
+                            <p id="role-binded-area" class="fl coll-tag"></p>
                         </div>
-                        <div id="role—unbind" class="collegebox">
-                            <div class="clearfix">
-                                <p class="fl coll-tag">当前未绑定角色</p>
-                            </div>
-                            <a id="bind-role-btn" data-action="bind-role" href="javascript:;" class="btn-change"
-                               title="切换">立即绑定></a>
+                        <p id="role-binded-rolename" class="coll-name"></p>
+                        <a id="role-binded-change" data-action="bind-role" href="javascript:;" class="btn-change"
+                        title="切换">切换></a>
+                    </div>
+                    <div id="role—unbind" class="collegebox">
+                        <div class="clearfix">
+                            <p class="fl coll-tag">当前未绑定角色</p>
                         </div>
-                        <ul class="logined_ul">
-                            <li><a title="我的优惠券" href="http://daoju.qq.com/mall/coupon.shtml?flag=lol"><i class="indexico ico1"></i>我的优惠券</a></li>
-                            <li>
-                                <a title="查询Q币Q点余额" target="_blank"
-                                   href="http://my.pay.qq.com/account/account_general_query.shtml?ADTAG=PAY.GENERALQUERY.FROM.INDEX_NEW">
-                                    <i class="indexico ico2"></i>查询Q币Q点余额</a>
-                            </li>
-                        </ul>
+                        <a id="bind-role-btn" data-action="bind-role" href="javascript:;" class="btn-change"
+                        title="切换">立即绑定></a>
                     </div>
-                    <div class="notice-list">
-                        <div class="titbox clearfix">
-                            <h5 class="tit" style="float:left;">公告</h5>
-                            <a class="more" href="/mall/notice.shtml" target="_blank">更多&gt;</a>
-                        </div>
-                        <ul id="blk_index_main_notice" class="clearfix"></ul>
-                        <!--  -->
-                        <script type="tmpl/text" id="tmpl_index_main_notice">
-                         
-                            <li><a href="http://daoju.qq.com/mall/notice.shtml?notice=${item.iSeqId}" target="_blank" class="js_btn_click_report" report_tag="mall.lol.index.notice_new">${item.sName}</a><i>${item.shortTime}</i></li>
-                            
-                        </script>
-                        <!--  -->
-                    </div>
-                </div>
-                <!-- 首页广告 -->
-                <div class="fl banner-slide">
-                    <div id="blk_index_main_focus" class="slide" data-onload="initFlash" data-title="广告轮播">
-                        <!--  -->
-                        <script type="tmpl/text" id="tmpl_index_main_focus">
-            	
-            	<div class="pic clearfix">
-            		
-            		
-                    <div class="dev">
-                       
-                    </div>
-                 
-          
-
-                        </script>
-                        <!--  -->
-                    </div>
-                </div>
-                <!-- 右侧链接栏 -->
-                <div class="fr linkbox">
-                    <a href="http://daoju.qq.com/mall/actcenter.shtml?flag=lol" target="_blank"
-                       class="indexico i-act" title="活动中心">活动中心</a>
-                    <a href="http://daoju.qq.com/mall/judou.shtml?sBizCode=lol" target="_blank"
-                       class="indexico i-jdmall" title="聚豆商城">聚豆商城</a>
-                    <div class="indexico djc-codebox">
-                        <img src="picture/code-index.png"
-                             width="140" height="140" alt="二维码">
-                        <p class="code-tit">手机购买，更便捷</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- 列表区 -->
-        <div class="list-cont clearfix">
-            <!-- 限时抢购 -->
-            <!-- 限时抢购 -->
-<!-- 限时抢购 -->
-<div class="likebox clearfix" id="blk_index_left_limitsales">
-    <h3 class="index-tit">限时抢购<span class="green-line"></span></h3>
-    <div class="morebox">
-        <a title="更多" class="fr plate-more" id="tuijian_more" href="http://daoju.qq.com/mall/tao.shtml?flag=lol">更多></a>
-    </div>                
-    <ul>
-    							        <li>
-            <div class="likediv">
-                <p class="bg_sp zj">直降<b>41.48元</b></p>
-                <a target="_blank" href="/lol/item/6048.shtml?ADTAG=innercop.lol.SY.sales_new">
-                    <img width="121" height="222" src="picture/2-40007-9.jpg">
-                </a>   
-                <p class="djname">    
-                    <a target="_blank" href="/lol/item/6048.shtml"><em>星之守护者 迦娜</em></a>
-                </p>  
-                <p class="orange"><b><strong>37.52</strong></b>元<span class="ml10 gray">(<s>79QB</s>)</span></p>
-                <p>剩余时间：
-                	<b class="left_time" start="2017-10-13 20:00:00" end="2017-10-19 23:59:59"></b>
-                </p>          
-                <a href="javascript:;" class="btn-com btn-buy buy-now" data-seqid="6048" >立即购买</a>
-            </div>      
-        </li>
-        						        <li>
-            <div class="likediv">
-                <p class="bg_sp zj">直降<b>15.75元</b></p>
-                <a target="_blank" href="/lol/item/990.shtml?ADTAG=innercop.lol.SY.sales_new">
-                    <img width="121" height="222" src="picture/1-68-9.jpg">
-                </a>   
-                <p class="djname">    
-                    <a target="_blank" href="/lol/item/990.shtml"><em>机械公敌 兰博</em></a>
-                </p>  
-                <p class="orange"><b><strong>14.25</strong></b>元<span class="ml10 gray">(<s>30QB</s>)</span></p>
-                <p>剩余时间：
-                	<b class="left_time" start="2017-10-13 20:00:00" end="2017-10-19 23:59:59"></b>
-                </p>          
-                <a href="javascript:;" class="btn-com btn-buy buy-now" data-seqid="990" >立即购买</a>
-            </div>      
-        </li>
-        						        <li>
-            <div class="likediv">
-                <p class="bg_sp zj">直降<b>5.25元</b></p>
-                <a target="_blank" href="/lol/item/1026.shtml?ADTAG=innercop.lol.SY.sales_new">
-                    <img width="121" height="222" src="picture/1-18-9.jpg">
-                </a>   
-                <p class="djname">    
-                    <a target="_blank" href="/lol/item/1026.shtml"><em>麦林炮手 崔丝塔娜</em></a>
-                </p>  
-                <p class="orange"><b><strong>4.75</strong></b>元<span class="ml10 gray">(<s>10QB</s>)</span></p>
-                <p>剩余时间：
-                	<b class="left_time" start="2017-10-13 20:00:00" end="2017-10-19 23:59:59"></b>
-                </p>          
-                <a href="javascript:;" class="btn-com btn-buy buy-now" data-seqid="1026" >立即购买</a>
-            </div>      
-        </li>
-        						        <li>
-            <div class="likediv">
-                <p class="bg_sp zj">直降<b>10.50元</b></p>
-                <a target="_blank" href="/lol/item/1041.shtml?ADTAG=innercop.lol.SY.sales_new">
-                    <img width="121" height="222" src="picture/1-3-9.jpg">
-                </a>   
-                <p class="djname">    
-                    <a target="_blank" href="/lol/item/1041.shtml"><em>正义巨像 加里奥</em></a>
-                </p>  
-                <p class="orange"><b><strong>9.50</strong></b>元<span class="ml10 gray">(<s>20QB</s>)</span></p>
-                <p>剩余时间：
-                	<b class="left_time" start="2017-10-13 20:00:00" end="2017-10-19 23:59:59"></b>
-                </p>          
-                <a href="javascript:;" class="btn-com btn-buy buy-now" data-seqid="1041" >立即购买</a>
-            </div>      
-        </li>
-            </ul>
-</div>
-<!--  -->
-<script type="tmpl/text" id="tmpl_index_left_limitsales_time">
-<em class="red">${day}</em>天<em class="red">${hour}</em>时<em class="red">${minite}</em>分<em class="red">${second}</em>秒
-</script>
-<!--  -->
-
-
-
-            <div class="hotbox clearfix">
-                <div class="fl wth952">
-  <div class="list-plate clearfix">
-    <ul class="plate-tit clearfix">
-    	    	        <li  class="current" >
-            <a href="javascript:;" attr_recid="20" class="plate-link">新品上架</a>
-        </li>
-                        <li >
-            <a href="javascript:;" attr_recid="19" class="plate-link">热门推荐</a>
-        </li>
-                    </ul>
-    <div class="morebox">
-    	    	        <a  title="更多" class="fr plate-more" href="/lol/list/0-0-20-0-0-0-0-0-0-0-0-00-0-0-1-1.shtml?ADTAG=innercop.lol.SY.recommend_more_new">更多&gt;</a>
-                        <a  style="display:none;"  title="更多" class="fr plate-more" href="/lol/list/0-0-19-0-0-0-0-0-0-0-0-00-0-0-1-1.shtml?ADTAG=innercop.lol.SY.recommend_more_new">更多&gt;</a>
-                    </div>
-    <div class="platebox">
-    	    	        <div class="listbox clearfix" >
-        	        	
-        										            <dl class="">
-                <dt>
-                    <a href="/lol/item/1424.shtml?ADTAG=innercop.lol.SY.recommend_new" target="_blank">
-                        <img src="picture/2-81006-9.jpg" width="116" height="212">
-                    </a>
-                    <div class="pop-tips">
-                        <span class="arrowbr">◆</span>
-                        <span class="arrow">◆</span>
-                        <strong>暗杀星 伊泽瑞尔</strong>
-                        <p>道具期限：永久</p>
-                        <p>道具介绍：暗杀星 伊泽瑞尔</p>
-                    </div>
-                </dt>
-                <dd>
-                    <a href="/lol/item/1424.shtml?ADTAG=innercop.lol.SY.recommend_new" class="djname" target="_blank">
-                    	<strong>暗杀星 伊泽瑞尔</strong>
-                    </a>
-                    					<div class="bx_list_t1">
-						Q币价：<span class="t2 fwb">&nbsp;&nbsp;&nbsp;69.00</span> <span class="t2 fwb">Q币</span>
-					</div>
-					<div class="bx_list_t1">
-						微信价：<span class="t2 fwb">&nbsp;&nbsp;&nbsp;&yen;</span><span class="t2 fwb">65.55</span>
-					</div>
-					                    <div class="bxlist-t2 c">
-                        <a href="javascript:MT.buyGood(1424);" data-seqid="1424" class="btn-green buy-now" title="立即购买">立即购买</a>
-                    </div>
-                    <span class=""></span>
-                </dd>
-            </dl>
-                    	
-        										            <dl class="">
-                <dt>
-                    <a href="/lol/item/1427.shtml?ADTAG=innercop.lol.SY.recommend_new" target="_blank">
-                        <img src="picture/2-36007-9.jpg" width="116" height="212">
-                    </a>
-                    <div class="pop-tips">
-                        <span class="arrowbr">◆</span>
-                        <span class="arrow">◆</span>
-                        <strong>暗杀星 蒙多</strong>
-                        <p>道具期限：永久</p>
-                        <p>道具介绍：暗杀星 蒙多</p>
-                    </div>
-                </dt>
-                <dd>
-                    <a href="/lol/item/1427.shtml?ADTAG=innercop.lol.SY.recommend_new" class="djname" target="_blank">
-                    	<strong>暗杀星 蒙多</strong>
-                    </a>
-                    					<div class="bx_list_t1">
-						Q币价：<span class="t2 fwb">&nbsp;&nbsp;&nbsp;69.00</span> <span class="t2 fwb">Q币</span>
-					</div>
-					<div class="bx_list_t1">
-						微信价：<span class="t2 fwb">&nbsp;&nbsp;&nbsp;&yen;</span><span class="t2 fwb">65.55</span>
-					</div>
-					                    <div class="bxlist-t2 c">
-                        <a href="javascript:MT.buyGood(1427);" data-seqid="1427" class="btn-green buy-now" title="立即购买">立即购买</a>
-                    </div>
-                    <span class=""></span>
-                </dd>
-            </dl>
-                    	
-        										            <dl class="">
-                <dt>
-                    <a href="/lol/item/1428.shtml?ADTAG=innercop.lol.SY.recommend_new" target="_blank">
-                        <img src="picture/2-61004-9.jpg" width="116" height="212">
-                    </a>
-                    <div class="pop-tips">
-                        <span class="arrowbr">◆</span>
-                        <span class="arrow">◆</span>
-                        <strong>暗杀星 奥莉安娜</strong>
-                        <p>道具期限：永久</p>
-                        <p>道具介绍：暗杀星 奥莉安娜</p>
-                    </div>
-                </dt>
-                <dd>
-                    <a href="/lol/item/1428.shtml?ADTAG=innercop.lol.SY.recommend_new" class="djname" target="_blank">
-                    	<strong>暗杀星 奥莉安娜</strong>
-                    </a>
-                    					<div class="bx_list_t1">
-						Q币价：<span class="t2 fwb">&nbsp;&nbsp;&nbsp;69.00</span> <span class="t2 fwb">Q币</span>
-					</div>
-					<div class="bx_list_t1">
-						微信价：<span class="t2 fwb">&nbsp;&nbsp;&nbsp;&yen;</span><span class="t2 fwb">65.55</span>
-					</div>
-					                    <div class="bxlist-t2 c">
-                        <a href="javascript:MT.buyGood(1428);" data-seqid="1428" class="btn-green buy-now" title="立即购买">立即购买</a>
-                    </div>
-                    <span class=""></span>
-                </dd>
-            </dl>
-                    	
-        										            <dl class="">
-                <dt>
-                    <a href="/lol/item/1447.shtml?ADTAG=innercop.lol.SY.recommend_new" target="_blank">
-                        <img src="picture/2-79008-9.jpg" width="116" height="212">
-                    </a>
-                    <div class="pop-tips">
-                        <span class="arrowbr">◆</span>
-                        <span class="arrow">◆</span>
-                        <strong>Fnatic 古拉加斯</strong>
-                        <p>道具期限：永久</p>
-                        <p>道具介绍：Fnatic 古拉加斯</p>
-                    </div>
-                </dt>
-                <dd>
-                    <a href="/lol/item/1447.shtml?ADTAG=innercop.lol.SY.recommend_new" class="djname" target="_blank">
-                    	<strong>Fnatic 古拉加斯</strong>
-                    </a>
-                    					<div class="bx_list_t1">
-						Q币价：<span class="t2 fwb">&nbsp;&nbsp;&nbsp;69.00</span> <span class="t2 fwb">Q币</span>
-					</div>
-					<div class="bx_list_t1">
-						微信价：<span class="t2 fwb">&nbsp;&nbsp;&nbsp;&yen;</span><span class="t2 fwb">65.55</span>
-					</div>
-					                    <div class="bxlist-t2 c">
-                        <a href="javascript:MT.buyGood(1447);" data-seqid="1447" class="btn-green buy-now" title="立即购买">立即购买</a>
-                    </div>
-                    <span class=""></span>
-                </dd>
-            </dl>
-                    	
-        										            <dl class="">
-                <dt>
-                    <a href="/lol/item/1449.shtml?ADTAG=innercop.lol.SY.recommend_new" target="_blank">
-                        <img src="picture/2-40006-9.jpg" width="116" height="212">
-                    </a>
-                    <div class="pop-tips">
-                        <span class="arrowbr">◆</span>
-                        <span class="arrow">◆</span>
-                        <strong>Fnatic 迦娜</strong>
-                        <p>道具期限：永久</p>
-                        <p>道具介绍：Fnatic 迦娜</p>
-                    </div>
-                </dt>
-                <dd>
-                    <a href="/lol/item/1449.shtml?ADTAG=innercop.lol.SY.recommend_new" class="djname" target="_blank">
-                    	<strong>Fnatic 迦娜</strong>
-                    </a>
-                    					<div class="bx_list_t1">
-						Q币价：<span class="t2 fwb">&nbsp;&nbsp;&nbsp;69.00</span> <span class="t2 fwb">Q币</span>
-					</div>
-					<div class="bx_list_t1">
-						微信价：<span class="t2 fwb">&nbsp;&nbsp;&nbsp;&yen;</span><span class="t2 fwb">65.55</span>
-					</div>
-					                    <div class="bxlist-t2 c">
-                        <a href="javascript:MT.buyGood(1449);" data-seqid="1449" class="btn-green buy-now" title="立即购买">立即购买</a>
-                    </div>
-                    <span class=""></span>
-                </dd>
-            </dl>
-                    	
-        										            <dl class="">
-                <dt>
-                    <a href="/lol/item/1450.shtml?ADTAG=innercop.lol.SY.recommend_new" target="_blank">
-                        <img src="picture/2-42007-9.jpg" width="116" height="212">
-                    </a>
-                    <div class="pop-tips">
-                        <span class="arrowbr">◆</span>
-                        <span class="arrow">◆</span>
-                        <strong>Fnatic 库奇</strong>
-                        <p>道具期限：永久</p>
-                        <p>道具介绍：Fnatic 库奇</p>
-                    </div>
-                </dt>
-                <dd>
-                    <a href="/lol/item/1450.shtml?ADTAG=innercop.lol.SY.recommend_new" class="djname" target="_blank">
-                    	<strong>Fnatic 库奇</strong>
-                    </a>
-                    					<div class="bx_list_t1">
-						Q币价：<span class="t2 fwb">&nbsp;&nbsp;&nbsp;69.00</span> <span class="t2 fwb">Q币</span>
-					</div>
-					<div class="bx_list_t1">
-						微信价：<span class="t2 fwb">&nbsp;&nbsp;&nbsp;&yen;</span><span class="t2 fwb">65.55</span>
-					</div>
-					                    <div class="bxlist-t2 c">
-                        <a href="javascript:MT.buyGood(1450);" data-seqid="1450" class="btn-green buy-now" title="立即购买">立即购买</a>
-                    </div>
-                    <span class=""></span>
-                </dd>
-            </dl>
-                    	
-        										            <dl class="">
-                <dt>
-                    <a href="/lol/item/1451.shtml?ADTAG=innercop.lol.SY.recommend_new" target="_blank">
-                        <img src="picture/2-59006-9.jpg" width="116" height="212">
-                    </a>
-                    <div class="pop-tips">
-                        <span class="arrowbr">◆</span>
-                        <span class="arrow">◆</span>
-                        <strong>Fnatic 嘉文四世</strong>
-                        <p>道具期限：永久</p>
-                        <p>道具介绍：Fnatic 嘉文四世</p>
-                    </div>
-                </dt>
-                <dd>
-                    <a href="/lol/item/1451.shtml?ADTAG=innercop.lol.SY.recommend_new" class="djname" target="_blank">
-                    	<strong>Fnatic 嘉文四世</strong>
-                    </a>
-                    					<div class="bx_list_t1">
-						Q币价：<span class="t2 fwb">&nbsp;&nbsp;&nbsp;69.00</span> <span class="t2 fwb">Q币</span>
-					</div>
-					<div class="bx_list_t1">
-						微信价：<span class="t2 fwb">&nbsp;&nbsp;&nbsp;&yen;</span><span class="t2 fwb">65.55</span>
-					</div>
-					                    <div class="bxlist-t2 c">
-                        <a href="javascript:MT.buyGood(1451);" data-seqid="1451" class="btn-green buy-now" title="立即购买">立即购买</a>
-                    </div>
-                    <span class=""></span>
-                </dd>
-            </dl>
-                    	
-        										            <dl class="">
-                <dt>
-                    <a href="/lol/item/5043.shtml?ADTAG=innercop.lol.SY.recommend_new" target="_blank">
-                        <img src="picture/2-76008-9.jpg" width="116" height="212">
-                    </a>
-                    <div class="pop-tips">
-                        <span class="arrowbr">◆</span>
-                        <span class="arrow">◆</span>
-                        <strong>勇者 奈德丽</strong>
-                        <p>道具期限：永久</p>
-                        <p>道具介绍：勇者 奈德丽</p>
-                    </div>
-                </dt>
-                <dd>
-                    <a href="/lol/item/5043.shtml?ADTAG=innercop.lol.SY.recommend_new" class="djname" target="_blank">
-                    	<strong>勇者 奈德丽</strong>
-                    </a>
-                    					<div class="bx_list_t1">
-						Q币价：<span class="t2 fwb">&nbsp;&nbsp;&nbsp;69.00</span> <span class="t2 fwb">Q币</span>
-					</div>
-					<div class="bx_list_t1">
-						微信价：<span class="t2 fwb">&nbsp;&nbsp;&nbsp;&yen;</span><span class="t2 fwb">65.55</span>
-					</div>
-					                    <div class="bxlist-t2 c">
-                        <a href="javascript:MT.buyGood(5043);" data-seqid="5043" class="btn-green buy-now" title="立即购买">立即购买</a>
-                    </div>
-                    <span class=""></span>
-                </dd>
-            </dl>
-                    </div>  
-                        <div class="listbox clearfix"  style="display:none;" >
-        	        	
-        										            <dl class="">
-                <dt>
-                    <a href="/lol/item/9065.shtml?ADTAG=innercop.lol.SY.recommend_new" target="_blank">
-                        <img src="picture/pkg-9065.jpg" width="116" height="212">
-                    </a>
-                    <div class="pop-tips">
-                        <span class="arrowbr">◆</span>
-                        <span class="arrow">◆</span>
-                        <strong>星之守护者 索拉卡(星光起源版)</strong>
-                        <p>道具期限：永久</p>
-                        <p>道具介绍：星之守护者 索拉卡(星光起源版)包含：皮肤（星之守护者 索拉卡）+英雄（索拉卡）+图标（星之守护者 索拉卡图标）+边框（星之守护者 索拉卡载入边框）</p>
-                    </div>
-                </dt>
-                <dd>
-                    <a href="/lol/item/9065.shtml?ADTAG=innercop.lol.SY.recommend_new" class="djname" target="_blank">
-                    	<strong>星之守护者 索拉卡(星光起源版)</strong>
-                    </a>
-                    					<div class="bx_list_t1">
-						Q币价：<span class="t2 fwb">&nbsp;&nbsp;&nbsp;109.00</span> <span class="t2 fwb">Q币</span>
-					</div>
-					<div class="bx_list_t1">
-						微信价：<span class="t2 fwb">&nbsp;&nbsp;&nbsp;&yen;</span><span class="t2 fwb">103.55</span>
-					</div>
-					                    <div class="bxlist-t2 c">
-                        <a href="javascript:MT.buyGood(9065);" data-seqid="9065" class="btn-green buy-now" title="立即购买">立即购买</a>
-                    </div>
-                    <span class=""></span>
-                </dd>
-            </dl>
-                    	
-        										            <dl class="">
-                <dt>
-                    <a href="/lol/item/9066.shtml?ADTAG=innercop.lol.SY.recommend_new" target="_blank">
-                        <img src="picture/pkg-9066.jpg" width="116" height="212">
-                    </a>
-                    <div class="pop-tips">
-                        <span class="arrowbr">◆</span>
-                        <span class="arrow">◆</span>
-                        <strong>星之守护者 厄运小姐(星光起源版)</strong>
-                        <p>道具期限：永久</p>
-                        <p>道具介绍：星之守护者 厄运小姐(星光起源版)包含：皮肤（星之守护者 厄运小姐）+英雄（厄运小姐）+图标（星之守护者 厄运小姐图标）+边框（星之守护者 厄运小姐载入边框）</p>
-                    </div>
-                </dt>
-                <dd>
-                    <a href="/lol/item/9066.shtml?ADTAG=innercop.lol.SY.recommend_new" class="djname" target="_blank">
-                    	<strong>星之守护者 厄运小姐(星光起源版)</strong>
-                    </a>
-                    					<div class="bx_list_t1">
-						Q币价：<span class="t2 fwb">&nbsp;&nbsp;&nbsp;124.00</span> <span class="t2 fwb">Q币</span>
-					</div>
-					<div class="bx_list_t1">
-						微信价：<span class="t2 fwb">&nbsp;&nbsp;&nbsp;&yen;</span><span class="t2 fwb">117.80</span>
-					</div>
-					                    <div class="bxlist-t2 c">
-                        <a href="javascript:MT.buyGood(9066);" data-seqid="9066" class="btn-green buy-now" title="立即购买">立即购买</a>
-                    </div>
-                    <span class=""></span>
-                </dd>
-            </dl>
-                    	
-        										            <dl class="">
-                <dt>
-                    <a href="/lol/item/9067.shtml?ADTAG=innercop.lol.SY.recommend_new" target="_blank">
-                        <img src="picture/pkg-9067.jpg" width="116" height="212">
-                    </a>
-                    <div class="pop-tips">
-                        <span class="arrowbr">◆</span>
-                        <span class="arrow">◆</span>
-                        <strong>星之守护者 阿狸(星光起源版)</strong>
-                        <p>道具期限：永久</p>
-                        <p>道具介绍：星之守护者 阿狸(星光起源版)：皮肤（星之守护者 阿狸）+英雄（阿狸）+图标（星之守护者 阿狸图标）+边框（星之守护者 阿狸载入边框）</p>
-                    </div>
-                </dt>
-                <dd>
-                    <a href="/lol/item/9067.shtml?ADTAG=innercop.lol.SY.recommend_new" class="djname" target="_blank">
-                    	<strong>星之守护者 阿狸(星光起源版)</strong>
-                    </a>
-                    					<div class="bx_list_t1">
-						Q币价：<span class="t2 fwb">&nbsp;&nbsp;&nbsp;154.00</span> <span class="t2 fwb">Q币</span>
-					</div>
-					<div class="bx_list_t1">
-						微信价：<span class="t2 fwb">&nbsp;&nbsp;&nbsp;&yen;</span><span class="t2 fwb">146.30</span>
-					</div>
-					                    <div class="bxlist-t2 c">
-                        <a href="javascript:MT.buyGood(9067);" data-seqid="9067" class="btn-green buy-now" title="立即购买">立即购买</a>
-                    </div>
-                    <span class=""></span>
-                </dd>
-            </dl>
-                    	
-        										            <dl class="">
-                <dt>
-                    <a href="/lol/item/9068.shtml?ADTAG=innercop.lol.SY.recommend_new" target="_blank">
-                        <img src="picture/pkg-9068.jpg" width="116" height="212">
-                    </a>
-                    <div class="pop-tips">
-                        <span class="arrowbr">◆</span>
-                        <span class="arrow">◆</span>
-                        <strong>星之守护者 辛德拉(星光起源版)</strong>
-                        <p>道具期限：永久</p>
-                        <p>道具介绍：星之守护者 辛德拉(星光起源版)包含：皮肤（星之守护者 辛德拉）+英雄（辛德拉）+图标（星之守护者 辛德拉图标）+边框（星之守护者 辛德拉载入边框）</p>
-                    </div>
-                </dt>
-                <dd>
-                    <a href="/lol/item/9068.shtml?ADTAG=innercop.lol.SY.recommend_new" class="djname" target="_blank">
-                    	<strong>星之守护者 辛德拉(星光起源版)</strong>
-                    </a>
-                    					<div class="bx_list_t1">
-						Q币价：<span class="t2 fwb">&nbsp;&nbsp;&nbsp;144.00</span> <span class="t2 fwb">Q币</span>
-					</div>
-					<div class="bx_list_t1">
-						微信价：<span class="t2 fwb">&nbsp;&nbsp;&nbsp;&yen;</span><span class="t2 fwb">136.80</span>
-					</div>
-					                    <div class="bxlist-t2 c">
-                        <a href="javascript:MT.buyGood(9068);" data-seqid="9068" class="btn-green buy-now" title="立即购买">立即购买</a>
-                    </div>
-                    <span class=""></span>
-                </dd>
-            </dl>
-                    	
-        										            <dl class="">
-                <dt>
-                    <a href="/lol/item/9061.shtml?ADTAG=innercop.lol.SY.recommend_new" target="_blank">
-                        <img src="picture/2-21015-9.jpg" width="116" height="212">
-                    </a>
-                    <div class="pop-tips">
-                        <span class="arrowbr">◆</span>
-                        <span class="arrow">◆</span>
-                        <strong>星之守护者 厄运小姐(标准版)</strong>
-                        <p>道具期限：永久</p>
-                        <p>道具介绍：星之守护者 厄运小姐(标准版)</p>
-                    </div>
-                </dt>
-                <dd>
-                    <a href="/lol/item/9061.shtml?ADTAG=innercop.lol.SY.recommend_new" class="djname" target="_blank">
-                    	<strong>星之守护者 厄运小姐(标准版)</strong>
-                    </a>
-                    					<div class="bx_list_t1">
-						Q币价：<span class="t2 fwb">&nbsp;&nbsp;&nbsp;79.00</span> <span class="t2 fwb">Q币</span>
-					</div>
-					<div class="bx_list_t1">
-						微信价：<span class="t2 fwb">&nbsp;&nbsp;&nbsp;&yen;</span><span class="t2 fwb">75.05</span>
-					</div>
-					                    <div class="bxlist-t2 c">
-                        <a href="javascript:MT.buyGood(9061);" data-seqid="9061" class="btn-green buy-now" title="立即购买">立即购买</a>
-                    </div>
-                    <span class=""></span>
-                </dd>
-            </dl>
-                    	
-        										            <dl class="">
-                <dt>
-                    <a href="/lol/item/9062.shtml?ADTAG=innercop.lol.SY.recommend_new" target="_blank">
-                        <img src="picture/2-103014-9.jpg" width="116" height="212">
-                    </a>
-                    <div class="pop-tips">
-                        <span class="arrowbr">◆</span>
-                        <span class="arrow">◆</span>
-                        <strong>星之守护者 阿狸(标准版)</strong>
-                        <p>道具期限：永久</p>
-                        <p>道具介绍：星之守护者 阿狸(标准版)</p>
-                    </div>
-                </dt>
-                <dd>
-                    <a href="/lol/item/9062.shtml?ADTAG=innercop.lol.SY.recommend_new" class="djname" target="_blank">
-                    	<strong>星之守护者 阿狸(标准版)</strong>
-                    </a>
-                    					<div class="bx_list_t1">
-						Q币价：<span class="t2 fwb">&nbsp;&nbsp;&nbsp;99.00</span> <span class="t2 fwb">Q币</span>
-					</div>
-					<div class="bx_list_t1">
-						微信价：<span class="t2 fwb">&nbsp;&nbsp;&nbsp;&yen;</span><span class="t2 fwb">94.05</span>
-					</div>
-					                    <div class="bxlist-t2 c">
-                        <a href="javascript:MT.buyGood(9062);" data-seqid="9062" class="btn-green buy-now" title="立即购买">立即购买</a>
-                    </div>
-                    <span class=""></span>
-                </dd>
-            </dl>
-                    	
-        										            <dl class="">
-                <dt>
-                    <a href="/lol/item/8632.shtml?ADTAG=innercop.lol.SY.recommend_new" target="_blank">
-                        <img src="picture/1-141-9.jpg" width="116" height="212">
-                    </a>
-                    <div class="pop-tips">
-                        <span class="arrowbr">◆</span>
-                        <span class="arrow">◆</span>
-                        <strong>影流之镰 凯隐</strong>
-                        <p>道具期限：永久</p>
-                        <p>道具介绍：影流之镰 凯隐</p>
-                    </div>
-                </dt>
-                <dd>
-                    <a href="/lol/item/8632.shtml?ADTAG=innercop.lol.SY.recommend_new" class="djname" target="_blank">
-                    	<strong>影流之镰 凯隐</strong>
-                    </a>
-                    					<div class="bx_list_t1">
-						Q币价：<span class="t2 fwb">&nbsp;&nbsp;&nbsp;45.00</span> <span class="t2 fwb">Q币</span>
-					</div>
-					<div class="bx_list_t1">
-						微信价：<span class="t2 fwb">&nbsp;&nbsp;&nbsp;&yen;</span><span class="t2 fwb">42.75</span>
-					</div>
-					                    <div class="bxlist-t2 c">
-                        <a href="javascript:MT.buyGood(8632);" data-seqid="8632" class="btn-green buy-now" title="立即购买">立即购买</a>
-                    </div>
-                    <span class=""></span>
-                </dd>
-            </dl>
-                    	
-        										            <dl class="">
-                <dt>
-                    <a href="/lol/item/8633.shtml?ADTAG=innercop.lol.SY.recommend_new" target="_blank">
-                        <img src="picture/2-141001-9.jpg" width="116" height="212">
-                    </a>
-                    <div class="pop-tips">
-                        <span class="arrowbr">◆</span>
-                        <span class="arrow">◆</span>
-                        <strong>摄魂猎手 凯隐</strong>
-                        <p>道具期限：永久</p>
-                        <p>道具介绍：摄魂猎手 凯隐</p>
-                    </div>
-                </dt>
-                <dd>
-                    <a href="/lol/item/8633.shtml?ADTAG=innercop.lol.SY.recommend_new" class="djname" target="_blank">
-                    	<strong>摄魂猎手 凯隐</strong>
-                    </a>
-                    					<div class="bx_list_t1">
-						Q币价：<span class="t2 fwb">&nbsp;&nbsp;&nbsp;69.00</span> <span class="t2 fwb">Q币</span>
-					</div>
-					<div class="bx_list_t1">
-						微信价：<span class="t2 fwb">&nbsp;&nbsp;&nbsp;&yen;</span><span class="t2 fwb">65.55</span>
-					</div>
-					                    <div class="bxlist-t2 c">
-                        <a href="javascript:MT.buyGood(8633);" data-seqid="8633" class="btn-green buy-now" title="立即购买">立即购买</a>
-                    </div>
-                    <span class=""></span>
-                </dd>
-            </dl>
-                    </div>  
-                    </div>
-  </div>
-</div>
-                <div class="fr rightbar">
-                    <!-- 热门排行 -->
-                    <div class="sbcont mb10">
-                        <h3 class="subin-tit">热门排行<span class="green-line"></span></h3>
-                        <ul id="blk_index_right_hotrank" class="ranklist">
-                            <div class="loading"><span class="loadmsg">loading...</span></div>
-                        </ul>
-                    </div>
-                    <!---->
-                    <script type="tmpl/text" id="tmpl_index_right_hotrank">
-               
-                    
-                    <li>
-                        <a target="_blank" href="item/${item.iSeqId}.shtml?ADTAG=innercop.lol.SY.ranking_new" class="rank-link clearfix">
-                            <div class="comico ico-rank">${item.index}</div>
-                            <div class="djimg fl">
-                                <img src="picture/${item.sgoodspic}" width="76" height="76" alt="道具图">
-                            </div>
-                            <div class="djinfo fr">
-                                <p class="djname">${item.sGoodsName}</p>
-                                <p class="djprice">Q币价：${item.iPriceQb} Q币</p>
-                                <p class="djcpri" style="font-size:12px;">微信价：<strong>￥${item.iWechatPrice} </strong></p>
-                            </div>
-                        </a>
-                    </li>
-                    
-              
-
-                    </script>
-                    <!--  -->
-                    <!-- 猜你喜欢 -->
-                    <div class="sbcont">
-                        <h3 class="subin-tit">猜你喜欢<span class="green-line"></span></h3>
-                        <ul id="blk_index_right_guess" class="ranklist">
-                            <div class="loading"><span class="loadmsg">loading...</span></div>
-                        </ul>
-                    </div>
-                    <!---->
-                    <script type="tmpl/text" id="tmpl_index_right_guess">
-                  
-                        <li pos="${item.pos}">
-                            <a target="_blank" href="item/${item.iSeqId}.shtml?ADTAG=innercop.lol.SY.recommend_new&algorithm=${item.algorithm}" class="rank-link clearfix">
-                                <div class="djimg fl">
-                                    <img src="picture/${item.sgoodspic}" width="76" height="76" alt="道具图">
-                                </div>
-                                <div class="djinfo fr">
-                                    <p class="djname">${item.sGoodsName}</p>
-                                    <p class="djprice">Q币价：${item.iPriceQb} Q币</p>
-                                    <p class="djcpri" style="font-size:12px;">微信价：<strong>￥${item.iWechatPrice} </strong></p>
-                                </div>
-                            </a>
+                    <ul class="logined_ul">
+                        <li><a title="我的优惠券" href="http://daoju.qq.com/mall/coupon.shtml?flag=lol"><i class="indexico ico1"></i>我的优惠券</a></li>
+                        <li>
+                            <a title="查询Q币Q点余额" target="_blank"
+                            href="http://my.pay.qq.com/account/account_general_query.shtml?ADTAG=PAY.GENERALQUERY.FROM.INDEX_NEW">
+                            <i class="indexico ico2"></i>查询Q币Q点余额</a>
                         </li>
-                        
-                    
+                    </ul>
+                </div>
+                <div class="notice-list">
+                    <div class="titbox clearfix">
+                        <h5 class="tit" style="float:left;">公告</h5>
+                        <a class="more" href="/mall/notice.shtml" target="_blank">更多&gt;</a>
+                    </div>
+                    <ul id="blk_index_main_notice" class="clearfix"></ul>
+                    <!--  -->
+                    <script type="tmpl/text" id="tmpl_index_main_notice">
+
+                    <li><a href="http://daoju.qq.com/mall/notice.shtml?notice=${item.iSeqId}" target="_blank" class="js_btn_click_report" report_tag="mall.lol.index.notice_new">${item.sName}</a><i>${item.shortTime}</i></li>
+
                     </script>
                     <!--  -->
                 </div>
             </div>
+            <!-- 首页广告 -->
+<div class="fl banner-slide">
+<div id="blk_index_main_focus" class="slide" data-onload="initFlash" data-title="广告轮播">
 
-            <!--周边商城-->
-            <div class="zblist clearfix" id="" data-onload="" data-title="周边商城">
-                <h3 class="index-tit">周边商城<span class="green-line"></span></h3>
-                <div class="morebox">
-                    <a href="http://mall.qq.com/lol/?ADTAG=innercop.lol.SY.zhoubian" target="_blank" title="更多" class="fr plate-more">更多&gt;</a>
-                </div>
-                <ul id="blk_index_zb_list" class="prod-list clearfix">
-                    <div class="loading"><span class="loadmsg">loading...</span></div>
-                </ul>
-            </div>
-            <!---->
-            <script type="tmpl/text" id="tmpl_index_zb_list">
-             
-                   
-                  
-               
+<!-- <iframe src='http://cw.gabbly.com/gabbly/cw.jsp?e=1&t=上http://gabbly.com/www.tpc.com/tpcsy' scrolling='no' style='width:300px; height:250px' frameborder='0'></iframe> -->
 
-            </script>
-            <!--  -->
-            <!-- 精彩活动 -->
-            <div class="adlist clearfix" data-onload="initActbot" data-title="广告列表">
-                <h3 class="index-tit">精彩活动<span class="green-line"></span></h3>
-                <div class="morebox">
-                    <a href="http://daoju.qq.com/mall/actlist.shtml?flag=lol&ADTAG=innercop.lol.SY.activities_more" target="_blank" title="更多" class="fr plate-more">更多&gt;</a>
-                </div>
-                <ul id="blk_index_bottom_ad" class="act-list clearfix">
-                    <div class="loading"><span class="loadmsg">loading...</span></div>
-                </ul>
-            </div>
-            <!---->
-            <script type="tmpl/text" id="tmpl_index_bottom_ad">
-        
-            
-           
+<!-- <video id="example_video_1" class="video-js vjs-default-skin vjs-big-play-centered"
+  controls preload="auto" width="640" height="360"
+  poster="http://video-js.zencoder.com/oceans-clip.png"
+  data-setup='{"example_option":true}'>
+<source src="//vjs.zencdn.net/v/oceans.mp4" type="video/mp4"></source>
+<source src="//vjs.zencdn.net/v/oceans.webm" type="video/webm"></source>
+<source src="//vjs.zencdn.net/v/oceans.ogv" type="video/ogg"></source>
+<source src="https://o6yh618n9.qnssl.com/8mUUOJ0F_5558248051.mp4" type='video/mp4'> 
+</video> -->
+
+</div>
+</div>
+
+<!-- 300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 -->
+            <!-- <video id="my_video_1" class="video-js vjs-default-skin" controls    preload="auto"width="740"height="480"poster="video-js/my_video_poster.png"    data-setup="{}">
+  <source src="https://o6yh618n9.qnssl.com/8mUUOJ0F_5558248051.mp4" type='video/mp4'> 
+  
        
-            </script>
-            <!--  -->
+      </video> -->
+            <!-- 右侧链接栏 -->
+            <div class="fr linkbox">
+                <a href="http://daoju.qq.com/mall/actcenter.shtml?flag=lol" target="_blank"
+                class="indexico i-act" title="个人中心">个人中心</a>
+                <a href="http://daoju.qq.com/mall/judou.shtml?sBizCode=lol" target="_blank"
+                class="indexico i-jdmall" title="我的订单">我的订单</a>
+                <div class="indexico djc-codebox">
+                    <img src="../../static/images/djc_app.png"
+                    width="140" height="140" alt="二维码">
+                    <p class="code-tit">手机购买，更便捷</p>
+                </div>
+            </div>
         </div>
     </div>
+
+    <!-- 列表区 -->
+    <div class="list-cont clearfix">
+        <!-- 限时抢购 -->
+        <!-- 限时抢购 -->
+        <!-- 限时抢购 -->
+        <div class="likebox clearfix" id="blk_index_left_limitsales">
+            <h3 class="index-tit">限时抢购<span class="green-line"></span></h3>
+            <div class="morebox">
+                <a title="更多" class="fr plate-more" id="tuijian_more" href="http://daoju.qq.com/mall/tao.shtml?flag=lol">更多></a>
+            </div>                
+            <ul>
+                <li>
+                    <div class="likediv">
+                        <p class="bg_sp zj">直降<b>41.48元</b></p>
+                        <a target="_blank" href="/lol/item/6048.shtml?ADTAG=innercop.lol.SY.sales_new">
+                            <img width="121" height="222" src="../../static/images/2-40007-9.jpg">
+                        </a>   
+                        <p class="djname">    
+                            <a target="_blank" href="/lol/item/6048.shtml"><em>星之守护者 迦娜</em></a>
+                        </p>  
+                        <p class="orange"><b><strong>37.52</strong></b>元<span class="ml10 gray">(<s>79QB</s>)</span></p>
+                        <p>剩余时间：
+                            <b class="left_time" start="2017-10-13 20:00:00" end="2017-10-19 23:59:59"></b>
+                        </p>          
+                        <a href="javascript:;" class="btn-com btn-buy buy-now" data-seqid="6048" >立即购买</a>
+                    </div>      
+                </li>
+                <li>
+                    <div class="likediv">
+                        <p class="bg_sp zj">直降<b>15.75元</b></p>
+                        <a target="_blank" href="/lol/item/990.shtml?ADTAG=innercop.lol.SY.sales_new">
+                            <img width="121" height="222" src="../../static/images/1-68-9.jpg">
+                        </a>   
+                        <p class="djname">    
+                            <a target="_blank" href="/lol/item/990.shtml"><em>机械公敌 兰博</em></a>
+                        </p>  
+                        <p class="orange"><b><strong>14.25</strong></b>元<span class="ml10 gray">(<s>30QB</s>)</span></p>
+                        <p>剩余时间：
+                            <b class="left_time" start="2017-10-13 20:00:00" end="2017-10-19 23:59:59"></b>
+                        </p>          
+                        <a href="javascript:;" class="btn-com btn-buy buy-now" data-seqid="990" >立即购买</a>
+                    </div>      
+                </li>
+                <li>
+                    <div class="likediv">
+                        <p class="bg_sp zj">直降<b>5.25元</b></p>
+                        <a target="_blank" href="/lol/item/1026.shtml?ADTAG=innercop.lol.SY.sales_new">
+                            <img width="121" height="222" src="../../static/images/1-18-9.jpg">
+                        </a>   
+                        <p class="djname">    
+                            <a target="_blank" href="/lol/item/1026.shtml"><em>麦林炮手 崔丝塔娜</em></a>
+                        </p>  
+                        <p class="orange"><b><strong>4.75</strong></b>元<span class="ml10 gray">(<s>10QB</s>)</span></p>
+                        <p>剩余时间：
+                            <b class="left_time" start="2017-10-13 20:00:00" end="2017-10-19 23:59:59"></b>
+                        </p>          
+                        <a href="javascript:;" class="btn-com btn-buy buy-now" data-seqid="1026" >立即购买</a>
+                    </div>      
+                </li>
+                <li>
+                    <div class="likediv">
+                        <p class="bg_sp zj">直降<b>10.50元</b></p>
+                        <a target="_blank" href="/lol/item/1041.shtml?ADTAG=innercop.lol.SY.sales_new">
+                            <img width="121" height="222" src="../../static/images/1-3-9.jpg">
+                        </a>   
+                        <p class="djname">    
+                            <a target="_blank" href="/lol/item/1041.shtml"><em>正义巨像 加里奥</em></a>
+                        </p>  
+                        <p class="orange"><b><strong>9.50</strong></b>元<span class="ml10 gray">(<s>20QB</s>)</span></p>
+                        <p>剩余时间：
+                            <b class="left_time" start="2017-10-13 20:00:00" end="2017-10-19 23:59:59"></b>
+                        </p>          
+                        <a href="javascript:;" class="btn-com btn-buy buy-now" data-seqid="1041" >立即购买</a>
+                    </div>      
+                </li>
+            </ul>
+        </div>
+        <!--  -->
+        <script type="tmpl/text" id="tmpl_index_left_limitsales_time">
+        <em class="red">${day}</em>天<em class="red">${hour}</em>时<em class="red">${minite}</em>分<em class="red">${second}</em>秒
+        </script>
+        <!--  -->
+        <!--  -->
+    </div>
+</div>
 </div>
 
 <!-- 新版介绍 -->
-<div id="lol_guide" class="newpage" style="display:none;">
-    <div class="pagebg"></div>
-	<div class="newmain">
-        <a href="javascript:closepage();" class="new-close">关闭</a>
-        <div class="mcont mcont1">
-            <div class="new-intro">
-                <img src="picture/new1.png" class="newimg" width="782" height="602" alt="新版介绍">
-            </div>
-            <h3 class="new-tit">购买新增按英雄查看皮肤</h3>
-            <p class="new-tip">选择英雄分类，进入后可查看对应英雄全部在售皮肤，缺一不可</p>
-            <ul class="cirlist">
-                <li class="mr cur"></li>
-                <li></li>                
-            </ul>
-            <a href="javascript:pagenext();" class="btn-next" id="page_next">下一步</a>
-            <a href="javascript:closepage();" class="link-next">跳过，我都知道了</a>  
-        </div>
-        <div class="mcont mcont2" style="display:none;">
-            <div class="new-intro">
-                <img src="picture/new2.png" class="newimg" width="782" height="602" alt="新版介绍">
-            </div>
-            <h3 class="new-tit">购买新增按英雄查看皮肤</h3>
-            <p class="new-tip">选择英雄分类，进入后可查看对应英雄全部在售皮肤，缺一不可</p>
-            <ul class="cirlist clearfix">
-                <li class="mr"></li>
-                <li class="cur"></li>
-            </ul>
-            <a href="javascript:closepage();" class="btn-close" id="page_close">进入新版</a> 
-        </div>      
-    </div>
-</div>
 <!-- 底部帮助栏 -->
 <div class="foot_area">
     <div class="bx_qa wrap clearfix">
@@ -1100,76 +456,76 @@
 <!-- 加入购物车 -->
 <table cellspacing="0" cellpadding="0" border="0" class="boxy-wrapper fixed" id="popup_footer_skuselector" style="display:none;">
     <tbody>
-    <tr>
-        <td class="boxy-top-left"></td>
-        <td class="boxy-top"></td><td class="boxy-top-right"></td>
-    </tr>
-    <tr>
-        <td class="boxy-left"></td>
-        <td class="boxy-inner">
-            <div class="title-bar">
-                <h2>加入购物车</h2>
-                <a href="#" class="close"> </a>
-            </div>
-            <div style="display: block;padding: 0px 15px 0px 15px;" class="boxy-content" id="blk_popup_footer_skuselector_main"></div>
-            <script type="tmpl/text" id="tmpl_popup_footer_skuselector_main">
-                	
-                	<input type="hidden" name="buynum" id="inpt_popup_footer_skuselector_currid" value="${curGoods.code}">
-                	<div class="goods-img fl">
-                        <div classlass="pop-djimg" src="picture/${curgoods.pic}" width="100" height="71" alt="${cur="goods-img-bg popimg pr">
-                            <img cGoods.name}">
-                        </div>
-                        <h2 class="goods-name">${curGoods.name}</h2>
-                    </div>
-                    <div class="goodsbuy-box fl" style="padding-bottom: 15px;">
-                        <div class="comico goods-bg popbg">
-                            <dl>
-                                <dt>价格：</dt>
-                                <dd class="fl">
-                                    <em id="tag_status" style="display:none"></em><span class="goods-price orange">${curGoods.curPrice}</span><span class="orange">Q币</span>
-                                </dd>
-                            </dl>
-                        </div>
-                        <dl class="pt5" id="blk_popup_footer_skuselector_stime">
-                            <dt>期限：</dt>
-                        	
-                           
-                           
-                        </dl>
-                        <dl class="pt5" style="display:none;">
-                            <dt class="lt36">数量：</dt>
-                            <dd>
-                                <div class="goods-amount fl">
-                                    <a href="javascript:void(0);" id="btn_popup_detail_skuselector_minus" class="goods-minus">-</a>
-                                    <input name="buy_num" id="inpt_popup_detail_skuselector_buynum" max_num="${curGoods.limitPerOrder}" type="text" value="1">
-                                    <a href="javascript:void(0);" id="btn_popup_detail_skuselector_plus"  class="goods-plus">+</a>
-                                </div>
-                                <span class="lt36">件 （单Q限购${curGoods.limitPerOrder}件）</span>
-                        	</dd>
-                        </dl>
-                        
-						<dl>
-							<dt>是否支持购物点购买：</dt>
-							
-						</dl>
-						<dl>
-							<dt>是否返还购物点：</dt>
-							
-						</dl>
-                        <span class="clearfix">
-                            <a href="javascript:;" id="btn_popup_footer_skuselector_addcart" class="fl btnico btn-goods-cart btn-com clearfix" title="确定">确定</a>
-                        </span>
-                    </div>
-                    
+        <tr>
+            <td class="boxy-top-left"></td>
+            <td class="boxy-top"></td><td class="boxy-top-right"></td>
+        </tr>
+        <tr>
+            <td class="boxy-left"></td>
+            <td class="boxy-inner">
+                <div class="title-bar">
+                    <h2>加入购物车</h2>
+                    <a href="#" class="close"> </a>
+                </div>
+                <div style="display: block;padding: 0px 15px 0px 15px;" class="boxy-content" id="blk_popup_footer_skuselector_main"></div>
+                <script type="tmpl/text" id="tmpl_popup_footer_skuselector_main">
+
+                <input type="hidden" name="buynum" id="inpt_popup_footer_skuselector_currid" value="${curGoods.code}">
+                <div class="goods-img fl">
+                <div classlass="pop-djimg" src="../../static/images/${curgoods.pic}" width="100" height="71" alt="${cur="goods-img-bg popimg pr">
+                <img cGoods.name}">
+                </div>
+                <h2 class="goods-name">${curGoods.name}</h2>
+                </div>
+                <div class="goodsbuy-box fl" style="padding-bottom: 15px;">
+                <div class="comico goods-bg popbg">
+                <dl>
+                <dt>价格：</dt>
+                <dd class="fl">
+                <em id="tag_status" style="display:none"></em><span class="goods-price orange">${curGoods.curPrice}</span><span class="orange">Q币</span>
+                </dd>
+                </dl>
+                </div>
+                <dl class="pt5" id="blk_popup_footer_skuselector_stime">
+                <dt>期限：</dt>
+
+
+
+                </dl>
+                <dl class="pt5" style="display:none;">
+                <dt class="lt36">数量：</dt>
+                <dd>
+                <div class="goods-amount fl">
+                <a href="javascript:void(0);" id="btn_popup_detail_skuselector_minus" class="goods-minus">-</a>
+                <input name="buy_num" id="inpt_popup_detail_skuselector_buynum" max_num="${curGoods.limitPerOrder}" type="text" value="1">
+                <a href="javascript:void(0);" id="btn_popup_detail_skuselector_plus"  class="goods-plus">+</a>
+                </div>
+                <span class="lt36">件 （单Q限购${curGoods.limitPerOrder}件）</span>
+                </dd>
+                </dl>
+
+                <dl>
+                <dt>是否支持购物点购买：</dt>
+
+                </dl>
+                <dl>
+                <dt>是否返还购物点：</dt>
+
+                </dl>
+                <span class="clearfix">
+                <a href="javascript:;" id="btn_popup_footer_skuselector_addcart" class="fl btnico btn-goods-cart btn-com clearfix" title="确定">确定</a>
+                </span>
+                </div>
+
                 </script>
-        </td>
-        <td class="boxy-right"></td>
-    </tr>
-    <tr>
-        <td class="boxy-bottom-left"></td>
-        <td class="boxy-bottom"></td>
-        <td class="boxy-bottom-right"></td>
-    </tr>
+            </td>
+            <td class="boxy-right"></td>
+        </tr>
+        <tr>
+            <td class="boxy-bottom-left"></td>
+            <td class="boxy-bottom"></td>
+            <td class="boxy-bottom-right"></td>
+        </tr>
     </tbody>
 </table>
 
@@ -1184,206 +540,206 @@
 <script type="text/javascript" src="js/milo.js"></script>
 
 <script type="text/javascript">
-    if(/cart\.shtml/.test(window.location.pathname)){//购物车页面要用1.4.2
-        document.write('<scr'+'ipt src="http://ossweb-img.qq.com/images/js/jquery/jquery-1.4.2.min.js"></scr'+'ipt>');
-        document.write('<scr'+'ipt src="http://ossweb-img.qq.com/images/gameshop/ui/dialog/boxymin.js"></scr'+'ipt>');
-    }
+if(/cart\.shtml/.test(window.location.pathname)){//购物车页面要用1.4.2
+    document.write('<scr'+'ipt src="http://ossweb-img.qq.com/images/js/jquery/jquery-1.4.2.min.js"></scr'+'ipt>');
+    document.write('<scr'+'ipt src="http://ossweb-img.qq.com/images/gameshop/ui/dialog/boxymin.js"></scr'+'ipt>');
+}
 </script>
 <script type="text/javascript" src="js/global.js"></script>
 <script type="text/javascript" src="js/biz.js"></script>
 
 <script type="text/javascript">
 
-    milo.ready(function() {
+milo.ready(function() {
 
-        need('util.jquery-min', function () {
+    need('util.jquery-min', function () {
 
-            if(!/cart\.shtml/.test(window.location.pathname)){
-                $('#blk_nav_cate').css('visibility','visible');
-            } else{
-                $('#blk_nav_cate').hide();
-            }
+        if(!/cart\.shtml/.test(window.location.pathname)){
+            $('#blk_nav_cate').css('visibility','visible');
+        } else{
+            $('#blk_nav_cate').hide();
+        }
 
-            var params = function (str, sep) {
-                sep = sep || "&";
-                var paramMap = {};
-                if (str.length > 0) {
-                    if (str.split("?").length > 1) {
-                        var paramArray = str.split("?")[1].split(sep);
-                    } else {
-                        var paramArray = str.split(sep);
-                    }
-                    for (var i = 0; i < paramArray.length; ++i) {
-                        var paramPair = paramArray[i].split("=");
-                        paramPair[0] = unescape(paramPair[0]);
-                        paramPair[1] = paramPair[1] ? unescape(paramPair[1]) : "";
-                        if (!paramMap[paramPair[0]]) {
-                            paramMap[paramPair[0]] = paramPair[1].replace(/\'|\"/g, "");
-                        }
-                    }
-                }
-                return paramMap;
-            };
-
-            var search = location.search;
-            var url = location.href;
-            var biz = typeof(globalvar) != "undefined" ? globalvar.flag : "daoju";
-            if (typeof(pgvMain) == 'function') {
-                if (search != "") {
-                    var params = params(search);
-                    var uri = url.split("?");
-                    var parts = location.pathname.split(".");
-                    var pop = parts.length > 1 ? parts.pop() : "shtml";
-                    var _params = "_";
-                    $.each(params, function (k, v) {
-                        _params += $.trim(k) + "_" + $.trim(v);
-                    });
-                    var new_url = parts.join(".") + _params + "." + pop;
-                    pgvMain && pgvMain({virtualURL: new_url, reserved2: biz});
-                }
-                else {
-                    pgvMain && pgvMain({reserved2: biz});
-                }
-            }
-
-            //上报
-            $('.js_btn_click_report').click(function () {
-                var tag = $(this).attr('report_tag');
-                tag && pgvSendClick({hottag: tag});
-            });
-
-
-
-            window.mallAlert = function(msg, success){
-                milo.loader.set({charset: "gbk"});
-                milo.loader.loadCSS('http://ossweb-img.qq.com/images/js/milo/daoju/hx/style/order.css');
-                need(["daoju.hx.html.order.alertPanelTpl"], function (alertTpl) {
-                    if ($("#alertPanelTpl").size() == 0) {
-                        $("body").append(alertTpl.html);
-                    }
-                    alertTpl.callback(msg, 'alert', success);
-                });
-            };
-            window.mallConfirm = function(msg, success, failure){
-                milo.loader.set({charset: "gbk"});
-                milo.loader.loadCSS('http://ossweb-img.qq.com/images/js/milo/daoju/hx/style/order.css');
-                need(["daoju.hx.html.order.alertPanelTpl"], function (alertTpl) {
-                    if ($("#confirmPanelTpl").size() == 0) {
-                        $("body").append(alertTpl.html);
-                    }
-                    alertTpl.callback(msg, 'confirm', success, failure);
-                });
-            };
-            window.mallPopupFunc = function(selector){
-                var popupBlock = $(selector);
-                $('#mask_footer_popup').height($(document).height()).show();
-                popupBlock.show();
-                popupBlock.css({
-                    'z-index': 1001,
-                    'visibility': 'visible',
-                    'left': ($(window).width()-popupBlock.outerWidth(true))/2,
-                    'top': ($(window).height()-popupBlock.outerHeight(true))/2
-                });
-                popupBlock.off('click', '.close').on('click', '.close', function(){
-                    window.mallClosePopupFunc(popupBlock);
-                    return false;
-                });
-            };
-            window.mallClosePopupFunc = function(selector){
-                var popupBlock = $(selector);
-                popupBlock.hide();
-                $('#mask_footer_popup').hide();
-            };
-            window.mallAddCart = function(iseqid, num, callback){
-                var match =  /rec_info=([^&]+)/i.exec(window.location.search);
-                var rec_info = match ? match[1] : '';
-                var src_pos;
-                var algorithm = window.algorithm||"";
-                var curPageType = 5;
-                if(window.ClickStream){
-                    algorithm = 1000;
-                    src_pos = window.ClickStream.getTrace().posId || '';
-                }else{
-                    src_pos = milo.cookie.get("posId")||window.posId||"";
-                }
-                var params = {
-                    "flag" : window.globalvar.flag,
-                    "iSeqId" : iseqid,
-                    "iNum" : num,
-                    "op":"add",
-                    "type":"json",
-                    "src_pos":src_pos,
-                    "cur_pos":curPageType,
-                    "page_type":curPageType,
-                    "algorithm":algorithm,
-                    'rec_info':rec_info
-                };
-                var loadFunc = function(){
-                    $.getScript('http://apps.game.qq.com/cgi-bin/daoju/v3/api/cart/v4/cart.cgi?'+$.param(params), function(){
-                        var json = JSON_cart;
-
-                        if(json.iRet=="-5005"){
-                            JSON_cart.sMsg = JSON_cart.sMsg || '抱歉, 购物车已满！';
-                        }
-
-                        callback&&callback(json);
-                    });
-                };
-                need("biz.login-min", function(login){
-                    login.checkLogin(loadFunc, function(){
-                        login.init({
-                            needReloadPage:false
-                        });
-                        login.login(loadFunc);
-                    });
-                });
-            };
-            window.mallSkuSelector = function(iSeqId, sPackageId){
-
-                if(window.goodsInfos && window.goodsInfos[iSeqId]){
-                    window.mallRenderSkuSelector(iSeqId, window.goodsInfos[iSeqId]);
+        var params = function (str, sep) {
+            sep = sep || "&";
+            var paramMap = {};
+            if (str.length > 0) {
+                if (str.split("?").length > 1) {
+                    var paramArray = str.split("?")[1].split(sep);
                 } else {
-                    var option = {
-                        appSource: 'pc',                    // 请求来源
-                        appSourceDetail: 'pc_'+window.globalvar.flag+'_revison',  // 请求来源的版本
-                        channel: 1001,                      // 渠道，默认1001
-                        storagetype:6501,                   // 存储类型
-                        plat:0,                             // 平台，0 ios ，1android
-                        output_format: 'jsonp',              // 接口返回类型，json还是jsonp
-                        biz: window.globalvar.flag,                         // 业务
-                        view: 'biz_portal',        // 接口请求类型，全部 biz_portal,大类，biz_cate,子类：biz_sub_cate
-                        iGoodsId: iSeqId,                   // 道具ID
-                        page: 1                        // 当前页码
-                    };
-
-                    $.getScript('http://apps.game.qq.com/daoju/v3/api/hx/goods/api/list/v54/GoodsListApp.php?' + $.param(option), function () {
-                        var rsp = window.ogoods_list_api ;
-                        if (rsp.ret != 0) {
-                            window.mallAlert('抱歉, 网络繁忙请稍后再试！');
-                        } else if (!rsp.data || !rsp.data.goods || !rsp.data.goods.length) {
-                            window.mallAlert('抱歉, 该道具尚未出售或已下架！');
-                        } else {
-                            var curGoods = rsp.data.goods[0];
-
-                            // 找出当前有效期的道具
-                            for(var i =0, len = curGoods.valiDate.length; i < len; i++) {
-                                if(curGoods.valiDate[i].code == curGoods.propId){
-                                    // 使用折扣价，没折扣的时候，折扣价就是原价
-                                    if(curGoods.valiDate[i].waterMark.toString().indexOf('9') > -1){
-                                        curGoods.valiDate[i].curPrice =   curGoods.valiDate[i].rushPrice;
-                                    }
-                                    curGoods.valiDate[i].curPrice /= 100;
-
-                                    $.extend(curGoods, curGoods.valiDate[i]);
-                                    break;
-                                }
-                            }
-                            window.mallRenderSkuSelector(iSeqId, curGoods);
-                        }
-                    });
+                    var paramArray = str.split(sep);
                 }
-            };
-            window.mallRenderSkuSelector = function(iSeqId, curGoods){
+                for (var i = 0; i < paramArray.length; ++i) {
+                    var paramPair = paramArray[i].split("=");
+                    paramPair[0] = unescape(paramPair[0]);
+                    paramPair[1] = paramPair[1] ? unescape(paramPair[1]) : "";
+                    if (!paramMap[paramPair[0]]) {
+                        paramMap[paramPair[0]] = paramPair[1].replace(/\'|\"/g, "");
+                    }
+                }
+            }
+            return paramMap;
+        };
+
+        var search = location.search;
+        var url = location.href;
+        var biz = typeof(globalvar) != "undefined" ? globalvar.flag : "daoju";
+        if (typeof(pgvMain) == 'function') {
+            if (search != "") {
+                var params = params(search);
+                var uri = url.split("?");
+                var parts = location.pathname.split(".");
+                var pop = parts.length > 1 ? parts.pop() : "shtml";
+                var _params = "_";
+                $.each(params, function (k, v) {
+                    _params += $.trim(k) + "_" + $.trim(v);
+                });
+                var new_url = parts.join(".") + _params + "." + pop;
+                pgvMain && pgvMain({virtualURL: new_url, reserved2: biz});
+            }
+            else {
+                pgvMain && pgvMain({reserved2: biz});
+            }
+        }
+
+//上报
+$('.js_btn_click_report').click(function () {
+    var tag = $(this).attr('report_tag');
+    tag && pgvSendClick({hottag: tag});
+});
+
+
+
+window.mallAlert = function(msg, success){
+    milo.loader.set({charset: "gbk"});
+    milo.loader.loadCSS('http://ossweb-img.qq.com/images/js/milo/daoju/hx/style/order.css');
+    need(["daoju.hx.html.order.alertPanelTpl"], function (alertTpl) {
+        if ($("#alertPanelTpl").size() == 0) {
+            $("body").append(alertTpl.html);
+        }
+        alertTpl.callback(msg, 'alert', success);
+    });
+};
+window.mallConfirm = function(msg, success, failure){
+    milo.loader.set({charset: "gbk"});
+    milo.loader.loadCSS('http://ossweb-img.qq.com/images/js/milo/daoju/hx/style/order.css');
+    need(["daoju.hx.html.order.alertPanelTpl"], function (alertTpl) {
+        if ($("#confirmPanelTpl").size() == 0) {
+            $("body").append(alertTpl.html);
+        }
+        alertTpl.callback(msg, 'confirm', success, failure);
+    });
+};
+window.mallPopupFunc = function(selector){
+    var popupBlock = $(selector);
+    $('#mask_footer_popup').height($(document).height()).show();
+    popupBlock.show();
+    popupBlock.css({
+        'z-index': 1001,
+        'visibility': 'visible',
+        'left': ($(window).width()-popupBlock.outerWidth(true))/2,
+        'top': ($(window).height()-popupBlock.outerHeight(true))/2
+    });
+    popupBlock.off('click', '.close').on('click', '.close', function(){
+        window.mallClosePopupFunc(popupBlock);
+        return false;
+    });
+};
+window.mallClosePopupFunc = function(selector){
+    var popupBlock = $(selector);
+    popupBlock.hide();
+    $('#mask_footer_popup').hide();
+};
+window.mallAddCart = function(iseqid, num, callback){
+    var match =  /rec_info=([^&]+)/i.exec(window.location.search);
+    var rec_info = match ? match[1] : '';
+    var src_pos;
+    var algorithm = window.algorithm||"";
+    var curPageType = 5;
+    if(window.ClickStream){
+        algorithm = 1000;
+        src_pos = window.ClickStream.getTrace().posId || '';
+    }else{
+        src_pos = milo.cookie.get("posId")||window.posId||"";
+    }
+    var params = {
+        "flag" : window.globalvar.flag,
+        "iSeqId" : iseqid,
+        "iNum" : num,
+        "op":"add",
+        "type":"json",
+        "src_pos":src_pos,
+        "cur_pos":curPageType,
+        "page_type":curPageType,
+        "algorithm":algorithm,
+        'rec_info':rec_info
+    };
+    var loadFunc = function(){
+        $.getScript('http://apps.game.qq.com/cgi-bin/daoju/v3/api/cart/v4/cart.cgi?'+$.param(params), function(){
+            var json = JSON_cart;
+
+            if(json.iRet=="-5005"){
+                JSON_cart.sMsg = JSON_cart.sMsg || '抱歉, 购物车已满！';
+            }
+
+            callback&&callback(json);
+        });
+    };
+    need("biz.login-min", function(login){
+        login.checkLogin(loadFunc, function(){
+            login.init({
+                needReloadPage:false
+            });
+            login.login(loadFunc);
+        });
+    });
+};
+window.mallSkuSelector = function(iSeqId, sPackageId){
+
+    if(window.goodsInfos && window.goodsInfos[iSeqId]){
+        window.mallRenderSkuSelector(iSeqId, window.goodsInfos[iSeqId]);
+    } else {
+        var option = {
+appSource: 'pc',                    // 请求来源
+appSourceDetail: 'pc_'+window.globalvar.flag+'_revison',  // 请求来源的版本
+channel: 1001,                      // 渠道，默认1001
+storagetype:6501,                   // 存储类型
+plat:0,                             // 平台，0 ios ，1android
+output_format: 'jsonp',              // 接口返回类型，json还是jsonp
+biz: window.globalvar.flag,                         // 业务
+view: 'biz_portal',        // 接口请求类型，全部 biz_portal,大类，biz_cate,子类：biz_sub_cate
+iGoodsId: iSeqId,                   // 道具ID
+page: 1                        // 当前页码
+};
+
+$.getScript('http://apps.game.qq.com/daoju/v3/api/hx/goods/api/list/v54/GoodsListApp.php?' + $.param(option), function () {
+    var rsp = window.ogoods_list_api ;
+    if (rsp.ret != 0) {
+        window.mallAlert('抱歉, 网络繁忙请稍后再试！');
+    } else if (!rsp.data || !rsp.data.goods || !rsp.data.goods.length) {
+        window.mallAlert('抱歉, 该道具尚未出售或已下架！');
+    } else {
+        var curGoods = rsp.data.goods[0];
+
+// 找出当前有效期的道具
+for(var i =0, len = curGoods.valiDate.length; i < len; i++) {
+    if(curGoods.valiDate[i].code == curGoods.propId){
+// 使用折扣价，没折扣的时候，折扣价就是原价
+if(curGoods.valiDate[i].waterMark.toString().indexOf('9') > -1){
+    curGoods.valiDate[i].curPrice =   curGoods.valiDate[i].rushPrice;
+}
+curGoods.valiDate[i].curPrice /= 100;
+
+$.extend(curGoods, curGoods.valiDate[i]);
+break;
+}
+}
+window.mallRenderSkuSelector(iSeqId, curGoods);
+}
+});
+}
+};
+window.mallRenderSkuSelector = function(iSeqId, curGoods){
 //        if(json.result != 0){
 //            window.mallAlert(json.msg);
 //            return false;
@@ -1394,10 +750,10 @@
 //            });
 //        }
 
-                need(["util.template"],function(template){
-                    var $pageBlock = $('#blk_popup_footer_skuselector_main');
-                    $pageBlock.html(template.parseDOMTemplate('tmpl_popup_footer_skuselector_main').process(curGoods, 'curGoods'));
-                    //道具期限
+need(["util.template"],function(template){
+    var $pageBlock = $('#blk_popup_footer_skuselector_main');
+    $pageBlock.html(template.parseDOMTemplate('tmpl_popup_footer_skuselector_main').process(curGoods, 'curGoods'));
+//道具期限
 //                    var dateTime = {};
 //                    $.each(dateTypes_, function(){
 //                        dateTime[this.iTime] = this.sTimeDesc;
@@ -1405,459 +761,459 @@
 //                    $('#blk_popup_footer_skuselector_stime a > span').each(function(){
 //                        $(this).html(dateTime[$(this).attr('attr_stime')] || '');
 //                    });
-                    window.mallPopupFunc('#popup_footer_skuselector');
-                    //sku选择
+window.mallPopupFunc('#popup_footer_skuselector');
+//sku选择
 
-                    //购买数量
-                    $('#btn_popup_detail_skuselector_minus').click(function(){
-                        var $inpt = $('#inpt_popup_detail_skuselector_buynum');
-                        var num = $inpt.val() - 1;
-                        $inpt.val(num);
-                        $inpt.trigger('keyup');
-                    });
-                    $('#btn_popup_detail_skuselector_plus').click(function(){
-                        var $inpt = $('#inpt_popup_detail_skuselector_buynum');
-                        var num = $inpt.val() + 1;
-                        $inpt.val(num);
-                        $inpt.trigger('keyup');
-                    });
-                    $('#inpt_popup_detail_skuselector_buynum').keyup(function(){
-                        var num = parseInt($(this).val()) || 1;
-                        var maxnum = $(this).attr('max_num') || 1;
-                        if(num > maxnum){
-                            window.mallAlert('该道具最多购买'+maxnum+'件');
-                        }
-                        num = Math.min(num, maxnum);
-                        num = Math.max(num, 1);
-                        $(this).val(num);
-                    });
-                    $('#btn_popup_footer_skuselector_addcart').click(function(){
-                        var iSeqId = $('#inpt_popup_footer_skuselector_currid').val();
-                        var num = $('#inpt_popup_detail_skuselector_buynum').val();
+//购买数量
+$('#btn_popup_detail_skuselector_minus').click(function(){
+    var $inpt = $('#inpt_popup_detail_skuselector_buynum');
+    var num = $inpt.val() - 1;
+    $inpt.val(num);
+    $inpt.trigger('keyup');
+});
+$('#btn_popup_detail_skuselector_plus').click(function(){
+    var $inpt = $('#inpt_popup_detail_skuselector_buynum');
+    var num = $inpt.val() + 1;
+    $inpt.val(num);
+    $inpt.trigger('keyup');
+});
+$('#inpt_popup_detail_skuselector_buynum').keyup(function(){
+    var num = parseInt($(this).val()) || 1;
+    var maxnum = $(this).attr('max_num') || 1;
+    if(num > maxnum){
+        window.mallAlert('该道具最多购买'+maxnum+'件');
+    }
+    num = Math.min(num, maxnum);
+    num = Math.max(num, 1);
+    $(this).val(num);
+});
+$('#btn_popup_footer_skuselector_addcart').click(function(){
+    var iSeqId = $('#inpt_popup_footer_skuselector_currid').val();
+    var num = $('#inpt_popup_detail_skuselector_buynum').val();
 
-                        window.mallAddCart(iSeqId, num, function(json){
-                            window.mallClosePopupFunc('#popup_footer_skuselector');
-                            if(json.iRet == 0){
-                                window.mallConfirm({
-                                    content: '道具已成功加入购物车',
-                                    leftBtnText: '继续购物',
-                                    rightBtnText: '去购物车结算',
-                                    leftBtnBgColor:'#bbb',
-                                    rightBtnBgColor: '#f74a4a',
-                                    rightBtnCls: 'dj_bt_com'
-                                }, function () {
+    window.mallAddCart(iSeqId, num, function(json){
+        window.mallClosePopupFunc('#popup_footer_skuselector');
+        if(json.iRet == 0){
+            window.mallConfirm({
+                content: '道具已成功加入购物车',
+                leftBtnText: '继续购物',
+                rightBtnText: '去购物车结算',
+                leftBtnBgColor:'#bbb',
+                rightBtnBgColor: '#f74a4a',
+                rightBtnCls: 'dj_bt_com'
+            }, function () {
 
-                                }, function () {
-                                    window.location.href = $('.btn-cart').attr('href'); // 跳转购物车
-                                });
-                                window.mallResetCartNum();
-                            }else {
-                                if(json.sMsg.indexOf('购物车已满') > -1){
-                                    json.sMsg += '&nbsp;&nbsp;<a target="_blank" style="color:#1c8bde;" href=" /lol/revision/cart.shtml?ADTAG=innercop.lol.SY.paylist_new">查看购物车</a>';
-                                }
-                                window.mallAlert(json.sMsg);
-                                window.mallPopupFunc('#popup_footer_skuselector');
-                            }
-                        });
-                    });
+            }, function () {
+window.location.href = $('.btn-cart').attr('href'); // 跳转购物车
+});
+            window.mallResetCartNum();
+        }else {
+            if(json.sMsg.indexOf('购物车已满') > -1){
+                json.sMsg += '&nbsp;&nbsp;<a target="_blank" style="color:#1c8bde;" href=" /lol/revision/cart.shtml?ADTAG=innercop.lol.SY.paylist_new">查看购物车</a>';
+            }
+            window.mallAlert(json.sMsg);
+            window.mallPopupFunc('#popup_footer_skuselector');
+        }
+    });
+});
 
-                    $stimes = $('#blk_popup_footer_skuselector_stime a');
+$stimes = $('#blk_popup_footer_skuselector_stime a');
 
-                    if($stimes.length > 1) {
-                        $stimes.click(function () {
-                            var iSeqId = $(this).find('span').attr('attr_iseqid');
-                            window.mallSkuSelector(iSeqId);
-                        });
-                    }
-                });
-            };
-            /**
-             * 添加浏览历史
-             * @param {number} id 道具的iSeqId
-             * @param {string} name 道具的名称
-             * @param {string} pic 道具的图片地址
-             * @param {number} qb 道具的价格，qb为单位
-             * @return {null}  无
-             */
+if($stimes.length > 1) {
+    $stimes.click(function () {
+        var iSeqId = $(this).find('span').attr('attr_iseqid');
+        window.mallSkuSelector(iSeqId);
+    });
+}
+});
+};
+/**
+* 添加浏览历史
+* @param {number} id 道具的iSeqId
+* @param {string} name 道具的名称
+* @param {string} pic 道具的图片地址
+* @param {number} qb 道具的价格，qb为单位
+* @return {null}  无
+*/
 
-            window.mallAddLAG = function(id,name,pic,qb){
-                var obj = {"id":id,"name":encodeURIComponent(name),"pic":pic,"qb":qb,"flag":window.globalvar.flag};
-                var lags = window.mallGetLAG()||[];
-                var exists = false;
-                $.each(lags,function(k,v){
-                    if(id==v.id){
-                        exists = true;
-                        return false;
-                    }
-                });
-                if(!exists){
-                    lags.push(obj);
-                }
+window.mallAddLAG = function(id,name,pic,qb){
+    var obj = {"id":id,"name":encodeURIComponent(name),"pic":pic,"qb":qb,"flag":window.globalvar.flag};
+    var lags = window.mallGetLAG()||[];
+    var exists = false;
+    $.each(lags,function(k,v){
+        if(id==v.id){
+            exists = true;
+            return false;
+        }
+    });
+    if(!exists){
+        lags.push(obj);
+    }
 
-                if(lags.length>4){
-                    lags.shift();
-                }
-                need(["util.json2"], function(){
-                    var str = JSON.stringify(lags);
-                    milo.cookie.set(window.globalvar.flag+"_lag",str,30*24*60*60,document.domain, "/"+window.globalvar.flag+"/");
-                });
-            };
-            /**
-             * 清空浏览历史
-             * @return {null}  无
-             */
-            window.mallClearLAG = function(){
-                milo.cookie.set(window.globalvar.flag+"_lag",'',-1,document.domain, "/"+window.globalvar.flag+"/");
-            };
-            /**
-             * 获取浏览道具的数据列表
-             * @return {object}  浏览道具的信息列表
-             */
-            window.mallGetLAG = function(){
-                try {
-                    var lags = $.parseJSON(milo.cookie.get(window.globalvar.flag + "_lag"));
-                    // 解码
-                    for(var i = 0 , len = lags.length; i < len ; i++){
-                        lags[i].name = decodeURIComponent(lags[i].name);
-                    }
-                    return lags;
-                } catch (e){
-                    return [];
-                }
+    if(lags.length>4){
+        lags.shift();
+    }
+    need(["util.json2"], function(){
+        var str = JSON.stringify(lags);
+        milo.cookie.set(window.globalvar.flag+"_lag",str,30*24*60*60,document.domain, "/"+window.globalvar.flag+"/");
+    });
+};
+/**
+* 清空浏览历史
+* @return {null}  无
+*/
+window.mallClearLAG = function(){
+    milo.cookie.set(window.globalvar.flag+"_lag",'',-1,document.domain, "/"+window.globalvar.flag+"/");
+};
+/**
+* 获取浏览道具的数据列表
+* @return {object}  浏览道具的信息列表
+*/
+window.mallGetLAG = function(){
+    try {
+        var lags = $.parseJSON(milo.cookie.get(window.globalvar.flag + "_lag"));
+// 解码
+for(var i = 0 , len = lags.length; i < len ; i++){
+    lags[i].name = decodeURIComponent(lags[i].name);
+}
+return lags;
+} catch (e){
+    return [];
+}
 
-            };
-            //购物车数量
-            window.mallResetCartNum = function(){
-                var cart_params = {
-                    flag: window.globalvar.flag,
-                    op: 'show',
-                    type: 'json'
-                };
-                $.getScript('http://apps.game.qq.com/cgi-bin/daoju/v3/api/cart/v4/cart.cgi?'+$.param(cart_params), function(){
-                    var json = JSON_cart;
-                    if(json.iRet == 0){
-                        $('#cartNum').html('（'+(json.data ? json.data.length: 0)+'）');
-                    }
-                });
-            };
+};
+//购物车数量
+window.mallResetCartNum = function(){
+    var cart_params = {
+        flag: window.globalvar.flag,
+        op: 'show',
+        type: 'json'
+    };
+    $.getScript('http://apps.game.qq.com/cgi-bin/daoju/v3/api/cart/v4/cart.cgi?'+$.param(cart_params), function(){
+        var json = JSON_cart;
+        if(json.iRet == 0){
+            $('#cartNum').html('（'+(json.data ? json.data.length: 0)+'）');
+        }
+    });
+};
 
-            need(["biz.login", "daoju.util"], function(login, util){
-                //登录
-                $('#btn_topbar_unlogin_login').click(function(){
-                    login.login();
-                });
-                $('#btn_topbar_logined_logout').click(function(){
-                    login.logout(function(){
-                        window.location.reload();
-                    });
-                });
-                login.checkLogin(function(){
-                    $('#unlogin').hide();
-                    $('#logined').show();
+need(["biz.login", "daoju.util"], function(login, util){
+//登录
+$('#btn_topbar_unlogin_login').click(function(){
+    login.login();
+});
+$('#btn_topbar_logined_logout').click(function(){
+    login.logout(function(){
+        window.location.reload();
+    });
+});
+login.checkLogin(function(){
+    $('#unlogin').hide();
+    $('#logined').show();
 //                    $('#login_qq_span').html(login.getUserUin());
-                    //用户信息
-                    var userinfoParams = {
-                        appid: 1003,
-                        optype: 'get_baseinfo',
-                        output_format: 'jsonp',
-                        view_type: 'account_info,social_info',
-                        p_tk: util.getACSRFToken(milo.cookie.get('skey')) || ''
-                    };
-                    $.getScript('http://apps.game.qq.com/daoju/v3/api/we/member/Member.php?'+$.param(userinfoParams), function(){
-                        var json = window.omember;
-                        if(json.ret == 0){
-                            var json = omember;
-                            json.data[0].iGrowthTrans = parseInt(json.data[0].iGrowth/100);
-                            json.data[0].iRichTrans = parseInt(json.data[0].iRich/100);
-                            json.data[0].iAttractTrans = parseInt(json.data[0].iAttract/100);
-                            json.data[0].sNextDegreeMinTrans = parseInt(json.data[0].sNextDegreeMin/100);
-                            json.data[0].iSaveTotalTrans = parseFloat(json.data[0].iSaveTotal/100).toFixed(2);
-                            json.data[0].sIcon = json.data[0].sIcon.replace(/_head\/\d+/i, '_head/128').replace(/&s=\d+/i, '&s=160');
+//用户信息
+var userinfoParams = {
+    appid: 1003,
+    optype: 'get_baseinfo',
+    output_format: 'jsonp',
+    view_type: 'account_info,social_info',
+    p_tk: util.getACSRFToken(milo.cookie.get('skey')) || ''
+};
+$.getScript('http://apps.game.qq.com/daoju/v3/api/we/member/Member.php?'+$.param(userinfoParams), function(){
+    var json = window.omember;
+    if(json.ret == 0){
+        var json = omember;
+        json.data[0].iGrowthTrans = parseInt(json.data[0].iGrowth/100);
+        json.data[0].iRichTrans = parseInt(json.data[0].iRich/100);
+        json.data[0].iAttractTrans = parseInt(json.data[0].iAttract/100);
+        json.data[0].sNextDegreeMinTrans = parseInt(json.data[0].sNextDegreeMin/100);
+        json.data[0].iSaveTotalTrans = parseFloat(json.data[0].iSaveTotal/100).toFixed(2);
+        json.data[0].sIcon = json.data[0].sIcon.replace(/_head\/\d+/i, '_head/128').replace(/&s=\d+/i, '&s=160');
 
-                            var nickName = util.subbyte(json.data[0].sName, 0, 12);
-                            $('#txt_topbar_logined_uin').text(nickName);
-                            $('#header_uin').text(nickName);
+        var nickName = util.subbyte(json.data[0].sName, 0, 12);
+        $('#txt_topbar_logined_uin').text(nickName);
+        $('#header_uin').text(nickName);
 
-                            $('#header_face_img').attr('src', json.data[0].sIcon);
-                            $('#con_face_img').attr('src', json.data[0].sIcon);
-                            $('#header_nick').html(json.data[0].sName);
-                            $('#con_nick').html(json.data[0].sName);
-                            $('#header_attract').html(json.data[0].iAttractTrans);
-                            $('#header_rich').html(json.data[0].iRichTrans);
-                            $('#header_gongxun').html(json.data[0].iGrowthTrans);
-                            //var next_level_needed = json.data[0].sNextDegreeMinTrans-json.data[0].iGrowthTrans;
-                            //$('#header_next_level_needed').html(next_level_needed);
-                            //$('#con_next_level_needed').html(next_level_needed);
-                            //$('#header_uin').html(LoginManager.getUserUin());
+        $('#header_face_img').attr('src', json.data[0].sIcon);
+        $('#con_face_img').attr('src', json.data[0].sIcon);
+        $('#header_nick').html(json.data[0].sName);
+        $('#con_nick').html(json.data[0].sName);
+        $('#header_attract').html(json.data[0].iAttractTrans);
+        $('#header_rich').html(json.data[0].iRichTrans);
+        $('#header_gongxun').html(json.data[0].iGrowthTrans);
+//var next_level_needed = json.data[0].sNextDegreeMinTrans-json.data[0].iGrowthTrans;
+//$('#header_next_level_needed').html(next_level_needed);
+//$('#con_next_level_needed').html(next_level_needed);
+//$('#header_uin').html(LoginManager.getUserUin());
 
-                            $('#blk_topbar_logined').hover(function(){
-                                $('#blk_topbar_logined .loginhover').show();
-                            }, function(){
-                                $('#blk_topbar_logined .loginhover').hide();
-                            });
-                        }
-                    });
-                    //用户心悦信息
-                    $.getScript('http://apps.game.qq.com/daoju/v3/api/we/member/accounts/UserAccounts.php?op=get_xy', function(){
-                        var json = ouser_accounts;
-                        if(json.ret==0){
-                            if(typeof(json.data)!='undefined' && json.data){
-                                var point=parseInt(json.data.point);
-                                var sNextDegreeMinTrans=0;
-                                var currRank=1;
-                                if(json.data.type=='0'){
-                                    sNextDegreeMinTrans=50000;
-                                    currRank=1;
-                                }
-                                if(json.data.type=='1'){
-                                    sNextDegreeMinTrans=100000;
-                                    currRank=2;
-                                }
-                                if(json.data.type=='2'){
-                                    sNextDegreeMinTrans=800000;
-                                    currRank=3;
-                                }
-                                if(json.data.type=='3'){
-                                    currRank=4;
-                                    sNextDegreeMinTrans=800000;//已是最高等级
-                                }
-                                if(json.data.type=='0'){
-                                    $('#header_growth_level_text').html('非会员');
-                                    $('#header_growth_level').addClass('ico_nonvip').attr('title', '非会员');
-                                    $('#con_growth_level').addClass('ico_nonvip').attr('title', '非会员');
-                                }else{
-                                    $('#header_growth_level_text').html('会员VIP'+json.data.type);
-                                    $('#header_growth_level').addClass('ico_vip'+json.data.type).attr('title', '会员VIP'+json.data.type);
-                                    $('#con_growth_level').addClass('ico_vip'+json.data.type).attr('title', '会员VIP'+json.data.type);
-                                }
-                                if(json.data.type=='3'){
-                                    $('#header_svover').width($('#header_valuebar').width());
-                                    $('#header_gthbar').html(point+'/'+sNextDegreeMinTrans);
-                                    $('#con_gthbar').html(point+'/'+sNextDegreeMinTrans);
-                                    $('#con_svover').animate({
-                                        width: $('#con_svaluebar').width()
-                                    }, 'slow');
-                                }else{
-                                    $('#header_svover').width(point/sNextDegreeMinTrans*$('#header_valuebar').width());
-                                    $('#header_gthbar').html(point+'/'+sNextDegreeMinTrans);
-                                    $('#con_gthbar').html(point+'/'+sNextDegreeMinTrans);
-                                    $('#con_svover').animate({
-                                        width: point/sNextDegreeMinTrans*$('#con_svaluebar').width()
-                                    }, 'slow');
-                                }
-                            }
-                        }
-                    });
-                    //聚豆
-                    $.getScript('http://apps.game.qq.com/daoju/appmarket/daoju_promotion/cloud_ticket/QueryCloudTicket.php?acctid=A100078&id=28', function(){
-                        $('#header_judou').html(sCLOUDJF_RES.data.ticket);
-                        $('#con_judou').html(sCLOUDJF_RES.data.ticket);
-                    });
-                }, function(){});
+$('#blk_topbar_logined').hover(function(){
+    $('#blk_topbar_logined .loginhover').show();
+}, function(){
+    $('#blk_topbar_logined .loginhover').hide();
+});
+}
+});
+//用户心悦信息
+$.getScript('http://apps.game.qq.com/daoju/v3/api/we/member/accounts/UserAccounts.php?op=get_xy', function(){
+    var json = ouser_accounts;
+    if(json.ret==0){
+        if(typeof(json.data)!='undefined' && json.data){
+            var point=parseInt(json.data.point);
+            var sNextDegreeMinTrans=0;
+            var currRank=1;
+            if(json.data.type=='0'){
+                sNextDegreeMinTrans=50000;
+                currRank=1;
+            }
+            if(json.data.type=='1'){
+                sNextDegreeMinTrans=100000;
+                currRank=2;
+            }
+            if(json.data.type=='2'){
+                sNextDegreeMinTrans=800000;
+                currRank=3;
+            }
+            if(json.data.type=='3'){
+                currRank=4;
+sNextDegreeMinTrans=800000;//已是最高等级
+}
+if(json.data.type=='0'){
+    $('#header_growth_level_text').html('非会员');
+    $('#header_growth_level').addClass('ico_nonvip').attr('title', '非会员');
+    $('#con_growth_level').addClass('ico_nonvip').attr('title', '非会员');
+}else{
+    $('#header_growth_level_text').html('会员VIP'+json.data.type);
+    $('#header_growth_level').addClass('ico_vip'+json.data.type).attr('title', '会员VIP'+json.data.type);
+    $('#con_growth_level').addClass('ico_vip'+json.data.type).attr('title', '会员VIP'+json.data.type);
+}
+if(json.data.type=='3'){
+    $('#header_svover').width($('#header_valuebar').width());
+    $('#header_gthbar').html(point+'/'+sNextDegreeMinTrans);
+    $('#con_gthbar').html(point+'/'+sNextDegreeMinTrans);
+    $('#con_svover').animate({
+        width: $('#con_svaluebar').width()
+    }, 'slow');
+}else{
+    $('#header_svover').width(point/sNextDegreeMinTrans*$('#header_valuebar').width());
+    $('#header_gthbar').html(point+'/'+sNextDegreeMinTrans);
+    $('#con_gthbar').html(point+'/'+sNextDegreeMinTrans);
+    $('#con_svover').animate({
+        width: point/sNextDegreeMinTrans*$('#con_svaluebar').width()
+    }, 'slow');
+}
+}
+}
+});
+//聚豆
+$.getScript('http://apps.game.qq.com/daoju/appmarket/daoju_promotion/cloud_ticket/QueryCloudTicket.php?acctid=A100078&id=28', function(){
+    $('#header_judou').html(sCLOUDJF_RES.data.ticket);
+    $('#con_judou').html(sCLOUDJF_RES.data.ticket);
+});
+}, function(){});
 
-                //导航栏
-                var pathname = window.location.pathname.indexOf('.shtml') > -1 ? window.location.pathname : window.location.pathname + 'index.shtml';
-                if(/shoppinglist\.php/.test(pathname)){
-                    pathname = '/'+window.globalvar.flag+'/list/shoppinglist.shtml';
-                }else if(/detail\.php/.test(pathname)){
-                    pathname = '/'+window.globalvar.flag+'/item/'+milo.request('m')+'.shtml';
-                }
-                pathname = pathname.replace('/revision/', '/');
-                $('#blk_nav_menu .navico > a').each(function(){
-                    if($(this).attr('href').indexOf(pathname) != -1){
-                        $(this).parent('li').addClass('current');
-                    }
-                });
-                //分类列表
-                var params_match = window.location.href.match(/list\/([\d\-]+)\.shtml/i);
-                var params_m = milo.request('m1');
-                var params_array = [];
-                if(params_match){
-                    params_array = params_match[1].split('-');
-                }else if(params_m){
-                    params_array = params_m.split('-');
-                }
-                var cat1 = parseInt(params_array[0]);
-                var cat2 = parseInt(params_array[1]);
-                if(cat1){
-                    $('#blk_nav_category .js_nav_category_cat1 li[catid="'+cat1+'"]').addClass('current');
-                    $('#blk_nav_category .js_nav_category_cat2 ul').hide();
-                    $('#blk_nav_category .js_nav_category_cat2 ul[catid="'+cat1+'"]').show();
-                    $('#blk_nav_category .js_nav_category_cat2').show();
-                }else{
-                    $('#blk_nav_category .js_nav_category_cat1 li').eq(0).addClass('current');
-                }
-                if(cat2){
-                    $('#blk_nav_category .js_nav_category_cat2 ul[catid="'+cat1+'"] li[catid="'+cat2+'"]').addClass('cur');
-                }
-                //只有首页、列表页、详情页显示分类
-                if(pathname.indexOf('index.shtml') != -1){
-                    $('#blk_nav_category').show();
-                    $('#blk_nav_category').find('.js_nav_category_cat1').show();
-                }else if(pathname.indexOf('/list/') != -1 || pathname.indexOf('/item/') != -1){
-                    $('#blk_nav_category').show();
-                    $('#blk_nav_category').find('.js_nav_category_cat1').show();
-                    //$('#blk_nav_category').find('.js_nav_category_cat2').show();
-                }
-                //购物车数量,非购物车页 这里更新，购物车里再购物车的逻辑更新
-                if(!/cart\.shtml/.test(location.href)) {
-                    window.mallResetCartNum();
-                }
+//导航栏
+var pathname = window.location.pathname.indexOf('.shtml') > -1 ? window.location.pathname : window.location.pathname + 'index.shtml';
+if(/shoppinglist\.php/.test(pathname)){
+    pathname = '/'+window.globalvar.flag+'/list/shoppinglist.shtml';
+}else if(/detail\.php/.test(pathname)){
+    pathname = '/'+window.globalvar.flag+'/item/'+milo.request('m')+'.shtml';
+}
+pathname = pathname.replace('/revision/', '/');
+$('#blk_nav_menu .navico > a').each(function(){
+    if($(this).attr('href').indexOf(pathname) != -1){
+        $(this).parent('li').addClass('current');
+    }
+});
+//分类列表
+var params_match = window.location.href.match(/list\/([\d\-]+)\.shtml/i);
+var params_m = milo.request('m1');
+var params_array = [];
+if(params_match){
+    params_array = params_match[1].split('-');
+}else if(params_m){
+    params_array = params_m.split('-');
+}
+var cat1 = parseInt(params_array[0]);
+var cat2 = parseInt(params_array[1]);
+if(cat1){
+    $('#blk_nav_category .js_nav_category_cat1 li[catid="'+cat1+'"]').addClass('current');
+    $('#blk_nav_category .js_nav_category_cat2 ul').hide();
+    $('#blk_nav_category .js_nav_category_cat2 ul[catid="'+cat1+'"]').show();
+    $('#blk_nav_category .js_nav_category_cat2').show();
+}else{
+    $('#blk_nav_category .js_nav_category_cat1 li').eq(0).addClass('current');
+}
+if(cat2){
+    $('#blk_nav_category .js_nav_category_cat2 ul[catid="'+cat1+'"] li[catid="'+cat2+'"]').addClass('cur');
+}
+//只有首页、列表页、详情页显示分类
+if(pathname.indexOf('index.shtml') != -1){
+    $('#blk_nav_category').show();
+    $('#blk_nav_category').find('.js_nav_category_cat1').show();
+}else if(pathname.indexOf('/list/') != -1 || pathname.indexOf('/item/') != -1){
+    $('#blk_nav_category').show();
+    $('#blk_nav_category').find('.js_nav_category_cat1').show();
+//$('#blk_nav_category').find('.js_nav_category_cat2').show();
+}
+//购物车数量,非购物车页 这里更新，购物车里再购物车的逻辑更新
+if(!/cart\.shtml/.test(location.href)) {
+    window.mallResetCartNum();
+}
 
-                //search输入框
-                var sbar_mouse_status = 0;
-                $('#blk_nav_search .sbar').mouseenter(function(){
-                    sbar_mouse_status=1;
-                }).mouseleave(function(){
-                    sbar_mouse_status=0;
-                });
-                $('#inpt_nav_search_name').focusin(function(){
-                    var v = $.trim($(this).val());
-                    var dft = $(this).attr('attr_default');
-                    if(v == dft){
-                        $(this).val('');
-                    }
-                }).focusout(function(){
-                    var v = $.trim($(this).val());
-                    var dft = $(this).attr('attr_default');
-                    if(!v){
-                        $(this).val(dft);
-                    }
-                    sbar_mouse_status||$('#blk_nav_search_keywordlist').addClass('hide');
-                }).keyup(function(e){
-                    if(e.keyCode == 13){
-                        $('#btn_nav_search_submit').trigger('click');
-                    }else if(e.keyCode == 38){
-                        var i = $(this).data('i') || 0;
-                        var len = $('#blk_nav_search_keywordlist a').length;
-                        i = Math.max(0, i-1);
-                        var v = $('#blk_nav_search_keywordlist a').eq(i).html();
-                        v&&$(this).val(v);
-                        $(this).data('i', i);
-                    }else if(e.keyCode == 40){
-                        var i = $(this).data('i') || 0;
-                        var len = $('#blk_nav_search_keywordlist a').length;
-                        i = Math.min(len-1, i+1);
-                        var v = $('#blk_nav_search_keywordlist a').eq(i).html();
-                        v&&$(this).val(v);
-                        $(this).data('i', i);
-                    }else{
-                        $block = $('#blk_nav_search_keywordlist');
-                        var sid = $block.data('sid');
+//search输入框
+var sbar_mouse_status = 0;
+$('#blk_nav_search .sbar').mouseenter(function(){
+    sbar_mouse_status=1;
+}).mouseleave(function(){
+    sbar_mouse_status=0;
+});
+$('#inpt_nav_search_name').focusin(function(){
+    var v = $.trim($(this).val());
+    var dft = $(this).attr('attr_default');
+    if(v == dft){
+        $(this).val('');
+    }
+}).focusout(function(){
+    var v = $.trim($(this).val());
+    var dft = $(this).attr('attr_default');
+    if(!v){
+        $(this).val(dft);
+    }
+    sbar_mouse_status||$('#blk_nav_search_keywordlist').addClass('hide');
+}).keyup(function(e){
+    if(e.keyCode == 13){
+        $('#btn_nav_search_submit').trigger('click');
+    }else if(e.keyCode == 38){
+        var i = $(this).data('i') || 0;
+        var len = $('#blk_nav_search_keywordlist a').length;
+        i = Math.max(0, i-1);
+        var v = $('#blk_nav_search_keywordlist a').eq(i).html();
+        v&&$(this).val(v);
+        $(this).data('i', i);
+    }else if(e.keyCode == 40){
+        var i = $(this).data('i') || 0;
+        var len = $('#blk_nav_search_keywordlist a').length;
+        i = Math.min(len-1, i+1);
+        var v = $('#blk_nav_search_keywordlist a').eq(i).html();
+        v&&$(this).val(v);
+        $(this).data('i', i);
+    }else{
+        $block = $('#blk_nav_search_keywordlist');
+        var sid = $block.data('sid');
 
-                        sid && window.clearTimeout(sid);
-                        sid = window.setTimeout(function(){
-                            $inpt = $('#inpt_nav_search_name');
-                            var goodsName = $.trim($inpt.val());
-                            var params = {
-                                plat: 2,                        // 默认是2
-                                busid: window.globalvar.flag,                   // 业务
-                                page: 1,                        // 页码
-                                keywords: goodsName,                   // 搜索关键词
-                                orderby: 'iPrice',              // 排序字段，search接口暂不支持
-                                ordertype:'desc',                // 排序类型，asc or desc
-                                output_foramt: 'jsonp'
-                            };
-                            if(goodsName){
-                                $.ajax({
-                                    type: "GET",
-                                    url: 'https://apps.game.qq.com/daoju/v3/api/hx/goods/api/list/v54/SearchGoods.php',
-                                    data: params,
-                                    dataType: 'jsonp',
-                                    success: function(rsp){
-                                        var json = rsp; //window.JSON_show_goods;
-                                        var list = (json.ret == 0 && json.data && json.data.goods) ? json.data.goods : [];
-                                        need(["util.template"],function(template){
-                                            $block.html(template.parseDOMTemplate('tmpl_nav_search_keywordlist').process(list, 'list'));
-                                            if(list.length==0){
-                                                $('#blk_nav_search_keywordlist').addClass('hide');
-                                            }else{
-                                                $('#blk_nav_search_keywordlist').removeClass('hide');
-                                                $("#blk_nav_search_keywordlist").css("height", $(".result-list").height());
-                                            }
+        sid && window.clearTimeout(sid);
+        sid = window.setTimeout(function(){
+            $inpt = $('#inpt_nav_search_name');
+            var goodsName = $.trim($inpt.val());
+            var params = {
+plat: 2,                        // 默认是2
+busid: window.globalvar.flag,                   // 业务
+page: 1,                        // 页码
+keywords: goodsName,                   // 搜索关键词
+orderby: 'iPrice',              // 排序字段，search接口暂不支持
+ordertype:'desc',                // 排序类型，asc or desc
+output_foramt: 'jsonp'
+};
+if(goodsName){
+    $.ajax({
+        type: "GET",
+        url: 'https://apps.game.qq.com/daoju/v3/api/hx/goods/api/list/v54/SearchGoods.php',
+        data: params,
+        dataType: 'jsonp',
+        success: function(rsp){
+var json = rsp; //window.JSON_show_goods;
+var list = (json.ret == 0 && json.data && json.data.goods) ? json.data.goods : [];
+need(["util.template"],function(template){
+    $block.html(template.parseDOMTemplate('tmpl_nav_search_keywordlist').process(list, 'list'));
+    if(list.length==0){
+        $('#blk_nav_search_keywordlist').addClass('hide');
+    }else{
+        $('#blk_nav_search_keywordlist').removeClass('hide');
+        $("#blk_nav_search_keywordlist").css("height", $(".result-list").height());
+    }
 
-                                            $('#blk_nav_search_keywordlist a').click(function(){
+    $('#blk_nav_search_keywordlist a').click(function(){
 //						    	var v = $.trim($(this).html());
-                                                var iSeqId = $(this).attr('iseqid');
-                                                window.location = 'http://daoju.qq.com/'+window.globalvar.flag+'/item/'+iSeqId+'.shtml';
+var iSeqId = $(this).attr('iseqid');
+window.location = 'http://daoju.qq.com/'+window.globalvar.flag+'/item/'+iSeqId+'.shtml';
 
-                                                return false;
-                                            });
-                                        });
+return false;
+});
+});
 
-                                    }
-                                });
-                            }
-                        }, 200);
-                        $block.data('sid', sid);
-                    }
-                    return false;
-                });
+}
+});
+}
+}, 200);
+$block.data('sid', sid);
+}
+return false;
+});
 
-                $('#btn_nav_search_submit').click(function(){
-                    var v = $.trim($('#inpt_nav_search_name').val());
-                    var dft = $('#inpt_nav_search_name').attr('attr_default');
-                    v == dft && (v = '');
-                    if(!v){
-                        window.mallAlert('搜索内容不能为空！');
-                    } else{
-                        window.location = '/'+window.globalvar.flag+'/list/shoppinglist.shtml?sGoodsName='+encodeURIComponent(v);
-                    }
-                });
+$('#btn_nav_search_submit').click(function(){
+    var v = $.trim($('#inpt_nav_search_name').val());
+    var dft = $('#inpt_nav_search_name').attr('attr_default');
+    v == dft && (v = '');
+    if(!v){
+        window.mallAlert('搜索内容不能为空！');
+    } else{
+        window.location = '/'+window.globalvar.flag+'/list/shoppinglist.shtml?sGoodsName='+encodeURIComponent(v);
+    }
+});
 
-                $("#search_txt").keyup(function(){
-                    $("#s_keywordList").css("height", $(".result-list").height());
-                    $("#s_keywordList").removeClass("hide");
-                    return false;
-                });
+$("#search_txt").keyup(function(){
+    $("#s_keywordList").css("height", $(".result-list").height());
+    $("#s_keywordList").removeClass("hide");
+    return false;
+});
 
 
-                //热门排行
-                $(".ranklist li").hover(function(){
-                    $(this).addClass("current").siblings().removeClass("current");
-                });
+//热门排行
+$(".ranklist li").hover(function(){
+    $(this).addClass("current").siblings().removeClass("current");
+});
 
-                //鼠标hover动画效果
-                $('#filter_list dl, #cnxh_list li').hover(function(){
-                    $(this).addClass("showtips");
-                },function(){
-                    $(this).removeClass("showtips");
-                });
+//鼠标hover动画效果
+$('#filter_list dl, #cnxh_list li').hover(function(){
+    $(this).addClass("showtips");
+},function(){
+    $(this).removeClass("showtips");
+});
 
-            });
-        });
+});
+});
 
 //        loadScript(window.location.protocol.indexOf('https')==-1 ? 'http://pingjs.qq.com/tcss.ping.js' : 'https://pingjs.qq.com/tcss.ping.https.js');
 
-        //TCSS上报和EAS上报的统一上报
-        need(["daoju.ping"],function(ping){
-            ping.report({'biz': 'lol','appid': 1003,'actid': 0});
-        });
+//TCSS上报和EAS上报的统一上报
+need(["daoju.ping"],function(ping){
+    ping.report({'biz': 'lol','appid': 1003,'actid': 0});
+});
 
-        // tips
-        loadScript('http://ossweb-img.qq.com/images/clientpop/js/djtips.js');
-    });
+// tips
+loadScript('http://ossweb-img.qq.com/images/clientpop/js/djtips.js');
+});
 
 </script>
 <!--  -->
 <script type="text/javascript">
-    milo.ready(function () {
-        need(["daoju.mall.lol.index", "util.jquery-min"], function (index, jQ) {
-            index.init();
-            
-            /*
-            var lol_guide = milo.cookie.get(window.globalvar.flag+"_index_guide") || '';
-			if(!lol_guide){
-				$('#lol_guide').show();
-			}else{
-				$('#lol_guide').hide();
-			}
-			*/
-        });
+milo.ready(function () {
+    need(["daoju.mall.lol.index", "util.jquery-min"], function (index, jQ) {
+        index.init();
 
-    });
-    
-    
+/*
+var lol_guide = milo.cookie.get(window.globalvar.flag+"_index_guide") || '';
+if(!lol_guide){
+$('#lol_guide').show();
+}else{
+$('#lol_guide').hide();
+}
+*/
+});
+
+});
+
+
 //新版本展示页面
 function newpage(){
     $(".newpage").show();        
@@ -1870,7 +1226,7 @@ function pagenext(){
 }
 
 function closepage(){
-	milo.cookie.set(window.globalvar.flag+"_index_guide",1,30*24*60*60,document.domain, "/"+window.globalvar.flag+"/");
+    milo.cookie.set(window.globalvar.flag+"_index_guide",1,30*24*60*60,document.domain, "/"+window.globalvar.flag+"/");
     $(".newpage").hide();
 }
 </script>

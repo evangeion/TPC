@@ -8,20 +8,24 @@
 		<!--我的购物点-->
 		<div class="comm_bd mb10 clearfix center_box">
 			<div class="center_tt">我的购物点<span class="line"><s class="l_5"></s></span></div>
+			{if condition="($logined == 0)"} 
+			<div class="default_con clearfix">
+				<div class="pic"></div>
+				<div class="txt">
+					<p class="tt" style="padding-top:35px;">抱歉，获取信息失败，请先<a href="/reslog/login/login">登录</a>！</p>
+				</div>
+			</div>
+			{else /}
 			<div class="comm_bd clearfix mb20 choose_box">
 				<div id="choose_game" class="mr20 choose_game fl" data-onload="initTicket">
-					<p class="fl">选择游戏：</p>
-					<div class="box fl" id="selectBorder">
-						<div class="tt"><s class="i_sp"></s><span id="curBizName" class="curBizName">选择游戏</span></a></div>
+					<p class="fl">本月剩余购物点:</p>
+					<div class="fl">
+						<div class="tt"><s class="i_sp"></s><span id="curBizName" class="curBizName">{$shopping_spot}</span></a></div>
 						<div class="choose_sub" id="game_list">
 						</div>
 					</div>
 				</div>
-				<div class="fl clearfix choose_time mr10">
-					<p class="fl">查询时间：</p>
-					<div class="fl mr10"><input type="text" name="date1" class="date datepicker" id="start_date" value="" />至<input type="text" name="date1" class="date datepicker" id="end_date" value="" /></div>
-				</div>
-				<div class="fl"><a href="#" class="comm_btn btn" title="查询" id="btn_query" >查 询</a></div>
+				<!-- <div class="fr"><a class="comm_btn btn" title="查询" id="btn_query" >查 询</a></div> -->
 			</div>
 			<div class="comm_bd coupon_tbl">
 				<table width="100%">
@@ -29,20 +33,39 @@
 						<tr>
 							<th width="180">日期</th>
 							<th width="150">购物点金额</th>
-							<th width="150">方式</th>
-							<th width="150">余额</th>
-							<th>详细说明</th>
+							<th width="150">商品名称</th>
 						</tr>
 					</thead>
-					<tbody id="table_list" >
-						<tr>
-							<td colspan="5">请选择游戏，查询购物点</td>
-						</tr>
+					<tbody id="table_list" >	
 					</tbody>
 				</table>
 			</div>
+			<script type="text/javascript">
+			function getLocalTime(nS) {
+				return new Date(parseInt(nS) * 1000).toLocaleString().replace(/:\d{1,2}$/,' ');
+			}
+			function demo(){
+				$.post("{:url('/order/index/ticket1')}",{},function(data){
+					var data = jQuery.parseJSON(data);
+					$("#table_list").html('');
+					for(i in data){
+						$("#table_list").append("<tr><th width='180'>"+ getLocalTime(data[i]['createtime'])+"</th><th width='150'>"+data[i]['real_price']+"</th><th width='150'>"+data[i]['name']+"</th></tr>");
+					}  
+				},'json');
+			}
+			$('#btn_query').click(demo());
+			demo();
+			</script>
 			<div class="page" id="page_wrapper"></div>
-			<p class="center_tip"><b class="red">温馨提示：</b>购物点会在每月1号零点清零，请及时使用！</p>
+			<p class="center_tip"><b class="red">温馨提示：</b>
+				{if condition="($privilege == 0)"} 
+				购物点会在每月1号零点清零，请及时使用！特权玩家可享受购物点不重置特权，<a href>成为特权玩家</a>
+				{else /}
+				您是特权玩家，享有不重置购物点特权！
+				{/if}
+			</p>
+			{/if}
+
 		</div>
 		<!--猜你喜欢-->
 		<div class="comm_bd favorite" id="favorite" data-onload="initFavorite" data-title="猜你喜欢">
